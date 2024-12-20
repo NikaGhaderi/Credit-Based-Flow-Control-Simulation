@@ -72,6 +72,44 @@ from device2 import Device as Device2
 from device3 import Device as Device3
 from device4 import Device as Device4
 
+RATIO = 1
+DURATION = 5
+
+def get_simulation_duration():
+    global DURATION
+    while True:
+        try:
+            user_input = input("Enter the simulation duration in seconds (positive integer):\n")
+            DURATION = int(user_input)
+            if DURATION <= 0:
+                print("Please enter a positive integer.\n")
+                continue
+            return
+        except ValueError:
+            print("Invalid input. Please enter a positive integer.\n")
+
+def get_simulation_RATIO():
+    global RATIO
+    while True:
+        try:
+            user_input = input("Enter the simulation state \n"
+                               "1: Packets are equal in priority and number.\n"
+                               "2: Packets from type 1 have double priority "
+                               "and are 4 times more common that packets of type 2\n")
+            state = int(user_input)
+            if state == 1:
+                RATIO = 1
+            elif state == 2:
+                RATIO = 4
+            else:
+                print("Please enter a valid number for a state.\n")
+                continue
+            return
+        except ValueError:
+            print("Invalid input. Please enter a positive integer.\n")
+
+
+
 # Configure Logging: Setup two loggers
 def setup_loggers():
 
@@ -128,6 +166,10 @@ def stop_simulation(switch, devices, logger):
         device.running = False
 
 if __name__ == "__main__":
+
+    get_simulation_duration()
+    get_simulation_RATIO()
+
     simulation_logger.info("Starting simulation...")
 
     # Shared queues for devices (Incoming queues: Devices send to Switch)
@@ -140,10 +182,10 @@ if __name__ == "__main__":
 
     # Initialize devices first to access their received_packets
     devices = [
-        Device1(1, incoming_queues[1], memory_logger),
-        Device2(2, incoming_queues[2], memory_logger),
-        Device3(3, incoming_queues[3], memory_logger),
-        Device4(4, incoming_queues[4], memory_logger)
+        Device1(1, incoming_queues[1], memory_logger, RATIO, DURATION),
+        Device2(2, incoming_queues[2], memory_logger, RATIO, DURATION),
+        Device3(3, incoming_queues[3], memory_logger, RATIO, DURATION),
+        Device4(4, incoming_queues[4], memory_logger, RATIO, DURATION)
     ]
 
     # Outgoing queues: Switch sends to Devices

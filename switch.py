@@ -132,19 +132,31 @@ class Switch:
     def process_packet(self, source_device, packet):
         target_device = packet['target']
         packet_size = packet['size']
-        elapsed = time.time() - PROGRAM_START_TIME
-        # Check if the target device has enough buffer space
+
+        # Threshold to trigger backpressure (e.g., 80% buffer utilization)
+        BACKPRESSURE_THRESHOLD = 0.8 * BUFFER_SIZES[target_device]
+
         if self.buffers[target_device] >= packet_size:
             self.buffers[target_device] -= packet_size
             self.outgoing_queues[target_device].put(packet)
             self.logger.info(
                 f"Switch: Packet from Device {source_device} to Device {target_device} sent. "
-                f"Remaining credits for Device {target_device}: {self.buffers[target_device]/8} bytes."
+                f"Remaining buffer for Device {target_device}: {self.buffers[target_device]} bytes."
             )
+
+            # Check if buffer usage exceeds threshold
+            if self.buffers[target_device] < BACKPRESSURE_THRESHOLD:
+                # Send a backpressure signal (e.g., via a special packet or message)
+                backpressure_packet = {"id": "BACKPRESSURE", "size": 0, "target": source_device}
+                self.incoming_queues[source_device].put(backpressure_packet)
+                self.logger.warning(
+                    f"Switch: Backpressure signal sent to Device {source_device} due to high buffer utilization."
+                )
         else:
-            self.logger.warning(
+            self.logger.error(
                 f"Switch: Packet from Device {source_device} to Device {target_device} dropped due to buffer overflow."
             )
+            
 
     def restore_buffers(self):
         self.logger.info("Switch: Buffer restoration thread started.")

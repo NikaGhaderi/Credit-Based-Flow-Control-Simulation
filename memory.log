@@ -1,12 +1,53 @@
-[21:31:26] [Device1Processor] [INFO] Device 1: Processed packets: [5457, 9912, 7428, 3090, 7098, 5844, 1909, 9552, 8342, 6294].
-[21:31:26] [Device2Processor] [INFO] Device 2: Processed packets: [7146, 3096, 5917, 5561, 4980, 2754, 6550, 4608, 1594].
-[21:31:27] [Device1Processor] [INFO] Device 1: Processed packets: [8823, 3766, 9320, 7010, 6516, 4020, 7044, 2315, 3700].
-[21:31:27] [Device3Processor] [INFO] Device 3: Processed packets: [2406, 8872, 6703, 4827, 2595, 2473, 4631, 1896, 7790, 4802].
-[21:31:27] [Device2Processor] [INFO] Device 2: Processed packets: [3182, 6135, 5277, 5777, 8244, 9878, 7203, 9983, 9924, 1263].
-[21:31:28] [Device2Processor] [INFO] Device 2: Processed packets: [5965, 8620, 8504, 1866, 3456, 3367, 8100, 8693, 7506, 6886].
-[21:31:28] [Device3Processor] [INFO] Device 3: Processed packets: [8464, 5326, 7451, 2716, 4654, 1784, 3063, 7128, 8623, 9820].
-[21:31:29] [Device3Processor] [INFO] Device 3: Processed packets: [5637, 1705, 3585, 8557, 4566, 5603, 1551, 2020, 9031, 5437].
-[21:31:29] [Device2Processor] [INFO] Device 2: Processed packets: [4746, 4411, 7075, 6286, 6047, 3416, 9902, 6436].
-[21:31:29] [Device4Processor] [INFO] Device 4: Processed packets: [2892, 9762, 1611, 5440, 3484, 2272, 5789, 5408, 8623, 5442].
-[21:31:30] [Device3Processor] [INFO] Device 3: Processed packets: [7109, 2818, 2850, 1139, 5884, 6319, 4189, 9327, 6089, 4587].
-[21:31:30] [Device4Processor] [INFO] Device 4: Processed packets: [2749, 6220, 5806, 4817, 1489, 5033, 6975, 4392, 2476, 6025].
+[23:18:04] [Device1Processor] [INFO] Device 1: Processed packets: [7605, 4531, 1785, 4042, 7696, 4577, 4960, 5825, 6653, 7932].
+[23:18:04] [Device2Processor] [WARNING] Device 2: Received backpressure signal. Slowing down transmission to Device 1 to 5.
+[23:18:04] [Device2Processor] [WARNING] Device 2: Received backpressure signal. Slowing down transmission to Device 1 to 2.
+[23:18:04] [Device2Processor] [WARNING] Device 2: Received backpressure signal. Slowing down transmission to Device 1 to 1.
+[23:18:04] [Device2Processor] [INFO] Device 2: Processed packets: [3677, 3538, 2810, 2563, 1504, 9915].
+[23:18:04] [Device3Processor] [WARNING] Device 3: Received backpressure signal. Slowing down transmission to Device 1 to 5.
+[23:18:04] [Device3Processor] [WARNING] Device 3: Received backpressure signal. Slowing down transmission to Device 1 to 2.
+[23:18:04] [Device3Processor] [WARNING] Device 3: Received backpressure signal. Slowing down transmission to Device 1 to 1.
+[23:18:04] [Device3Processor] [WARNING] Device 3: Received backpressure signal. Slowing down transmission to Device 2 to 10.
+[23:18:04] [Device3Processor] [WARNING] Device 3: Received backpressure signal. Slowing down transmission to Device 2 to 5.
+[23:18:04] [Device4Processor] [WARNING] Device 4: Received backpressure signal. Slowing down transmission to Device 1 to 5.
+[23:18:04] [Device3Processor] [INFO] Device 3: Processed packets: [7046, 5507, 2884, 6680].
+[23:18:04] [Device4Processor] [WARNING] Device 4: Received backpressure signal. Slowing down transmission to Device 1 to 2.
+[23:18:04] [Device4Processor] [WARNING] Device 4: Received backpressure signal. Slowing down transmission to Device 1 to 1.
+[23:18:04] [Device4Processor] [WARNING] Device 4: Received backpressure signal. Slowing down transmission to Device 2 to 10.
+[23:18:04] [Device4Processor] [WARNING] Device 4: Received backpressure signal. Slowing down transmission to Device 2 to 5.
+[23:18:04] [Device4Processor] [WARNING] Device 4: Received backpressure signal. Slowing down transmission to Device 2 to 2.
+[23:18:04] [Device4Processor] [WARNING] Device 4: Received backpressure signal. Slowing down transmission to Device 2 to 1.
+[23:18:05] [Device1Processor] [WARNING] Device 1: Received backpressure signal. Slowing down transmission to Device 2 to 5.
+[23:18:05] [Device1Processor] [WARNING] Device 1: Received backpressure signal. Slowing down transmission to Device 2 to 2.
+[23:18:05] [Device1Processor] [WARNING] Device 1: Received backpressure signal. Slowing down transmission to Device 2 to 1.
+[23:18:05] [Device1Processor] [INFO] Device 1: Processed packets: [1547, 4234, 1142, 1439, 5557, 4401].
+[23:18:05] [Device2Processor] [INFO] Device 2: Processed packets: [8732, 8800, 9538, 5885, 3372, 7650, 8015, 9235, 3150, 8542].
+[23:18:05] [Device3Processor] [WARNING] Device 3: Received backpressure signal. Slowing down transmission to Device 2 to 2.
+[23:18:05] [Device3Processor] [WARNING] Device 3: Received backpressure signal. Slowing down transmission to Device 2 to 1.
+[23:18:05] [Device3Processor] [INFO] Device 3: Processed packets: [2216, 9908, 6905, 5692, 6881, 5852, 2396, 2604].
+[23:18:05] [Device4Processor] [WARNING] Device 4: Received backpressure signal. Slowing down transmission to Device 3 to 15.
+[23:18:05] [Device4Processor] [WARNING] Device 4: Received backpressure signal. Slowing down transmission to Device 3 to 7.
+[23:18:05] [Device4Processor] [WARNING] Device 4: Received backpressure signal. Slowing down transmission to Device 3 to 3.
+[23:18:05] [Device4Processor] [WARNING] Device 4: Received backpressure signal. Slowing down transmission to Device 3 to 1.
+[23:18:06] [Device1Processor] [WARNING] Device 1: Received backpressure signal. Slowing down transmission to Device 3 to 10.
+[23:18:06] [Device2Processor] [INFO] Device 2: Processed packets: [5474, 2002, 5239, 7339, 9408, 3119, 4774, 4388, 1487, 9942].
+[23:18:06] [Device1Processor] [WARNING] Device 1: Received backpressure signal. Slowing down transmission to Device 3 to 5.
+[23:18:06] [Device3Processor] [INFO] Device 3: Processed packets: [5654, 5432, 8849, 4924, 4868, 5346, 4784, 6981, 8376, 8103].
+[23:18:06] [Device1Processor] [WARNING] Device 1: Received backpressure signal. Slowing down transmission to Device 3 to 2.
+[23:18:06] [Device4Processor] [INFO] Device 4: Processed packets: [3417, 2588, 3709, 5478, 2350, 9044, 5555, 4018].
+[23:18:06] [Device1Processor] [WARNING] Device 1: Received backpressure signal. Slowing down transmission to Device 3 to 1.
+[23:18:07] [Device2Processor] [WARNING] Device 2: Received backpressure signal. Slowing down transmission to Device 3 to 10.
+[23:18:07] [Device2Processor] [WARNING] Device 2: Received backpressure signal. Slowing down transmission to Device 3 to 5.
+[23:18:07] [Device2Processor] [WARNING] Device 2: Received backpressure signal. Slowing down transmission to Device 3 to 2.
+[23:18:07] [Device2Processor] [WARNING] Device 2: Received backpressure signal. Slowing down transmission to Device 3 to 1.
+[23:18:07] [Device3Processor] [INFO] Device 3: Processed packets: [2101, 7759, 6777, 2021, 9374, 5690].
+[23:18:07] [Device4Processor] [INFO] Device 4: Processed packets: [9904, 7245, 3873, 2432, 5205, 8172, 2561, 3629, 5737, 4443].
+[23:18:08] [Device2Processor] [WARNING] Device 2: Received backpressure signal. Slowing down transmission to Device 4 to 15.
+[23:18:08] [Device2Processor] [WARNING] Device 2: Received backpressure signal. Slowing down transmission to Device 4 to 7.
+[23:18:08] [Device2Processor] [WARNING] Device 2: Received backpressure signal. Slowing down transmission to Device 4 to 3.
+[23:18:08] [Device2Processor] [WARNING] Device 2: Received backpressure signal. Slowing down transmission to Device 4 to 1.
+[23:18:08] [Device3Processor] [INFO] Device 3: Processed packets: [2269, 5412, 2484, 1934, 6498, 7751, 7582, 9993, 9859, 7219].
+[23:18:08] [Device1Processor] [WARNING] Device 1: Received backpressure signal. Slowing down transmission to Device 4 to 15.
+[23:18:08] [Device1Processor] [WARNING] Device 1: Received backpressure signal. Slowing down transmission to Device 4 to 7.
+[23:18:08] [Device1Processor] [WARNING] Device 1: Received backpressure signal. Slowing down transmission to Device 4 to 3.
+[23:18:08] [Device1Processor] [WARNING] Device 1: Received backpressure signal. Slowing down transmission to Device 4 to 1.
+[23:18:08] [Device4Processor] [INFO] Device 4: Processed packets: [5355, 7580, 1481, 8268, 5948, 3566, 4010, 8656, 8552, 9501].

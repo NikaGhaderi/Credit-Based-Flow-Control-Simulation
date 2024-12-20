@@ -92,6 +92,8 @@ BUFFER_SIZES = {
 
 PROCESS_RATE = 10  # Packets processed per second by each device
 
+DEVICES_NUMBER = 4
+
 PROGRAM_START_TIME = time.time()
 
 # === Define Custom 'PROCESS' Logging Level ===
@@ -127,14 +129,14 @@ class Switch:
                 if not q.empty():
                     packet = q.get()
                     self.process_packet(device_id, packet)
-            time.sleep(0.1)  # Prevents tight loop; adjust as needed
+            time.sleep(0.05)  # Prevents tight loop; adjust as needed
 
     def process_packet(self, source_device, packet):
         target_device = packet['target']
         packet_size = packet['size']
 
         # Threshold to trigger backpressure (e.g., 80% buffer utilization)
-        BACKPRESSURE_THRESHOLD = 0.8 * BUFFER_SIZES[target_device]
+        BACKPRESSURE_THRESHOLD = 0.25 * BUFFER_SIZES[target_device]
 
         if self.buffers[target_device] >= packet_size:
             self.buffers[target_device] -= packet_size
@@ -145,12 +147,14 @@ class Switch:
             )
 
             # Check if buffer usage exceeds threshold
-            if self.buffers[target_device] < BACKPRESSURE_THRESHOLD:
+            if self.buffers[target_device] < BACKPRESSURE_THRESHOLD and self.buffers[target_device] != 1:
                 # Send a backpressure signal (e.g., via a special packet or message)
-                backpressure_packet = {"id": "BACKPRESSURE", "size": 0, "target": source_device}
-                self.incoming_queues[source_device].put(backpressure_packet)
+                backpressure_packet = {"id": "BACKPRESSURE", "size": 0, "target": target_device}
+                for i in range(DEVICES_NUMBER):
+                    if i + 1 != target_device:
+                        self.outgoing_queues[i + 1].put(backpressure_packet)
                 self.logger.warning(
-                    f"Switch: Backpressure signal sent to Device {source_device} due to high buffer utilization."
+                    f"Switch: Backpressure signal sent to devices for Device {target_device} due to high buffer utilization."
                 )
         else:
             self.logger.error(

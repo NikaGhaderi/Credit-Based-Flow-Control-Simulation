@@ -94,6 +94,15 @@ class Device:
             for _ in range(PROCESS_RATE):
                 if not self.received_packets.empty():
                     packet = self.received_packets.get()
+                    if packet['id'] == "BACKPRESSURE":
+                        target_device = packet['target']
+                        original_rate = self.outgoing_packets[target_device]
+                        self.outgoing_packets[target_device] = max(1, original_rate // 2)
+                        if original_rate != 1:
+                            self.logger.warning(
+                                f"Device {self.device_id}: Received backpressure signal. Slowing down transmission to"
+                                f" Device {target_device} to {self.outgoing_packets[target_device]}.")
+                        continue
                     processed_packets.append(packet)
 
             if processed_packets:

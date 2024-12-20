@@ -107,9 +107,10 @@ logging.Logger.process = process
 # === End of Custom Logging Level ===
 
 class Switch:
-    def __init__(self, queues, logger):
-        self.queues = queues  # Incoming queues from devices
-        self.outgoing_queues = {1: queue.Queue(), 2: queue.Queue(), 3: queue.Queue(), 4: queue.Queue()}  # Outgoing queues to devices
+    def __init__(self, incoming_queues, outgoing_queues, logger):
+        self.incoming_queues = incoming_queues  # Queues from Devices to Switch
+        self.outgoing_queues = outgoing_queues  # Queues from Switch to Devices
+
         self.buffers = {
             1: BUFFER_SIZES[1],
             2: BUFFER_SIZES[2],
@@ -122,8 +123,8 @@ class Switch:
     def listen(self):
         self.logger.info("Switch: Listening for incoming packets...")
         while self.running:
-            for device_id, q in self.queues.items():
-                if not q.empty():
+            for device_id, q in self.incoming_queues.items():
+                while not q.empty():
                     packet = q.get()
                     self.process_packet(device_id, packet)
             time.sleep(0.1)  # Prevents tight loop; adjust as needed

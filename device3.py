@@ -116,9 +116,9 @@ class Device:
 # Start the device only if device2.py is run directly (for standalone testing)
 if __name__ == "__main__":
     # Configure logging similarly to central.py or import the logger
-    logger = logging.getLogger("SimulationLogger")
+    logger = logging.getLogger("MemoryLogger")
     if not logger.handlers:
-        fh = logging.FileHandler("simulation.log")
+        fh = logging.FileHandler("memory.log")
         fh.setLevel(logging.DEBUG)
         formatter = logging.Formatter(
             fmt='[%(asctime)s] [%(threadName)s] [%(levelname)s] %(message)s',

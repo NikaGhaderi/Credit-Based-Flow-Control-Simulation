@@ -108,7 +108,7 @@ class Device:
                     packet_id = random.randint(1000, 9999)
                     packet = {"id": packet_id, "size": 512, "target": target_device}
                     self.switch_queue.put(packet)
-                    self.logger.info(f"Device {self.device_id}: Sent packet {packet_id} to Device {target_device}.")
+                    # self.logger.info(f"Device {self.device_id}: Sent packet {packet_id} to Device {target_device}.")
                 time.sleep(1 / sum(self.outgoing_packets.values()))
 
     def stop(self):

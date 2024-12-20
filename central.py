@@ -81,7 +81,7 @@ def setup_loggers():
     # Erase previous content
     open('simulation.log', 'w').close()
 
-    # Create a file handler for simulation.log with colors
+    # Create a file handler for simulation.log
     fh_sim = logging.FileHandler("simulation.log", mode='a')
     fh_sim.setLevel(logging.DEBUG)
     formatter_sim = logging.Formatter(
@@ -98,7 +98,7 @@ def setup_loggers():
     # Erase previous content
     open('memory.log', 'w').close()
 
-    # Create a file handler for memory.log without colors
+    # Create a file handler for memory.log
     fh_mem = logging.FileHandler("memory.log", mode='a')
     fh_mem.setLevel(logging.DEBUG)
     formatter_mem = logging.Formatter(
@@ -125,34 +125,44 @@ def stop_simulation(switch, devices, logger):
 if __name__ == "__main__":
     simulation_logger.info("Starting simulation...")
 
-    # Shared queues for devices
-    shared_queues = {
+    # Shared queues for devices (Incoming queues: Devices send to Switch)
+    incoming_queues = {
         1: queue.Queue(),
         2: queue.Queue(),
         3: queue.Queue(),
         4: queue.Queue()
     }
 
-    # Initialize the switch with SimulationLogger
-    switch = Switch(shared_queues, simulation_logger)
+    # Initialize devices first to access their received_packets
+    devices = [
+        Device1(1, incoming_queues[1], memory_logger),
+        Device2(2, incoming_queues[2], memory_logger),
+        Device3(3, incoming_queues[3], memory_logger),
+        Device4(4, incoming_queues[4], memory_logger)
+    ]
+
+    # Outgoing queues: Switch sends to Devices
+    outgoing_queues = {
+        1: devices[0].received_packets,
+        2: devices[1].received_packets,
+        3: devices[2].received_packets,
+        4: devices[3].received_packets
+    }
+
+    # Initialize the switch with both incoming and outgoing queues
+    switch = Switch(incoming_queues, outgoing_queues, simulation_logger)
     switch_thread = threading.Thread(target=switch.listen, name="SwitchListener")
     buffer_thread = threading.Thread(target=switch.restore_buffers, name="BufferRestorer")
 
-    # Initialize devices with MemoryLogger
-    devices = [
-        Device1(1, shared_queues[1], memory_logger),
-        Device2(2, shared_queues[2], memory_logger),
-        Device3(3, shared_queues[3], memory_logger),
-        Device4(4, shared_queues[4], memory_logger)
-    ]
+    # Create device threads
     device_threads = []
     for device in devices:
         device_thread_sender = threading.Thread(target=device.send_packets, name=f"Device{device.device_id}Sender")
-        device_thread_processor = threading.Thread(target=device.process_incoming, name=f"Device{device.device_id}Sender")
+        device_thread_processor = threading.Thread(target=device.process_incoming, name=f"Device{device.device_id}Processor")
         device_threads.append(device_thread_sender)
         device_threads.append(device_thread_processor)
 
-    # Start the switch and devices
+    # Start the switch and device threads
     switch_thread.start()
     buffer_thread.start()
     for thread in device_threads:

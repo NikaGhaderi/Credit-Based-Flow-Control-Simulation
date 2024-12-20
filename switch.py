@@ -124,7 +124,7 @@ class Switch:
         self.logger.info("Switch: Listening for incoming packets...")
         while self.running:
             for device_id, q in self.incoming_queues.items():
-                while not q.empty():
+                if not q.empty():
                     packet = q.get()
                     self.process_packet(device_id, packet)
             time.sleep(0.1)  # Prevents tight loop; adjust as needed
@@ -139,7 +139,7 @@ class Switch:
             self.outgoing_queues[target_device].put(packet)
             self.logger.info(
                 f"Switch: Packet from Device {source_device} to Device {target_device} sent. "
-                f"Remaining buffer for Device {target_device}: {self.buffers[target_device]/8} bytes."
+                f"Remaining credits for Device {target_device}: {self.buffers[target_device]/8} bytes."
             )
         else:
             self.logger.warning(
@@ -156,8 +156,8 @@ class Switch:
                 self.buffers[device_id] = min(self.buffers[device_id] + restored_size, BUFFER_SIZES[device_id])
                 restored = self.buffers[device_id] - before_restore
                 self.logger.process(
-                    f"Switch: Restored buffer for Device {device_id} by {restored/8} bytes. "
-                    f"Current buffer size: {self.buffers[device_id]/8} bytes."
+                    f"Switch: Restored credit for Device {device_id} by {restored/8} bytes. "
+                    f"Current credit size: {self.buffers[device_id]/8} bytes."
                 )
 
     def stop(self):

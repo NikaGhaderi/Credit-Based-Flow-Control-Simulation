@@ -1,20 +1,12 @@
-[20:45:52] [Device1Processor] [INFO] Device 1: Processed packets: [4880, 1844, 8238, 1347, 2691, 3523, 8676, 1873, 9795, 9267].
-[20:45:52] [Device2Processor] [INFO] Device 2: Processed packets: [6937, 3618, 2076, 2032, 3568, 4071, 1374, 6720, 5224, 6155].
-[20:45:52] [Device3Processor] [INFO] Device 3: Processed packets: [7024, 2521, 8514, 1195, 7610, 6646, 6612, 6045, 4139, 3849].
-[20:45:52] [Device4Processor] [INFO] Device 4: Processed packets: [7782, 3010, 2630, 5131, 2803, 1041, 2676, 7133, 7696, 7553].
-[20:45:53] [Device1Processor] [INFO] Device 1: Processed packets: [4129, 3656, 4926, 5839, 3225, 6572, 5110, 3942, 7876, 3087].
-[20:45:53] [Device2Processor] [INFO] Device 2: Processed packets: [2224, 6185, 2790, 3584, 5920, 8776, 1434, 8785, 3540, 3655].
-[20:45:53] [Device3Processor] [INFO] Device 3: Processed packets: [5530, 4661, 5744, 2243, 3074, 9473, 5603, 6150, 1441, 9088].
-[20:45:53] [Device4Processor] [INFO] Device 4: Processed packets: [6746, 8063, 5687, 2077, 9976, 5702, 7148, 5808, 8904, 3873].
-[20:45:54] [Device2Processor] [INFO] Device 2: Processed packets: [2694, 5907, 9304, 3251, 1458, 8616, 7107, 6805, 2890, 6469].
-[20:45:54] [Device1Processor] [INFO] Device 1: Processed packets: [8575, 9719, 3565, 6429, 2945, 3489, 3285, 3200, 2730, 6538].
-[20:45:54] [Device4Processor] [INFO] Device 4: Processed packets: [8964, 1469, 2278, 2531, 7762, 9987, 8643, 4066, 2854, 6707].
-[20:45:54] [Device3Processor] [INFO] Device 3: Processed packets: [9947, 6470, 6704, 8974, 4122, 2954, 2495, 8169, 2528, 8904].
-[20:45:55] [Device2Processor] [INFO] Device 2: Processed packets: [8261, 9286, 8727, 4221, 5536, 4908, 8330, 9533, 6340, 1544].
-[20:45:55] [Device4Processor] [INFO] Device 4: Processed packets: [6579, 3385, 6841, 9168, 5935, 3201, 3974, 3028, 2687, 5563].
-[20:45:55] [Device1Processor] [INFO] Device 1: Processed packets: [7882, 4338, 9227, 3183, 1237, 4534, 7348, 8035, 5765, 1411].
-[20:45:55] [Device3Processor] [INFO] Device 3: Processed packets: [6469, 2459, 9818, 2582, 8356, 6697, 5932, 5919, 3417, 4694].
-[20:45:56] [Device2Processor] [INFO] Device 2: Processed packets: [5825, 1287, 9793, 1408, 8887, 9613, 9873, 2584, 9347, 6661].
-[20:45:56] [Device4Processor] [INFO] Device 4: Processed packets: [3658, 7021, 9134, 2724, 4286, 4903, 7338, 7817, 3861, 8474].
-[20:45:56] [Device1Processor] [INFO] Device 1: Processed packets: [4463, 6038, 5985, 6697, 3523, 9885, 8578, 5691, 7949, 1997].
-[20:45:56] [Device3Processor] [INFO] Device 3: Processed packets: [5899, 6368, 5193, 7614, 7143, 9635, 1484, 9450, 8629, 6670].
+[21:31:26] [Device1Processor] [INFO] Device 1: Processed packets: [5457, 9912, 7428, 3090, 7098, 5844, 1909, 9552, 8342, 6294].
+[21:31:26] [Device2Processor] [INFO] Device 2: Processed packets: [7146, 3096, 5917, 5561, 4980, 2754, 6550, 4608, 1594].
+[21:31:27] [Device1Processor] [INFO] Device 1: Processed packets: [8823, 3766, 9320, 7010, 6516, 4020, 7044, 2315, 3700].
+[21:31:27] [Device3Processor] [INFO] Device 3: Processed packets: [2406, 8872, 6703, 4827, 2595, 2473, 4631, 1896, 7790, 4802].
+[21:31:27] [Device2Processor] [INFO] Device 2: Processed packets: [3182, 6135, 5277, 5777, 8244, 9878, 7203, 9983, 9924, 1263].
+[21:31:28] [Device2Processor] [INFO] Device 2: Processed packets: [5965, 8620, 8504, 1866, 3456, 3367, 8100, 8693, 7506, 6886].
+[21:31:28] [Device3Processor] [INFO] Device 3: Processed packets: [8464, 5326, 7451, 2716, 4654, 1784, 3063, 7128, 8623, 9820].
+[21:31:29] [Device3Processor] [INFO] Device 3: Processed packets: [5637, 1705, 3585, 8557, 4566, 5603, 1551, 2020, 9031, 5437].
+[21:31:29] [Device2Processor] [INFO] Device 2: Processed packets: [4746, 4411, 7075, 6286, 6047, 3416, 9902, 6436].
+[21:31:29] [Device4Processor] [INFO] Device 4: Processed packets: [2892, 9762, 1611, 5440, 3484, 2272, 5789, 5408, 8623, 5442].
+[21:31:30] [Device3Processor] [INFO] Device 3: Processed packets: [7109, 2818, 2850, 1139, 5884, 6319, 4189, 9327, 6089, 4587].
+[21:31:30] [Device4Processor] [INFO] Device 4: Processed packets: [2749, 6220, 5806, 4817, 1489, 5033, 6975, 4392, 2476, 6025].

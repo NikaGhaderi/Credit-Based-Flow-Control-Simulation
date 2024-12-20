@@ -61,6 +61,7 @@
 
 # central.py
 # central.py
+# central.py
 import threading
 import queue
 import time
@@ -107,6 +108,10 @@ def setup_loggers():
     )
     fh_mem.setFormatter(formatter_mem)
     memory_logger.addHandler(fh_mem)
+
+    # Prevent logs from propagating to the root logger
+    simulation_logger.propagate = False
+    memory_logger.propagate = False
 
     return simulation_logger, memory_logger
 
@@ -158,7 +163,7 @@ if __name__ == "__main__":
     device_threads = []
     for device in devices:
         device_thread_sender = threading.Thread(target=device.send_packets, name=f"Device{device.device_id}Sender")
-        device_thread_processor = threading.Thread(target=device.process_incoming, name=f"Device{device.device_id}Processor")
+        device_thread_processor = threading.Thread(target=device.process_incoming, name=f"Device{device.device_id}Processor")  # Corrected name
         device_threads.append(device_thread_sender)
         device_threads.append(device_thread_processor)
 

@@ -59,6 +59,7 @@
 #     process_thread.start()
 
 # device2.py
+# device1.py
 import threading
 import time
 import random
@@ -73,6 +74,7 @@ TRANSMISSION_RATES = {
     3: {1: 10, 2: 20, 4: 30},
     4: {1: 10, 2: 20, 3: 30}
 }
+
 PROCESS_RATE = 10
 
 class Device:
@@ -83,6 +85,7 @@ class Device:
         self.outgoing_packets = TRANSMISSION_RATES[device_id]
         self.received_packets = queue.Queue()
         self.logger = logger
+        self.next_packet_type = 'type1'  # Initialize the first packet type
 
     def process_incoming(self):
         start_time = time.time()
@@ -98,8 +101,9 @@ class Device:
                         self.outgoing_packets[target_device] = max(1, original_rate // 2)
                         if original_rate != 1:
                             self.logger.warning(
-                                f"Device {self.device_id}: Received backpressure signal. Slowing down transmission to"
-                                f" Device {target_device} to {self.outgoing_packets[target_device]}.")
+                                f"Device {self.device_id}: Received backpressure signal. Slowing down transmission to "
+                                f"Device {target_device} to {self.outgoing_packets[target_device]}."
+                            )
                         continue
                     processed_packets.append(packet)
 
@@ -113,16 +117,26 @@ class Device:
             for target_device, rate in self.outgoing_packets.items():
                 for _ in range(rate):
                     packet_id = random.randint(1000, 9999)
-                    packet = {"id": packet_id, "size": 512, "target": target_device}
+                    packet_type = self.next_packet_type
+                    packet = {
+                        "id": packet_id,
+                        "size": 512,
+                        "target": target_device,
+                        "type": packet_type
+                    }
                     self.switch_queue.put(packet)
-                    # self.logger.info(f"Device {self.device_id}: Sent packet {packet_id} to Device {target_device}.")
+                    # self.logger.info(
+                    #     f"Device {self.device_id}: Sent packet {packet_id} ({packet_type}) to Device {target_device}."
+                    # )
+                    # Toggle the packet type for the next packet
+                    self.next_packet_type = 'type2' if self.next_packet_type == 'type1' else 'type1'
                 time.sleep(1 / sum(self.outgoing_packets.values()))
 
     def stop(self):
         self.logger.info(f"Device {self.device_id}: Stopping packet transmission.")
         self.running = False
 
-# Start the device only if device2.py is run directly (for standalone testing)
+# Start the device only if device1.py is run directly (for standalone testing)
 if __name__ == "__main__":
     # Configure logging similarly to central.py or import the logger
     logger = logging.getLogger("MemoryLogger")
@@ -141,7 +155,7 @@ if __name__ == "__main__":
 
     device = Device(3, switch_queue, logger)
     send_thread = threading.Thread(target=device.send_packets, name="Device3Sender")
-    process_thread = threading.Thread(target=device.process_incoming, name="Device3Processor")
+    process_thread = threading.Thread(target=device.process_incoming, name="Device3Processor")  # Corrected name
 
     send_thread.start()
     process_thread.start()

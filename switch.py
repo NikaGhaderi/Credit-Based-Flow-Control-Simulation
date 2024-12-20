@@ -137,12 +137,12 @@ class Switch:
 
         # Threshold to trigger backpressure (e.g., 80% buffer utilization)
         BACKPRESSURE_THRESHOLD = 0.25 * BUFFER_SIZES[target_device]
-
+        packet_type = packet.get('type', 'unknown')
         if self.buffers[target_device] >= packet_size:
             self.buffers[target_device] -= packet_size
             self.outgoing_queues[target_device].put(packet)
             self.logger.info(
-                f"Switch: Packet from Device {source_device} to Device {target_device} sent. "
+                f"Switch: {packet_type} packet from Device {source_device} to Device {target_device} sent. "
                 f"Remaining buffer for Device {target_device}: {self.buffers[target_device]} bytes."
             )
 

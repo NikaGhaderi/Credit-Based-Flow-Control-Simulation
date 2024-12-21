@@ -8,8 +8,10 @@ from device2 import Device as Device2
 from device3 import Device as Device3
 from device4 import Device as Device4
 
+STATE = 1
 RATIO = 1
 DURATION = 5
+PRIORITY_OPTION = 1  # Default priority option
 
 # === Define Custom 'PROCESS' Logging Level ===
 PROCESS_LEVEL_NUM = 25
@@ -44,23 +46,43 @@ def get_simulation_duration():
 
 def get_simulation_RATIO():
     global RATIO
+    global STATE
     while True:
         try:
             user_input = input("Enter the simulation state \n"
                                "1: Packets are equal in priority and number.\n"
                                "2: Packets from type 1 have double priority "
-                               "and are 4 times more common that packets of type 2\n")
-            state = int(user_input)
-            if state == 1:
+                               "and are 4 times more common than packets of type 2.\n")
+            STATE = int(user_input)
+            if STATE == 1:
                 RATIO = 1
-            elif state == 2:
+                return
+            elif STATE == 2:
                 RATIO = 4
+                get_priority_option()
+                return
             else:
                 print("Please enter a valid number for a state.\n")
                 continue
-            return
         except ValueError:
             print("Invalid input. Please enter a positive integer.\n")
+
+
+def get_priority_option():
+    global PRIORITY_OPTION
+    while True:
+        try:
+            user_input = input("Choose priority management option:\n"
+                               "1) Packets of type 1 are always processed before packets of type 2.\n"
+                               "2) Only when competing for remaining buffer space, packets of type 1 are preferred to type 2.\n"
+                               "Enter 1 or 2:\n")
+            PRIORITY_OPTION = int(user_input)
+            if PRIORITY_OPTION in [1, 2]:
+                return
+            else:
+                print("Please enter a valid option (1 or 2).\n")
+        except ValueError:
+            print("Invalid input. Please enter 1 or 2.\n")
 
 
 # Configure Logging: Setup two loggers
@@ -137,6 +159,7 @@ if __name__ == "__main__":
         4: queue.Queue()
     }
 
+    global STATE, RATIO, DURATION, PRIORITY_OPTION
     # Initialize devices first to access their received_packets
     devices = [
         Device1(1, incoming_queues[1], memory_logger, RATIO, DURATION),
@@ -153,8 +176,8 @@ if __name__ == "__main__":
         4: devices[3].received_packets
     }
 
-    # Initialize the switch with both incoming and outgoing queues
-    switch = Switch(incoming_queues, outgoing_queues, simulation_logger)
+    # Initialize the switch with both incoming and outgoing queues and priority option
+    switch = Switch(incoming_queues, outgoing_queues, simulation_logger, STATE, PRIORITY_OPTION)
     switch_thread = threading.Thread(target=switch.listen, name="SwitchListener")
     buffer_thread = threading.Thread(target=switch.restore_buffers, name="BufferRestorer")
 

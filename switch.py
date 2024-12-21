@@ -18,9 +18,10 @@ DEVICES_NUMBER = 4
 PROGRAM_START_TIME = time.time()
 
 class Switch:
-    def __init__(self, incoming_queues, outgoing_queues, logger):
+    def __init__(self, incoming_queues, outgoing_queues, logger, STATE):
         self.incoming_queues = incoming_queues  # Queues from Devices to Switch
         self.outgoing_queues = outgoing_queues  # Queues from Switch to Devices
+        self.STATE = STATE
 
         self.buffers = {
             1: BUFFER_SIZES[1],

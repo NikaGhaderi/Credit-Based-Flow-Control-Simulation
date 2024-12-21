@@ -1,555 +1,551 @@
-[22:16:55] [MainThread] [INFO] Switch is running. Ready to process packets...
-[22:16:58] [MainThread] [INFO] Starting simulation...
-[22:16:58] [SwitchListener] [INFO] Switch: Listening for incoming packets...
-[22:16:58] [BufferRestorer] [INFO] Switch: Buffer restoration thread started.
-[22:16:58] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 7680 bytes.
-[22:16:58] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 7680 bytes.
-[22:16:58] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 7168 bytes.
-[22:16:58] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 6656 bytes.
-[22:16:58] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 7168 bytes.
-[22:16:58] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 6144 bytes.
-[22:16:58] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 5632 bytes.
-[22:16:58] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 5120 bytes.
-[22:16:58] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 6656 bytes.
-[22:16:58] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 4608 bytes.
-[22:16:58] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 4096 bytes.
-[22:16:58] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 3584 bytes.
-[22:16:58] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 6144 bytes.
-[22:16:58] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 3072 bytes.
-[22:16:58] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 2560 bytes.
-[22:16:58] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
-[22:16:58] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 2048 bytes.
-[22:16:58] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
-[22:16:58] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 5632 bytes.
-[22:16:58] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 1536 bytes.
-[22:16:58] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
-[22:16:58] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 1024 bytes.
-[22:16:58] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
-[22:16:58] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 512 bytes.
-[22:16:58] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
-[22:16:58] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 5120 bytes.
-[22:16:58] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 0 bytes.
-[22:16:58] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 1 due to buffer overflow.
-[22:16:58] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
-[22:16:58] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
-[22:16:58] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 4608 bytes.
-[22:16:58] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 1 dropped due to buffer overflow.
-[22:16:58] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
-[22:16:58] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
-[22:16:58] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 4096 bytes.
-[22:16:58] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 1 dropped due to buffer overflow.
-[22:16:58] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
-[22:16:58] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
-[22:16:58] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 3584 bytes.
-[22:16:58] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 1 dropped due to buffer overflow.
-[22:16:58] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
-[22:16:58] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
-[22:16:58] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 3072 bytes.
-[22:16:58] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 1 dropped due to buffer overflow.
-[22:16:58] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
-[22:16:58] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
-[22:16:58] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 15872 bytes.
-[22:16:58] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 15360 bytes.
-[22:16:58] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 2560 bytes.
-[22:16:58] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:16:58] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 2048 bytes.
-[22:16:58] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 14848 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 14336 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 1536 bytes.
-[22:16:59] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 1024 bytes.
-[22:16:59] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 13824 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 13312 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 512 bytes.
-[22:16:59] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 0 bytes.
-[22:16:59] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 2 due to buffer overflow.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 12800 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 12288 bytes.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 11776 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 11264 bytes.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 10752 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 10240 bytes.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 9728 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 9216 bytes.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 8704 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 8192 bytes.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 7680 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 7168 bytes.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:16:59] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 1 by 640.0 bytes. Current credit size: 640.0 bytes.
-[22:16:59] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 1 as buffer usage is below the threshold.
-[22:16:59] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 2 by 640.0 bytes. Current credit size: 640.0 bytes.
-[22:16:59] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 2 as buffer usage is below the threshold.
-[22:16:59] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 3 by 640.0 bytes. Current credit size: 1536.0 bytes.
-[22:16:59] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 3 as buffer usage is below the threshold.
-[22:16:59] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 4 by 0.0 bytes. Current credit size: 4096.0 bytes.
-[22:16:59] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 4 as buffer usage is below the threshold.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 11776 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 11264 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 4608 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 4096 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 10752 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 10240 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 3584 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 3072 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 9728 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 9216 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 2560 bytes.
-[22:16:59] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 2048 bytes.
-[22:16:59] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 8704 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 8192 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 1536 bytes.
-[22:16:59] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 1024 bytes.
-[22:16:59] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 7680 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 7168 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 512 bytes.
-[22:16:59] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 0 bytes.
-[22:16:59] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 2 due to buffer overflow.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 6656 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 6144 bytes.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 5632 bytes.
-[22:16:59] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 5120 bytes.
-[22:16:59] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 4608 bytes.
-[22:16:59] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 4096 bytes.
-[22:16:59] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 3584 bytes.
-[22:16:59] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 3072 bytes.
-[22:16:59] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 2560 bytes.
-[22:16:59] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 2048 bytes.
-[22:16:59] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 1536 bytes.
-[22:16:59] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:16:59] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 1024 bytes.
-[22:16:59] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 32256 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 31744 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 31232 bytes.
-[22:16:59] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 512 bytes.
-[22:16:59] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 30720 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 30208 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 29696 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 0 bytes.
-[22:17:00] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 3 due to buffer overflow.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 29184 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 28672 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 28160 bytes.
-[22:17:00] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 27648 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 27136 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 26624 bytes.
-[22:17:00] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 26112 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 25600 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 25088 bytes.
-[22:17:00] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 24576 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 24064 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 23552 bytes.
-[22:17:00] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 23040 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 22528 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 22016 bytes.
-[22:17:00] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 21504 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 20992 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 20480 bytes.
-[22:17:00] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 19968 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 19456 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 18944 bytes.
-[22:17:00] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:00] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 1 by 384.0 bytes. Current credit size: 1024.0 bytes.
-[22:17:00] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 1 as buffer usage is below the threshold.
-[22:17:00] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 2 by 640.0 bytes. Current credit size: 640.0 bytes.
-[22:17:00] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 2 as buffer usage is below the threshold.
-[22:17:00] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 3 by 640.0 bytes. Current credit size: 640.0 bytes.
-[22:17:00] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 3 as buffer usage is below the threshold.
-[22:17:00] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 4 by 640.0 bytes. Current credit size: 3008.0 bytes.
-[22:17:00] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 4 as buffer usage is below the threshold.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 23552 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 23040 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 22528 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 4608 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 22016 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 21504 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 20992 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 4096 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 20480 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 19968 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 19456 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 3584 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 18944 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 18432 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 17920 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 3072 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 17408 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 16896 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 16384 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 2560 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 15872 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 15360 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 14848 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 2048 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 14336 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 13824 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 13312 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 1536 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 12800 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 12288 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 11776 bytes.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 1024 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 11264 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 10752 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 10240 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 512 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 9728 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 9216 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 8704 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 0 bytes.
-[22:17:00] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 3 due to buffer overflow.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 8192 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 7680 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 7168 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:00] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 6656 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 6144 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:00] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 5632 bytes.
-[22:17:00] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:00] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 5120 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 4608 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 4096 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 3584 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 3072 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 2560 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 2048 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 1536 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 1024 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 512 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 0 bytes.
-[22:17:01] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 4 due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 4 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 4 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 4 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 4 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 4 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 4 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 4 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 4 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 4 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 4 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:01] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 1 by 0.0 bytes. Current credit size: 1024.0 bytes.
-[22:17:01] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 1 as buffer usage is below the threshold.
-[22:17:01] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 2 by 384.0 bytes. Current credit size: 1024.0 bytes.
-[22:17:01] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 2 as buffer usage is below the threshold.
-[22:17:01] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 3 by 640.0 bytes. Current credit size: 640.0 bytes.
-[22:17:01] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 3 as buffer usage is below the threshold.
-[22:17:01] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 4 by 640.0 bytes. Current credit size: 640.0 bytes.
-[22:17:01] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 4 as buffer usage is below the threshold.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 4608 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 4096 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 3584 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 4608 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 3072 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 2560 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 2048 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 4096 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 7680 bytes.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 7680 bytes.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 7168 bytes.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 6656 bytes.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 7168 bytes.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 6144 bytes.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 5632 bytes.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 5120 bytes.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 6656 bytes.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 4608 bytes.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 4096 bytes.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 3584 bytes.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 6144 bytes.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 3072 bytes.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 2560 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 2048 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 5632 bytes.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 1536 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 1024 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 512 bytes.
-[22:17:01] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 5120 bytes.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 0 bytes.
-[22:17:01] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 1 due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 4608 bytes.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 1 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 4096 bytes.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 1 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 3584 bytes.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 1 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 3072 bytes.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 1 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
-[22:17:01] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 3584 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 3072 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 2560 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 2048 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 2560 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 2048 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 1536 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 1024 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 1536 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 1024 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 512 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 0 bytes.
-[22:17:02] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 2 due to buffer overflow.
-[22:17:02] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 512 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 0 bytes.
-[22:17:02] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 3 due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:17:02] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 1 by 640.0 bytes. Current credit size: 640.0 bytes.
-[22:17:02] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 1 as buffer usage is below the threshold.
-[22:17:02] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 2 by 640.0 bytes. Current credit size: 640.0 bytes.
-[22:17:02] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 2 as buffer usage is below the threshold.
-[22:17:02] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 3 by 640.0 bytes. Current credit size: 640.0 bytes.
-[22:17:02] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 3 as buffer usage is below the threshold.
-[22:17:02] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 4 by 640.0 bytes. Current credit size: 896.0 bytes.
-[22:17:02] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 4 as buffer usage is below the threshold.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 4608 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 4096 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 4608 bytes.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 4096 bytes.
-[22:17:02] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 3584 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 3072 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 3584 bytes.
-[22:17:02] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 3072 bytes.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 2560 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 2048 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 2560 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 2048 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 1536 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 1024 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 1536 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 1024 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 512 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 0 bytes.
-[22:17:02] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 3 due to buffer overflow.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 512 bytes.
-[22:17:02] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
-[22:17:02] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 0 bytes.
-[22:17:02] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 2 due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
-[22:17:02] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
-[22:17:03] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 6656 bytes.
-[22:17:03] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:03] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 6144 bytes.
-[22:17:03] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:03] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 5632 bytes.
-[22:17:03] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:03] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:03] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 5120 bytes.
-[22:17:03] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:03] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 4608 bytes.
-[22:17:03] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:03] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 4096 bytes.
-[22:17:03] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:03] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:03] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 3584 bytes.
-[22:17:03] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:03] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 3072 bytes.
-[22:17:03] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:03] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 2560 bytes.
-[22:17:03] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:03] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:03] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 2048 bytes.
-[22:17:03] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:03] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 1536 bytes.
-[22:17:03] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:03] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 1024 bytes.
-[22:17:03] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:03] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:03] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 512 bytes.
-[22:17:03] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
-[22:17:03] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 0 bytes.
-[22:17:03] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 4 due to buffer overflow.
-[22:17:03] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 4 dropped due to buffer overflow.
-[22:17:03] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:03] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 4 dropped due to buffer overflow.
-[22:17:03] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 4 dropped due to buffer overflow.
-[22:17:03] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 4 dropped due to buffer overflow.
-[22:17:03] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:03] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 4 dropped due to buffer overflow.
-[22:17:03] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 4 dropped due to buffer overflow.
-[22:17:03] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 4 dropped due to buffer overflow.
-[22:17:03] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
-[22:17:03] [MainThread] [INFO] Stopping simulation...
-[22:17:03] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 1 by 384.0 bytes. Current credit size: 1024.0 bytes.
-[22:17:03] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 1 as buffer usage is below the threshold.
-[22:17:03] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 2 by 640.0 bytes. Current credit size: 640.0 bytes.
-[22:17:03] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 2 as buffer usage is below the threshold.
-[22:17:03] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 3 by 640.0 bytes. Current credit size: 640.0 bytes.
-[22:17:03] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 3 as buffer usage is below the threshold.
-[22:17:03] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 4 by 640.0 bytes. Current credit size: 640.0 bytes.
-[22:17:03] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 4 as buffer usage is below the threshold.
-[22:17:03] [MainThread] [INFO] Simulation completed.
+[01:52:09] [MainThread] [INFO] Switch is running. Ready to process packets...
+[01:52:17] [MainThread] [INFO] Starting simulation...
+[01:52:17] [SwitchListener] [INFO] Switch: Listening for incoming packets...
+[01:52:17] [BufferRestorer] [INFO] Switch: Buffer restoration thread started.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 7680 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 7680 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 7168 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 6656 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 7168 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 6144 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 5632 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 5120 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 6656 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 4608 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 4096 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 3584 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 6144 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 3072 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 2560 bytes.
+[01:52:17] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 2048 bytes.
+[01:52:17] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 5632 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 1536 bytes.
+[01:52:17] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 1024 bytes.
+[01:52:17] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 512 bytes.
+[01:52:17] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 5120 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 0 bytes.
+[01:52:17] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 1 due to buffer overflow.
+[01:52:17] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
+[01:52:17] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
+[01:52:17] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 4608 bytes.
+[01:52:17] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 1 dropped due to buffer overflow.
+[01:52:17] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
+[01:52:17] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 4096 bytes.
+[01:52:17] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 1 dropped due to buffer overflow.
+[01:52:17] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
+[01:52:17] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 3584 bytes.
+[01:52:17] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 1 dropped due to buffer overflow.
+[01:52:17] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
+[01:52:17] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 3072 bytes.
+[01:52:17] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 1 dropped due to buffer overflow.
+[01:52:17] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
+[01:52:17] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 15872 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 15360 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 2560 bytes.
+[01:52:17] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 2048 bytes.
+[01:52:17] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:17] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 14848 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 14336 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 1536 bytes.
+[01:52:17] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:17] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 1024 bytes.
+[01:52:17] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 13824 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 13312 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 512 bytes.
+[01:52:17] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 0 bytes.
+[01:52:17] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 2 due to buffer overflow.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 12800 bytes.
+[01:52:17] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 12288 bytes.
+[01:52:17] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:17] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 11776 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 11264 bytes.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 10752 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 10240 bytes.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 9728 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 9216 bytes.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 8704 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 8192 bytes.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 7680 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 7168 bytes.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:18] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 1 by 640.0 bytes. Current credit size: 640.0 bytes.
+[01:52:18] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 1 as buffer usage is below the threshold.
+[01:52:18] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 2 by 640.0 bytes. Current credit size: 640.0 bytes.
+[01:52:18] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 2 as buffer usage is below the threshold.
+[01:52:18] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 3 by 640.0 bytes. Current credit size: 1536.0 bytes.
+[01:52:18] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 3 as buffer usage is below the threshold.
+[01:52:18] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 4 by 0.0 bytes. Current credit size: 4096.0 bytes.
+[01:52:18] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 4 as buffer usage is below the threshold.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 11776 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 11264 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 4608 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 4096 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 10752 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 10240 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 3584 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 3072 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 9728 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 9216 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 2560 bytes.
+[01:52:18] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:18] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 2048 bytes.
+[01:52:18] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 8704 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 8192 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 1536 bytes.
+[01:52:18] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 1024 bytes.
+[01:52:18] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 7680 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 7168 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 512 bytes.
+[01:52:18] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 0 bytes.
+[01:52:18] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 2 due to buffer overflow.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 6656 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 6144 bytes.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 5632 bytes.
+[01:52:18] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 5120 bytes.
+[01:52:18] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 4608 bytes.
+[01:52:18] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:18] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 4096 bytes.
+[01:52:18] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 3584 bytes.
+[01:52:18] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 3072 bytes.
+[01:52:18] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 2560 bytes.
+[01:52:18] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 2048 bytes.
+[01:52:18] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 1536 bytes.
+[01:52:18] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 1024 bytes.
+[01:52:18] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 32256 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 31744 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 31232 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 512 bytes.
+[01:52:18] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:18] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 30720 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 30208 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 29696 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 0 bytes.
+[01:52:18] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 3 due to buffer overflow.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 29184 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 28672 bytes.
+[01:52:18] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 28160 bytes.
+[01:52:18] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 27648 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 27136 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 26624 bytes.
+[01:52:19] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 26112 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 25600 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 25088 bytes.
+[01:52:19] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 24576 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 24064 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 23552 bytes.
+[01:52:19] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:19] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 23040 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 22528 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 22016 bytes.
+[01:52:19] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 21504 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 20992 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 20480 bytes.
+[01:52:19] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:19] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 1 by 384.0 bytes. Current credit size: 1024.0 bytes.
+[01:52:19] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 1 as buffer usage is below the threshold.
+[01:52:19] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 2 by 640.0 bytes. Current credit size: 640.0 bytes.
+[01:52:19] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 2 as buffer usage is below the threshold.
+[01:52:19] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 3 by 640.0 bytes. Current credit size: 640.0 bytes.
+[01:52:19] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 3 as buffer usage is below the threshold.
+[01:52:19] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 4 by 640.0 bytes. Current credit size: 3200.0 bytes.
+[01:52:19] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 4 as buffer usage is below the threshold.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 25088 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 24576 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 24064 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 4608 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 23552 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 23040 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 22528 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 4096 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 22016 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 21504 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 20992 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 3584 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 20480 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 19968 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 19456 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 3072 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 18944 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 18432 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 17920 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 2560 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 17408 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 16896 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 16384 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 2048 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 15872 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 15360 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 14848 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 1536 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 14336 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 13824 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 13312 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 1024 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 12800 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 12288 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 11776 bytes.
+[01:52:19] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 512 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 11264 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 10752 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 10240 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 0 bytes.
+[01:52:19] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 3 due to buffer overflow.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 9728 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 9216 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 8704 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:19] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 8192 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 7680 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 7168 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:19] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 6656 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 6144 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 5632 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:19] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:19] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 5120 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 4608 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:19] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 4096 bytes.
+[01:52:19] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:19] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 3584 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 3072 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 2560 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 2048 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 1536 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 1024 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 512 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 0 bytes.
+[01:52:20] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 4 due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 4 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 4 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 4 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 4 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 4 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 4 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 4 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:20] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 1 by 0.0 bytes. Current credit size: 1024.0 bytes.
+[01:52:20] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 1 as buffer usage is below the threshold.
+[01:52:20] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 2 by 384.0 bytes. Current credit size: 1024.0 bytes.
+[01:52:20] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 2 as buffer usage is below the threshold.
+[01:52:20] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 3 by 640.0 bytes. Current credit size: 640.0 bytes.
+[01:52:20] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 3 as buffer usage is below the threshold.
+[01:52:20] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 4 by 640.0 bytes. Current credit size: 640.0 bytes.
+[01:52:20] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 4 as buffer usage is below the threshold.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 4608 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 4096 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 3584 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 4608 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 3072 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 2560 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 2048 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 4096 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 1536 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 1024 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 512 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 3 sent. Remaining buffer for Device 3: 3584 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 7680 bytes.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 7680 bytes.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 7168 bytes.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 6656 bytes.
+[01:52:20] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 7168 bytes.
+[01:52:20] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 6144 bytes.
+[01:52:20] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 5632 bytes.
+[01:52:20] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 5120 bytes.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 6656 bytes.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 4608 bytes.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 4096 bytes.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 3584 bytes.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 6144 bytes.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 3072 bytes.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 2560 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 2048 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 5632 bytes.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 1536 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 1 sent. Remaining buffer for Device 1: 1024 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 1 sent. Remaining buffer for Device 1: 512 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 1 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 5120 bytes.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 1 sent. Remaining buffer for Device 1: 0 bytes.
+[01:52:20] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 1 due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 4608 bytes.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 1 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 4096 bytes.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 1 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 3584 bytes.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 1 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 2 sent. Remaining buffer for Device 2: 3072 bytes.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 1 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 1 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 1 dropped due to buffer overflow.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 3072 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 2560 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 2560 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:20] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 2048 bytes.
+[01:52:20] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 2048 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 1536 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 1536 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 1024 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 1024 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 512 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 512 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 0 bytes.
+[01:52:21] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 2 due to buffer overflow.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 0 bytes.
+[01:52:21] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 3 due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:21] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 1 by 640.0 bytes. Current credit size: 640.0 bytes.
+[01:52:21] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 1 as buffer usage is below the threshold.
+[01:52:21] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 2 by 640.0 bytes. Current credit size: 640.0 bytes.
+[01:52:21] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 2 as buffer usage is below the threshold.
+[01:52:21] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 3 by 640.0 bytes. Current credit size: 640.0 bytes.
+[01:52:21] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 3 as buffer usage is below the threshold.
+[01:52:21] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 4 by 640.0 bytes. Current credit size: 704.0 bytes.
+[01:52:21] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 4 as buffer usage is below the threshold.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 4608 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 4096 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 4608 bytes.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 4096 bytes.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 3584 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 3072 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 3584 bytes.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 3072 bytes.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 2560 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 2048 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 2560 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 2048 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 1536 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 1024 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 1536 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type1 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 1024 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 3 sent. Remaining buffer for Device 3: 512 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 3 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 3 sent. Remaining buffer for Device 3: 0 bytes.
+[01:52:21] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 3 due to buffer overflow.
+[01:52:21] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 2 sent. Remaining buffer for Device 2: 512 bytes.
+[01:52:21] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 2 due to high buffer utilization.
+[01:52:21] [SwitchListener] [INFO] Switch: type2 packet from Device 4 to Device 2 sent. Remaining buffer for Device 2: 0 bytes.
+[01:52:21] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 2 due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 3 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 2 dropped due to buffer overflow.
+[01:52:21] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 2 dropped due to buffer overflow.
+[01:52:22] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 5120 bytes.
+[01:52:22] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:22] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 4608 bytes.
+[01:52:22] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:22] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 4096 bytes.
+[01:52:22] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:22] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:22] [SwitchListener] [INFO] Switch: type2 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 3584 bytes.
+[01:52:22] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:22] [SwitchListener] [INFO] Switch: type2 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 3072 bytes.
+[01:52:22] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:22] [SwitchListener] [INFO] Switch: type2 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 2560 bytes.
+[01:52:22] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:22] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:22] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 2048 bytes.
+[01:52:22] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:22] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 1536 bytes.
+[01:52:22] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:22] [SwitchListener] [INFO] Switch: type1 packet from Device 3 to Device 4 sent. Remaining buffer for Device 4: 1024 bytes.
+[01:52:22] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:22] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:22] [SwitchListener] [INFO] Switch: type1 packet from Device 1 to Device 4 sent. Remaining buffer for Device 4: 512 bytes.
+[01:52:22] [SwitchListener] [WARNING] Switch: Backpressure signal sent to devices for Device 4 due to high buffer utilization.
+[01:52:22] [SwitchListener] [INFO] Switch: type1 packet from Device 2 to Device 4 sent. Remaining buffer for Device 4: 0 bytes.
+[01:52:22] [SwitchListener] [CRITICAL] Switch: Critical backpressure signal sent to all devices to stop sending to Device 4 due to buffer overflow.
+[01:52:22] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 4 dropped due to buffer overflow.
+[01:52:22] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:22] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 4 dropped due to buffer overflow.
+[01:52:22] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 4 dropped due to buffer overflow.
+[01:52:22] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 4 dropped due to buffer overflow.
+[01:52:22] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:22] [SwitchListener] [ERROR] Switch: Packet from Device 1 to Device 4 dropped due to buffer overflow.
+[01:52:22] [SwitchListener] [ERROR] Switch: Packet from Device 2 to Device 4 dropped due to buffer overflow.
+[01:52:22] [SwitchListener] [ERROR] Switch: Packet from Device 3 to Device 4 dropped due to buffer overflow.
+[01:52:22] [SwitchListener] [ERROR] Switch: Packet from Device 4 to Device 3 dropped due to buffer overflow.
+[01:52:22] [MainThread] [INFO] Stopping simulation...
+[01:52:22] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 1 by 384.0 bytes. Current credit size: 1024.0 bytes.
+[01:52:22] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 1 as buffer usage is below the threshold.
+[01:52:22] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 2 by 640.0 bytes. Current credit size: 640.0 bytes.
+[01:52:22] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 2 as buffer usage is below the threshold.
+[01:52:22] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 3 by 640.0 bytes. Current credit size: 640.0 bytes.
+[01:52:22] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 3 as buffer usage is below the threshold.
+[01:52:22] [BufferRestorer] [PROCESS] Switch: Restored credit for Device 4 by 640.0 bytes. Current credit size: 640.0 bytes.
+[01:52:22] [BufferRestorer] [PROCESS] Switch: Sent RESTORE signal for Device 4 as buffer usage is below the threshold.
+[01:52:22] [MainThread] [INFO] Simulation completed.

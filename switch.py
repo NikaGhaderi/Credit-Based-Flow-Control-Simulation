@@ -18,10 +18,11 @@ DEVICES_NUMBER = 4
 PROGRAM_START_TIME = time.time()
 
 class Switch:
-    def __init__(self, incoming_queues, outgoing_queues, logger, STATE):
+    def __init__(self, incoming_queues, outgoing_queues, logger, STATE, PRIORITY_OPTION):
         self.incoming_queues = incoming_queues  # Queues from Devices to Switch
         self.outgoing_queues = outgoing_queues  # Queues from Switch to Devices
         self.STATE = STATE
+        self.PRIORITY_MODE = PRIORITY_OPTION
 
         self.buffers = {
             1: BUFFER_SIZES[1],
@@ -35,10 +36,40 @@ class Switch:
     def listen(self):
         self.logger.info("Switch: Listening for incoming packets...")
         while self.running:
+            # Initialize a data structure (dictionary of lists) to save packets and device_id for each target device
+            packets_to_process = {}
+
             for device_id, q in self.incoming_queues.items():
                 if not q.empty():
                     packet = q.get()
+                    target_device = packet["target"]  # Get the target device for this packet
+                    # Add a tuple (device_id, packet) to the list for the target device
+                    if target_device not in packets_to_process:
+                        packets_to_process[target_device] = []
+                    packets_to_process[target_device].append((device_id, packet))
+
+            # Now, sort the packets before processing
+            if self.STATE == 1:
+                # If state 1, no sorting needed
+                pass
+            else:
+                # State 2: Handle sorting based on priority mode, for each target device
+                for target_device, packets in packets_to_process.items():
+                    if self.PRIORITY_MODE == 1:
+                        # Option 1: Prioritize packet type 1 before type 2 for this specific target_device
+                        packets.sort(key=lambda pkt: pkt[1]["type"] == 2)  # Type 1 comes before Type 2
+                    elif self.PRIORITY_MODE == 2:
+                        # Option 2: Prioritize packet type 1 only when buffer is low for this specific target_device
+                        buffer_usage = self.buffers[target_device]
+                        if buffer_usage < 0.10 * BUFFER_SIZES[target_device]:
+                            # If buffer is low, prioritize type 1 over type 2 for this target device
+                            packets.sort(key=lambda pkt: pkt[1]["type"] == 2)  # Type 1 comes before Type 2
+
+            # Process all packets for each target device after sorting
+            for target_device, packets in packets_to_process.items():
+                for device_id, packet in packets:
                     self.process_packet(device_id, packet)
+
             time.sleep(0.05)  # Prevents tight loop; adjust as needed
 
     def broadcast(self, message, exclude=None):

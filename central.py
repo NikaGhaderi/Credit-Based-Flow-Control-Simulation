@@ -159,7 +159,6 @@ if __name__ == "__main__":
         4: queue.Queue()
     }
 
-    global STATE, RATIO, DURATION, PRIORITY_OPTION
     # Initialize devices first to access their received_packets
     devices = [
         Device1(1, incoming_queues[1], memory_logger, RATIO, DURATION),
@@ -209,3 +208,4 @@ if __name__ == "__main__":
         thread.join()
 
     simulation_logger.info("Simulation completed.")
+    print("Simulation completed.")

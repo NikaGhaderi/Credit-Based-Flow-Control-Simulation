@@ -11,6 +11,23 @@ from device4 import Device as Device4
 RATIO = 1
 DURATION = 5
 
+# === Define Custom 'PROCESS' Logging Level ===
+PROCESS_LEVEL_NUM = 25
+logging.addLevelName(PROCESS_LEVEL_NUM, "PROCESS")
+
+
+def process(self, message, *args, **kws):
+    if self.isEnabledFor(PROCESS_LEVEL_NUM):
+        self._log(PROCESS_LEVEL_NUM, message, args, **kws)
+
+
+# Add the 'process' method to the Logger class
+logging.Logger.process = process
+
+
+# === End of Custom Logging Level ===
+
+
 def get_simulation_duration():
     global DURATION
     while True:
@@ -23,6 +40,7 @@ def get_simulation_duration():
             return
         except ValueError:
             print("Invalid input. Please enter a positive integer.\n")
+
 
 def get_simulation_RATIO():
     global RATIO
@@ -45,10 +63,8 @@ def get_simulation_RATIO():
             print("Invalid input. Please enter a positive integer.\n")
 
 
-
 # Configure Logging: Setup two loggers
 def setup_loggers():
-
     # === Simulation Logger ===
     simulation_logger = logging.getLogger("SimulationLogger")
     simulation_logger.setLevel(logging.DEBUG)
@@ -57,7 +73,7 @@ def setup_loggers():
     open('simulation.log', 'w').close()
 
     # Create a file handler for simulation.log
-    fh_sim = logging.FileHandler("simulation.log", mode='a')
+    fh_sim = logging.FileHandler("simulation.log")
     fh_sim.setLevel(logging.DEBUG)
     formatter_sim = logging.Formatter(
         fmt='[%(asctime)s] [%(threadName)s] [%(levelname)s] %(message)s',
@@ -65,6 +81,8 @@ def setup_loggers():
     )
     fh_sim.setFormatter(formatter_sim)
     simulation_logger.addHandler(fh_sim)
+
+    simulation_logger.info("Switch is running. Ready to process packets...")
 
     # === Memory Logger ===
     memory_logger = logging.getLogger("MemoryLogger")
@@ -74,7 +92,7 @@ def setup_loggers():
     open('memory.log', 'w').close()
 
     # Create a file handler for memory.log
-    fh_mem = logging.FileHandler("memory.log", mode='a')
+    fh_mem = logging.FileHandler("memory.log")
     fh_mem.setLevel(logging.DEBUG)
     formatter_mem = logging.Formatter(
         fmt='[%(asctime)s] [%(threadName)s] [%(levelname)s] %(message)s',
@@ -83,16 +101,18 @@ def setup_loggers():
     fh_mem.setFormatter(formatter_mem)
     memory_logger.addHandler(fh_mem)
 
+    memory_logger.info("Memory is running. Ready to process packets...")
+
     # Prevent logs from propagating to the root logger
     simulation_logger.propagate = False
     memory_logger.propagate = False
 
     return simulation_logger, memory_logger
 
+
 # Initialize the loggers
 simulation_logger, memory_logger = setup_loggers()
 
-DURATION = 5  # Simulation duration in seconds
 
 def stop_simulation(switch, devices, logger):
     # Signal the switch and devices to stop
@@ -100,6 +120,7 @@ def stop_simulation(switch, devices, logger):
     switch.running = False
     for device in devices:
         device.running = False
+
 
 if __name__ == "__main__":
 
@@ -141,7 +162,8 @@ if __name__ == "__main__":
     device_threads = []
     for device in devices:
         device_thread_sender = threading.Thread(target=device.send_packets, name=f"Device{device.device_id}Sender")
-        device_thread_processor = threading.Thread(target=device.process_incoming, name=f"Device{device.device_id}Processor")  # Corrected name
+        device_thread_processor = threading.Thread(target=device.process_incoming,
+                                                   name=f"Device{device.device_id}Processor")  # Corrected name
         device_threads.append(device_thread_sender)
         device_threads.append(device_thread_processor)
 

@@ -11,13 +11,15 @@ TRANSMISSION_RATES = {
 
 PROCESS_RATE = 10
 
+TRANSITION_DURATION = 60
+
 
 class Device:
     def __init__(self, device_id, switch_queue, logger, RATIO, DURATION):
         self.device_id = device_id
         self.switch_queue = switch_queue
         self.running = True
-        self.outgoing_packets = TRANSMISSION_RATES[device_id]
+        self.outgoing_packets = TRANSMISSION_RATES[device_id].copy()
         self.received_packets = queue.Queue()
         self.logger = logger
         self.ratio_counter = 0
@@ -32,21 +34,35 @@ class Device:
             for _ in range(PROCESS_RATE):
                 if not self.received_packets.empty():
                     packet = self.received_packets.get()
+
                     if packet['id'] == "BACKPRESSURE":
                         target_device = packet['target']
                         original_rate = self.outgoing_packets[target_device]
-                        self.outgoing_packets[target_device] = max(1, original_rate // 2)
-                        if original_rate != 1:
+                        self.outgoing_packets[target_device] = max(0, original_rate // 2)
+                        if original_rate != 0:
                             self.logger.warning(
                                 f"Device {self.device_id}: Received backpressure signal. Slowing down transmission to "
                                 f"Device {target_device} to {self.outgoing_packets[target_device]}."
                             )
                         continue
+
+                    if packet['id'] == "RESTORE":
+                        target_device = packet['target']
+                        current_rate = self.outgoing_packets[target_device]
+                        self.outgoing_packets[target_device] = min(TRANSMISSION_RATES[self.device_id][target_device],
+                                                                   current_rate + 1)
+                        if current_rate != TRANSMISSION_RATES[self.device_id][target_device]:
+                            self.logger.info(
+                                f"Device {self.device_id}: Received restore signal. Speeding up transmission to "
+                                f"Device {target_device} to {self.outgoing_packets[target_device]}."
+                            )
+                        continue
+
                     processed_packets.append(packet)
 
             if processed_packets:
                 packet_ids = [p['id'] for p in processed_packets]
-                self.logger.info(f"Device {self.device_id}: Processed packets: {packet_ids}.")
+                self.logger.process(f"Device {self.device_id}: Processed packets: {packet_ids}.")
 
     def send_packets(self):
         start_time = time.time()
@@ -72,7 +88,7 @@ class Device:
                     # self.logger.info(
                     #     f"Device {self.device_id}: Sent packet {packet_id} ({packet_type}) to Device {target_device}."
                     # )
-                time.sleep(1 / sum(self.outgoing_packets.values()))
+                time.sleep(1 / TRANSITION_DURATION)
 
     def stop(self):
         self.logger.info(f"Device {self.device_id}: Stopping packet transmission.")

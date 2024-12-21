@@ -17,18 +17,6 @@ DEVICES_NUMBER = 4
 
 PROGRAM_START_TIME = time.time()
 
-# === Define Custom 'PROCESS' Logging Level ===
-PROCESS_LEVEL_NUM = 25
-logging.addLevelName(PROCESS_LEVEL_NUM, "PROCESS")
-
-def process(self, message, *args, **kws):
-    if self.isEnabledFor(PROCESS_LEVEL_NUM):
-        self._log(PROCESS_LEVEL_NUM, message, args, **kws)
-
-# Add the 'process' method to the Logger class
-logging.Logger.process = process
-# === End of Custom Logging Level ===
-
 class Switch:
     def __init__(self, incoming_queues, outgoing_queues, logger):
         self.incoming_queues = incoming_queues  # Queues from Devices to Switch
@@ -57,7 +45,7 @@ class Switch:
         packet_size = packet['size']
 
         # Threshold to trigger backpressure (e.g., 80% buffer utilization)
-        BACKPRESSURE_THRESHOLD = 0.25 * BUFFER_SIZES[target_device]
+        BACKPRESSURE_THRESHOLD = 0.35 * BUFFER_SIZES[target_device]
         packet_type = packet.get('type', 'unknown')
         if self.buffers[target_device] >= packet_size:
             self.buffers[target_device] -= packet_size
@@ -75,13 +63,13 @@ class Switch:
                     if i + 1 != target_device:
                         self.outgoing_queues[i + 1].put(backpressure_packet)
                 self.logger.warning(
-                    f"Switch: Backpressure signal sent to devices for Device {target_device} due to high buffer utilization."
+                    f"Switch: Backpressure signal sent to devices for Device {target_device} "
+                    f"due to high buffer utilization."
                 )
         else:
             self.logger.error(
                 f"Switch: Packet from Device {source_device} to Device {target_device} dropped due to buffer overflow."
             )
-            
 
     def restore_buffers(self):
         self.logger.info("Switch: Buffer restoration thread started.")
@@ -93,56 +81,31 @@ class Switch:
                 self.buffers[device_id] = min(self.buffers[device_id] + restored_size, BUFFER_SIZES[device_id])
                 restored = self.buffers[device_id] - before_restore
                 self.logger.process(
-                    f"Switch: Restored credit for Device {device_id} by {restored/8} bytes. "
-                    f"Current credit size: {self.buffers[device_id]/8} bytes."
+                    f"Switch: Restored credit for Device {device_id} by {restored / 8} bytes. "
+                    f"Current credit size: {self.buffers[device_id] / 8} bytes."
                 )
+
+                # Check if buffer usage is now below backpressure threshold
+                BACKPRESSURE_THRESHOLD = 0.15 * BUFFER_SIZES[device_id]
+                if self.buffers[device_id] >= BACKPRESSURE_THRESHOLD:
+                    # Send "RESTORE" signal to all devices
+                    restore_packet = {"id": "RESTORE", "size": 0, "target": device_id}
+                    for i in range(DEVICES_NUMBER):
+                        if i + 1 != device_id:
+                            self.outgoing_queues[i + 1].put(restore_packet)
+                    self.logger.process(
+                        f"Switch: Sent RESTORE signal for Device {device_id} as buffer usage is below the threshold."
+                    )
+                elif self.buffers[device_id] < BACKPRESSURE_THRESHOLD:
+                    # Continue backpressure if threshold is still exceeded
+                    backpressure_packet = {"id": "BACKPRESSURE", "size": 0, "target": device_id}
+                    for i in range(DEVICES_NUMBER):
+                        if i + 1 != device_id:
+                            self.outgoing_queues[i + 1].put(backpressure_packet)
+                    self.logger.process(
+                        f"Switch: Continued backpressure for Device {device_id} due to high buffer utilization."
+                    )
 
     def stop(self):
         self.logger.info("Switch: Stopping switch operations...")
         self.running = False
-
-# Start the switch only if switch.py is run directly (for standalone testing)
-if __name__ == "__main__":
-    # Configure logging similarly to central.py or import the logger
-    import logging
-
-    # Setup logger
-    logger = logging.getLogger("SimulationLogger")
-    if not logger.handlers:
-        fh = logging.FileHandler("simulation.log")
-        fh.setLevel(logging.DEBUG)
-        formatter = logging.Formatter(
-            fmt='[%(asctime)s] [%(threadName)s] [%(levelname)s] %(message)s',
-            datefmt='%H:%M:%S'
-        )
-        fh.setFormatter(formatter)
-        logger.addHandler(fh)
-
-    logger.info("Switch is running. Ready to process packets...")
-
-    # Shared queues for devices
-    shared_queues = {
-        1: queue.Queue(),
-        2: queue.Queue(),
-        3: queue.Queue(),
-        4: queue.Queue()
-    }
-
-    # Initialize the switch
-    switch = Switch(shared_queues, logger)
-    switch_thread = threading.Thread(target=switch.listen, name="SwitchListener")
-    buffer_thread = threading.Thread(target=switch.restore_buffers, name="BufferRestorer")
-
-    switch_thread.start()
-    buffer_thread.start()
-
-    try:
-        # Run the switch indefinitely or implement your own termination condition
-        while True:
-            time.sleep(1)
-    except KeyboardInterrupt:
-        # Handle graceful shutdown on user interrupt
-        switch.stop()
-        switch_thread.join()
-        buffer_thread.join()
-        logger.info("Switch has been stopped gracefully.")

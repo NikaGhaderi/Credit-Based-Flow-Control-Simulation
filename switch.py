@@ -40,12 +40,20 @@ class Switch:
                     self.process_packet(device_id, packet)
             time.sleep(0.05)  # Prevents tight loop; adjust as needed
 
+    def broadcast(self, message, exclude=None):
+        if exclude is None:
+            exclude = []
+        for device_id in self.outgoing_queues:
+            if device_id not in exclude:
+                self.outgoing_queues[device_id].put(message)
+
     def process_packet(self, source_device, packet):
         target_device = packet['target']
         packet_size = packet['size']
 
         # Threshold to trigger backpressure (e.g., 80% buffer utilization)
         BACKPRESSURE_THRESHOLD = 0.35 * BUFFER_SIZES[target_device]
+        CRITICAL_THRESHOLD = 0
         packet_type = packet.get('type', 'unknown')
         if self.buffers[target_device] >= packet_size:
             self.buffers[target_device] -= packet_size
@@ -56,16 +64,25 @@ class Switch:
             )
 
             # Check if buffer usage exceeds threshold
-            if self.buffers[target_device] < BACKPRESSURE_THRESHOLD and self.buffers[target_device] != 1:
+            if self.buffers[target_device] < BACKPRESSURE_THRESHOLD and self.buffers[target_device] != 0:
                 # Send a backpressure signal (e.g., via a special packet or message)
                 backpressure_packet = {"id": "BACKPRESSURE", "size": 0, "target": target_device}
-                for i in range(DEVICES_NUMBER):
-                    if i + 1 != target_device:
-                        self.outgoing_queues[i + 1].put(backpressure_packet)
+                self.broadcast(backpressure_packet, exclude=[target_device])
+
                 self.logger.warning(
                     f"Switch: Backpressure signal sent to devices for Device {target_device} "
                     f"due to high buffer utilization."
                 )
+
+            if self.buffers[target_device] == CRITICAL_THRESHOLD:
+                # Send a critical backpressure signal to stop sending
+                critical_backpressure_packet = {"id": "CRITICAL_BACKPRESSURE", "size": 0, "target": target_device}
+                self.broadcast(critical_backpressure_packet, exclude=[target_device])
+                self.logger.critical(
+                    f"Switch: Critical backpressure signal sent to all devices to stop sending to Device {target_device} "
+                    f"due to buffer overflow."
+                )
+
         else:
             self.logger.error(
                 f"Switch: Packet from Device {source_device} to Device {target_device} dropped due to buffer overflow."
@@ -90,18 +107,14 @@ class Switch:
                 if self.buffers[device_id] >= BACKPRESSURE_THRESHOLD:
                     # Send "RESTORE" signal to all devices
                     restore_packet = {"id": "RESTORE", "size": 0, "target": device_id}
-                    for i in range(DEVICES_NUMBER):
-                        if i + 1 != device_id:
-                            self.outgoing_queues[i + 1].put(restore_packet)
+                    self.broadcast(restore_packet, exclude=[device_id])
                     self.logger.process(
                         f"Switch: Sent RESTORE signal for Device {device_id} as buffer usage is below the threshold."
                     )
                 elif self.buffers[device_id] < BACKPRESSURE_THRESHOLD:
                     # Continue backpressure if threshold is still exceeded
                     backpressure_packet = {"id": "BACKPRESSURE", "size": 0, "target": device_id}
-                    for i in range(DEVICES_NUMBER):
-                        if i + 1 != device_id:
-                            self.outgoing_queues[i + 1].put(backpressure_packet)
+                    self.broadcast(backpressure_packet, exclude=[device_id])
                     self.logger.process(
                         f"Switch: Continued backpressure for Device {device_id} due to high buffer utilization."
                     )

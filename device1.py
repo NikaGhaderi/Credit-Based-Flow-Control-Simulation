@@ -38,15 +38,15 @@ class Device:
                     if packet['id'] == "BACKPRESSURE":
                         target_device = packet['target']
                         original_rate = self.outgoing_packets[target_device]
-                        self.outgoing_packets[target_device] = max(0, original_rate // 2)
-                        if original_rate != 0:
+                        self.outgoing_packets[target_device] = max(1, original_rate // 2)
+                        if original_rate != 1:
                             self.logger.warning(
                                 f"Device {self.device_id}: Received backpressure signal. Slowing down transmission to "
                                 f"Device {target_device} to {self.outgoing_packets[target_device]}."
                             )
                         continue
 
-                    if packet['id'] == "RESTORE":
+                    elif packet['id'] == "RESTORE":
                         target_device = packet['target']
                         current_rate = self.outgoing_packets[target_device]
                         self.outgoing_packets[target_device] = min(TRANSMISSION_RATES[self.device_id][target_device],
@@ -55,6 +55,17 @@ class Device:
                             self.logger.info(
                                 f"Device {self.device_id}: Received restore signal. Speeding up transmission to "
                                 f"Device {target_device} to {self.outgoing_packets[target_device]}."
+                            )
+                        continue
+
+                    elif packet['id'] == "CRITICAL_BACKPRESSURE":
+                        target_device = packet['target']
+                        current_rate = self.outgoing_packets[target_device]
+                        self.outgoing_packets[target_device] = 0
+                        if current_rate != 0:
+                            self.logger.critical(
+                                f"Device {self.device_id}: Received critical pressure signal. Stopping transmission to "
+                                f"Device {target_device}."
                             )
                         continue
 

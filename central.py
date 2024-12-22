@@ -74,15 +74,18 @@ def get_priority_option():
         try:
             user_input = input("Choose priority management option:\n"
                                "1) Packets of type 1 are always processed before packets of type 2.\n"
-                               "2) Only when competing for remaining buffer space, packets of type 1 are preferred to type 2.\n"
-                               "Enter 1 or 2:\n")
+                               "2) Only when competing for remaining buffer space, packets of type 1 are preferred to "
+                               "type 2.\n"
+                               "3) Process 2 packets of type 1 for every 1 packet of type 2.\n"
+                               "Enter 1, 2, or 3:\n")
+
             PRIORITY_OPTION = int(user_input)
-            if PRIORITY_OPTION in [1, 2]:
+            if PRIORITY_OPTION in [1, 2, 3]:
                 return
             else:
-                print("Please enter a valid option (1 or 2).\n")
+                print("Please enter a valid option (1, 2 or 3).\n")
         except ValueError:
-            print("Invalid input. Please enter 1 or 2.\n")
+            print("Invalid input. Please enter 1, 2 or 3.\n")
 
 
 # Configure Logging: Setup two loggers
@@ -186,6 +189,7 @@ if __name__ == "__main__":
         device_thread_sender = threading.Thread(target=device.send_packets, name=f"Device{device.device_id}Sender")
         device_thread_processor = threading.Thread(target=device.process_incoming,
                                                    name=f"Device{device.device_id}Processor")  # Corrected name
+        device_thread_alert = threading.Thread(target=device.check_alerts, name=f"Device{device.device_id}AlertHandler")
         device_threads.append(device_thread_sender)
         device_threads.append(device_thread_processor)
 

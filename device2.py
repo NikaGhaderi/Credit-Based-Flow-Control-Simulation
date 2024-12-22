@@ -13,8 +13,8 @@ PROCESS_RATE = 10
 
 TRANSITION_DURATION = 60
 
-
 import threading
+
 
 class Device:
     def __init__(self, device_id, switch_queue, logger, RATIO, DURATION):
@@ -44,29 +44,31 @@ class Device:
 
                         # Process the alert
                         target_device = packet.get('target', None)
+                        current_rate = self.outgoing_packets[target_device]
 
                         if packet['id'] == "BACKPRESSURE":
-                            original_rate = self.outgoing_packets[target_device]
-                            self.outgoing_packets[target_device] = max(1, original_rate // 2)
-                            self.logger.warning(
-                                f"Device {self.device_id}: Received BACKPRESSURE signal. Slowing down transmission to "
-                                f"Device {target_device} to {self.outgoing_packets[target_device]}."
-                            )
+                            self.outgoing_packets[target_device] = max(1, current_rate // 2)
+                            if current_rate != 1:
+                                self.logger.warning(
+                                    f"Device {self.device_id}: Received BACKPRESSURE signal. Slowing down transmission to "
+                                    f"Device {target_device} to {self.outgoing_packets[target_device]}."
+                                )
                         elif packet['id'] == "RESTORE":
-                            current_rate = self.outgoing_packets[target_device]
                             self.outgoing_packets[target_device] = min(
                                 TRANSMISSION_RATES[self.device_id][target_device], current_rate + 1
                             )
-                            self.logger.info(
-                                f"Device {self.device_id}: Received RESTORE signal. Speeding up transmission to "
-                                f"Device {target_device} to {self.outgoing_packets[target_device]}."
-                            )
+                            if current_rate != TRANSMISSION_RATES[self.device_id][target_device]:
+                                self.logger.info(
+                                    f"Device {self.device_id}: Received RESTORE signal. Speeding up transmission to "
+                                    f"Device {target_device} to {self.outgoing_packets[target_device]}."
+                                )
                         elif packet['id'] == "CRITICAL_BACKPRESSURE":
                             self.outgoing_packets[target_device] = 0
-                            self.logger.critical(
-                                f"Device {self.device_id}: Received CRITICAL_BACKPRESSURE signal. Stopping transmission "
-                                f"to Device {target_device}."
-                            )
+                            if current_rate != 0:
+                                self.logger.critical(
+                                    f"Device {self.device_id}: Received CRITICAL_BACKPRESSURE signal. Stopping transmission "
+                                    f"to Device {target_device}."
+                                )
             except Exception as e:
                 self.logger.error(f"Device {self.device_id}: Error in handling alert: {e}")
 
@@ -90,25 +92,32 @@ class Device:
                     f"Buffer Status: Device {self.device_id}: Buffer Content (IDs): {buffer_ids}, Total Packets: {buffer_size}"
                 )
 
-            time.sleep(1)  # Process packets every second
             processed_packets = []
-            for _ in range(PROCESS_RATE):
+            counter = 0
+            while True:
                 if not self.received_packets.empty():
                     packet = self.received_packets.get()
 
                     # Ignore alert packets here (handled by `check_alerts`)
                     if packet['id'] in ["BACKPRESSURE", "RESTORE", "CRITICAL_BACKPRESSURE"]:
                         continue
-
+                    counter += 1
                     processed_packets.append(packet)
+                    if counter == PROCESS_RATE:
+                        break
+                else:
+                    break
 
             if processed_packets:
                 packet_ids = [p['id'] for p in processed_packets]
                 self.logger.process(f"Device {self.device_id}: Processed packets: {packet_ids}.")
 
+            time.sleep(1)  # Process packets every second
+
     def send_packets(self):
         """Send packets to the switch."""
         start_time = time.time()
+        packets_to_send = []  # List to gather packets to send
         while self.running and time.time() - start_time < self.DURATION:
             for target_device, rate in self.outgoing_packets.items():
                 for _ in range(rate):
@@ -126,9 +135,14 @@ class Device:
                         "target": target_device,
                         "type": packet_type
                     }
-                    self.switch_queue.put(packet)
+                    packets_to_send.append(packet)  # Gather packets
 
-                time.sleep(1 / TRANSITION_DURATION)
+            # Send all gathered packets every second
+            for packet in packets_to_send:
+                self.switch_queue.put(packet)  # Send all gathered packets to the switch
+
+            packets_to_send.clear()  # Clear the list for the next round
+            time.sleep(1)  # Wait for 1 second before sending
 
     def stop(self):
         """Stop the device."""

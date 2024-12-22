@@ -95,7 +95,7 @@ class Switch:
                 for device_id, packet in packets:
                     self.process_packet(device_id, packet)
 
-            time.sleep(0.05)  # Prevents tight loop; adjust as needed
+            # time.sleep(0.1)  # Prevents tight loop; adjust as needed
 
     def broadcast(self, message, exclude=None):
         if exclude is None:

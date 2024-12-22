@@ -13,8 +13,8 @@ PROCESS_RATE = 10
 
 TRANSITION_DURATION = 60
 
-import threading
 
+import threading
 
 class Device:
     def __init__(self, device_id, switch_queue, logger, RATIO, DURATION):
@@ -76,6 +76,20 @@ class Device:
     def process_incoming(self):
         start_time = time.time()
         while self.running and time.time() - start_time < self.DURATION:
+
+            # Log buffer status
+            buffer_contents = list(self.received_packets.queue)
+            filtered_buffer = [packet for packet in buffer_contents if packet['id'] not in ["BACKPRESSURE", "RESTORE",
+                                                                                            "CRITICAL_BACKPRESSURE"]]
+
+            if filtered_buffer:
+                buffer_ids = [packet['id'] for packet in filtered_buffer]
+                buffer_size = len(buffer_ids)
+
+                self.logger.info(
+                    f"Buffer Status: Device {self.device_id}: Buffer Content (IDs): {buffer_ids}, Total Packets: {buffer_size}"
+                )
+
             time.sleep(1)  # Process packets every second
             processed_packets = []
             for _ in range(PROCESS_RATE):
@@ -91,19 +105,6 @@ class Device:
             if processed_packets:
                 packet_ids = [p['id'] for p in processed_packets]
                 self.logger.process(f"Device {self.device_id}: Processed packets: {packet_ids}.")
-
-            # Log buffer status
-            buffer_contents = list(self.received_packets.queue)
-            filtered_buffer = [packet for packet in buffer_contents if packet['id'] not in ["BACKPRESSURE", "RESTORE",
-                                                                                            "CRITICAL_BACKPRESSURE"]]
-
-            if filtered_buffer:
-                buffer_ids = [packet['id'] for packet in filtered_buffer]
-                buffer_size = len(buffer_ids)
-
-                self.logger.info(
-                    f"Buffer Status: Device {self.device_id}: Buffer Content (IDs): {buffer_ids}, Total Packets: {buffer_size}"
-                )
 
     def send_packets(self):
         """Send packets to the switch."""

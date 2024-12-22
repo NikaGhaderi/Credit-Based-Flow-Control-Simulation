@@ -37,7 +37,7 @@ class Switch:
 
     def listen(self):
         self.logger.info("Switch: Listening for incoming packets...")
-        while self.running and self.lock:
+        while self.running:
             # Initialize a data structure (dictionary of lists) to save packets and device_id for each target device
             packets_to_process = {}
 
@@ -95,7 +95,7 @@ class Switch:
                 for device_id, packet in packets:
                     self.process_packet(device_id, packet)
 
-            time.sleep(0.1)  # Prevents tight loop; adjust as needed
+            time.sleep(0.05)  # Prevents tight loop; adjust as needed
 
     def broadcast(self, message, exclude=None):
         if exclude is None:
@@ -146,7 +146,8 @@ class Switch:
             else:
                 # Packet is dropped due to insufficient buffer space
                 self.logger.warning(
-                    f"Switch: Packet from Device {source_device} to Device {target_device} dropped due to buffer overflow. "
+                    f"Switch: Packet from Device {source_device} to Device {target_device} dropped due to buffer "
+                    f"overflow."
                     f"Buffer space remaining: {self.buffers[target_device]} bits, Packet size: {packet_size} bits."
                 )
 

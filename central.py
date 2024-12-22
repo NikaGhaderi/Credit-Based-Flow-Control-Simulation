@@ -192,6 +192,7 @@ if __name__ == "__main__":
         device_thread_alert = threading.Thread(target=device.check_alerts, name=f"Device{device.device_id}AlertHandler")
         device_threads.append(device_thread_sender)
         device_threads.append(device_thread_processor)
+        device_threads.append(device_thread_alert)
 
     # Start the switch and device threads
     switch_thread.start()

@@ -1,150 +1,561 @@
-[01:16:36] [MainThread] [INFO] Memory is running. Ready to process packets...
-[01:16:39] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [7324, 1172, 3806, 4359, 4052, 2738, 5702, 4376, 1734, 6115], Total Packets: 10
-[01:16:39] [Device2Processor] [PROCESS] Device 2: Processed packets: [7324, 1172, 3806, 4359, 4052, 2738, 5702, 4376, 1734, 6115].
-[01:16:39] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [1941, 4815, 4513, 9769, 9102, 2988, 2551, 6504, 7329, 3045, 8629, 9463, 8130, 5600, 1234, 2310, 8005, 7484, 4485], Total Packets: 19
-[01:16:39] [Device3Processor] [PROCESS] Device 3: Processed packets: [1941, 4815, 4513, 9769, 9102, 2988, 2551, 6504, 7329, 3045].
-[01:16:39] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission to Device 1 to 5.
-[01:16:39] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission to Device 1 to 5.
-[01:16:39] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission to Device 1 to 2.
-[01:16:39] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission to Device 3 to 10.
-[01:16:39] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission to Device 1 to 2.
-[01:16:39] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission to Device 1 to 1.
-[01:16:39] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission to Device 3 to 5.
-[01:16:39] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission to Device 1 to 1.
-[01:16:39] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission to Device 3 to 10.
-[01:16:39] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission to Device 3 to 5.
-[01:16:39] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission to Device 3 to 15.
-[01:16:39] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission to Device 1 to 5.
-[01:16:39] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission to Device 1 to 2.
-[01:16:39] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission to Device 3 to 2.
-[01:16:39] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission to Device 3 to 2.
-[01:16:39] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission to Device 3 to 1.
-[01:16:39] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission to Device 3 to 1.
-[01:16:39] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmission to Device 1.
-[01:16:39] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmission to Device 1.
-[01:16:39] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission to Device 3 to 7.
-[01:16:39] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission to Device 1 to 1.
-[01:16:39] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmission to Device 1.
-[01:16:39] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission to Device 3 to 3.
-[01:16:39] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission to Device 3 to 1.
-[01:16:39] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission to Device 2 to 5.
-[01:16:39] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission to Device 2 to 2.
-[01:16:39] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission to Device 2 to 10.
-[01:16:39] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission to Device 2 to 10.
-[01:16:39] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission to Device 2 to 5.
-[01:16:39] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission to Device 2 to 5.
-[01:16:39] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmission to Device 3.
-[01:16:39] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmission to Device 3.
-[01:16:39] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission to Device 2 to 1.
-[01:16:39] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmission to Device 3.
-[01:16:39] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission to Device 2 to 2.
-[01:16:39] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission to Device 2 to 1.
-[01:16:39] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission to Device 2 to 2.
-[01:16:39] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission to Device 2 to 1.
-[01:16:39] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmission to Device 2.
-[01:16:39] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmission to Device 2.
-[01:16:39] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmission to Device 2.
-[01:16:39] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission to Device 4 to 15.
-[01:16:39] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission to Device 4 to 7.
-[01:16:39] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission to Device 4 to 15.
-[01:16:39] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission to Device 4 to 15.
-[01:16:39] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission to Device 4 to 7.
-[01:16:39] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission to Device 4 to 7.
-[01:16:39] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission to Device 4 to 3.
-[01:16:39] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission to Device 4 to 3.
-[01:16:39] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission to Device 4 to 3.
-[01:16:39] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission to Device 4 to 1.
-[01:16:39] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission to Device 4 to 1.
-[01:16:39] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission to Device 4 to 1.
-[01:16:39] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmission to Device 4.
-[01:16:39] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmission to Device 4.
-[01:16:39] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmission to Device 4.
-[01:16:40] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 1.
-[01:16:40] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 1.
-[01:16:40] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
-[01:16:40] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
-[01:16:40] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
-[01:16:40] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [2762, 1711, 8282, 2771, 1290, 3723, 3191, 1196, 7247, 6981, 7444, 2695, 2553, 4158, 4751, 3343, 9079, 6372, 9710, 2290, 9757, 1294, 8235, 9279, 2438, 2049, 6819, 5735, 7331, 8882, 9036, 8893, 4917, 1982, 8930, 6367, 1293, 8121, 7491, 3108, 7496, 5755, 5383, 1798, 5909, 5070, 4052, 6067, 5325, 9471, 6935, 7213, 4143, 2117, 9621, 1345, 6915, 9131, 8253, 6891, 3144, 9542, 3969, 3191], Total Packets: 64
-[01:16:40] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
-[01:16:40] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [7359, 1219, 4952, 4108, 9196, 6865], Total Packets: 6
-[01:16:40] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [8050, 9926, 4494, 9718, 7143, 4380, 2403, 7866, 7678, 5332, 3741, 9534, 8614, 9138, 3674, 7203, 9653, 7767], Total Packets: 18
-[01:16:40] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 1.
-[01:16:40] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [8629, 9463, 8130, 5600, 1234, 2310, 8005, 7484, 4485, 7774, 8437, 8531, 3435, 6261, 1778, 1181, 1657, 7453, 3703, 6632, 3060, 8150], Total Packets: 22
-[01:16:40] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
-[01:16:40] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
-[01:16:40] [Device4Processor] [PROCESS] Device 4: Processed packets: [2762, 1711, 8282, 2771, 1290, 3723, 3191, 1196, 7247, 6981].
-[01:16:40] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
-[01:16:40] [Device2Processor] [PROCESS] Device 2: Processed packets: [7359, 1219, 4952, 4108, 9196, 6865, 6533].
-[01:16:40] [Device1Processor] [PROCESS] Device 1: Processed packets: [8050, 9926, 4494, 9718, 7143, 4380, 2403, 7866, 7678, 5332].
-[01:16:40] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
-[01:16:41] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
-[01:16:40] [Device3Processor] [PROCESS] Device 3: Processed packets: [8629, 9463, 8130, 5600, 1234, 2310, 8005, 7484, 4485, 7774].
-[01:16:41] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
-[01:16:41] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
-[01:16:41] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
-[01:16:41] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
-[01:16:41] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
-[01:16:41] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
-[01:16:41] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
-[01:16:41] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
-[01:16:41] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
-[01:16:41] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission to Device 4 to 1.
-[01:16:41] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
-[01:16:41] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
-[01:16:41] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
-[01:16:41] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission to Device 4 to 1.
-[01:16:41] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission to Device 4 to 1.
-[01:16:41] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [7444, 2695, 2553, 4158, 4751, 3343, 9079, 6372, 9710, 2290, 9757, 1294, 8235, 9279, 2438, 2049, 6819, 5735, 7331, 8882, 9036, 8893, 4917, 1982, 8930, 6367, 1293, 8121, 7491, 3108, 7496, 5755, 5383, 1798, 5909, 5070, 4052, 6067, 5325, 9471, 6935, 7213, 4143, 2117, 9621, 1345, 6915, 9131, 8253, 6891, 3144, 9542, 3969, 3191, 9082, 7166, 3460], Total Packets: 57
-[01:16:41] [Device4Processor] [PROCESS] Device 4: Processed packets: [7444, 2695, 2553, 4158, 4751, 3343, 9079, 6372, 9710, 2290].
-[01:16:42] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [3741, 9534, 8614, 9138, 3674, 7203, 9653, 7767, 6941, 6337, 1302], Total Packets: 11
-[01:16:42] [Device1Processor] [PROCESS] Device 1: Processed packets: [3741, 9534, 8614, 9138, 3674, 7203, 9653, 7767, 6941, 6337].
-[01:16:42] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [8437, 8531, 3435, 6261, 1778, 1181, 1657, 7453, 3703, 6632, 3060, 8150, 9188, 2403, 1638, 4475, 2172], Total Packets: 17
-[01:16:42] [Device3Processor] [PROCESS] Device 3: Processed packets: [8437, 8531, 3435, 6261, 1778, 1181, 1657, 7453, 3703, 6632].
-[01:16:42] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [7123, 9491, 1194], Total Packets: 3
-[01:16:42] [Device2Processor] [PROCESS] Device 2: Processed packets: [7123, 9491, 1194].
-[01:16:42] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
-[01:16:42] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
-[01:16:42] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
-[01:16:42] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
-[01:16:42] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
-[01:16:42] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
-[01:16:42] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 3.
-[01:16:42] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 3.
-[01:16:42] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 3.
-[01:16:42] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
-[01:16:42] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
-[01:16:42] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
-[01:16:42] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission to Device 4 to 1.
-[01:16:42] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission to Device 4 to 1.
-[01:16:42] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission to Device 4 to 1.
-[01:16:42] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [9757, 1294, 8235, 9279, 2438, 2049, 6819, 5735, 7331, 8882, 9036, 8893, 4917, 1982, 8930, 6367, 1293, 8121, 7491, 3108, 7496, 5755, 5383, 1798, 5909, 5070, 4052, 6067, 5325, 9471, 6935, 7213, 4143, 2117, 9621, 1345, 6915, 9131, 8253, 6891, 3144, 9542, 3969, 3191, 9082, 7166, 3460, 4648, 5565, 3490], Total Packets: 50
-[01:16:43] [Device4Processor] [PROCESS] Device 4: Processed packets: [9757, 1294, 8235, 9279, 2438, 2049, 6819, 5735, 7331, 8882].
-[01:16:43] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [1302, 2683, 2389, 9150, 3655, 9313, 9304], Total Packets: 7
-[01:16:43] [Device1Processor] [PROCESS] Device 1: Processed packets: [1302, 2683, 2389, 9150, 3655, 9313, 9304].
-[01:16:43] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [6378, 7095, 1518, 4930, 1251, 7988], Total Packets: 6
-[01:16:43] [Device2Processor] [PROCESS] Device 2: Processed packets: [6378, 7095, 1518, 4930, 1251, 7988].
-[01:16:43] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [3060, 8150, 9188, 2403, 1638, 4475, 2172, 7831, 2136, 3610, 2949, 3853, 2822], Total Packets: 13
-[01:16:43] [Device3Processor] [PROCESS] Device 3: Processed packets: [3060, 8150, 9188, 2403, 1638, 4475, 2172, 7831, 2136, 3610].
-[01:16:43] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission to Device 1 to 1.
-[01:16:43] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission to Device 1 to 1.
-[01:16:43] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission to Device 1 to 1.
-[01:16:43] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
-[01:16:43] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
-[01:16:43] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
-[01:16:43] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
-[01:16:43] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
-[01:16:43] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 4.
-[01:16:43] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
-[01:16:43] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 4.
-[01:16:43] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 4.
-[01:16:43] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
-[01:16:43] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
-[01:16:43] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
-[01:16:44] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [9036, 8893, 4917, 1982, 8930, 6367, 1293, 8121, 7491, 3108, 7496, 5755, 5383, 1798, 5909, 5070, 4052, 6067, 5325, 9471, 6935, 7213, 4143, 2117, 9621, 1345, 6915, 9131, 8253, 6891, 3144, 9542, 3969, 3191, 9082, 7166, 3460, 4648, 5565, 3490, 2144, 8677, 1285], Total Packets: 43
-[01:16:44] [Device4Processor] [PROCESS] Device 4: Processed packets: [9036, 8893, 4917, 1982, 8930, 6367, 1293, 8121, 7491, 3108].
-[01:16:44] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [9930, 9316, 1276, 2242, 3020, 6949, 8951], Total Packets: 7
-[01:16:44] [Device1Processor] [PROCESS] Device 1: Processed packets: [9930, 9316, 1276, 2242, 3020, 6949, 8951].
-[01:16:44] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [2391, 8700, 3574, 8787, 5577, 3695, 1789, 2829, 1017], Total Packets: 9
-[01:16:44] [Device2Processor] [PROCESS] Device 2: Processed packets: [2391, 8700, 3574, 8787, 5577, 3695, 1789, 2829, 1017].
-[01:16:44] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [2949, 3853, 2822, 3202, 5238, 2345, 4829, 4246, 1708, 3247, 5510, 1758], Total Packets: 12
-[01:16:44] [Device3Processor] [PROCESS] Device 3: Processed packets: [2949, 3853, 2822, 3202, 5238, 2345, 4829, 4246, 1708, 3247].
+[22:32:10] [MainThread] [INFO] Memory is running. Ready to process packets...
+[22:32:13] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 10.
+[22:32:13] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [2526, 1194, 6301, 3729, 8021, 8976, 3686, 1027, 2159, 7660], Total Packets: 10
+[22:32:13] [Device2Processor] [PROCESS] Device 2: Processed packets: [2526, 1194, 6301, 3729, 8021, 8976, 3686, 1027, 2159, 7660].
+[22:32:13] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 5.
+[22:32:13] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 10.
+[22:32:13] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 2.
+[22:32:13] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 5.
+[22:32:13] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 5.
+[22:32:13] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 2.
+[22:32:13] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 10.
+[22:32:13] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[22:32:13] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [6830, 6907, 8105, 6003, 4836, 2096, 7827, 3052, 7635, 6845, 8481, 1182, 2446, 9035, 8956, 7069, 8460, 6947, 8148, 6440, 7512, 7447, 2671, 2239, 2370, 4375, 7548, 3096, 9101, 4187, 9381, 2571], Total Packets: 32
+[22:32:13] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[22:32:13] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 5.
+[22:32:13] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [8936, 5930, 6790, 1990, 3658, 9560, 2210, 9304, 5564, 3795, 2069, 6786, 9092, 1389, 7160, 4715, 5018, 8874, 1453, 6674, 8693, 4090, 9561, 9212, 1279, 8675, 8367, 6784, 7278, 1924], Total Packets: 30
+[22:32:13] [Device3Processor] [PROCESS] Device 3: Processed packets: [6830, 6907, 8105, 6003, 4836, 2096, 7827, 3052, 7635, 6845].
+[22:32:13] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[22:32:13] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[22:32:13] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 10.
+[22:32:13] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 15.
+[22:32:13] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 5.
+[22:32:13] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 7.
+[22:32:13] [Device4Processor] [PROCESS] Device 4: Processed packets: [8936, 5930, 6790, 1990, 3658, 9560, 2210, 9304, 5564, 3795].
+[22:32:13] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 3.
+[22:32:13] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[22:32:13] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:13] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 5.
+[22:32:13] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[22:32:13] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[22:32:13] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 1.
+[22:32:13] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[22:32:13] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:13] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[22:32:13] [Device4AlertHandler] [ERROR] Device 4: Error in handling alert: {'id': 'BACKPRESSURE', 'size': 0, 'target': 3} is not in deque
+[22:32:13] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 5.
+[22:32:13] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[22:32:13] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[22:32:13] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[22:32:13] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 1.
+[22:32:13] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[22:32:13] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[22:32:13] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[22:32:13] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:13] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 1.
+[22:32:13] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 15.
+[22:32:13] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 15.
+[22:32:13] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 7.
+[22:32:13] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 5.
+[22:32:13] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[22:32:13] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 15.
+[22:32:13] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 7.
+[22:32:13] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 3.
+[22:32:13] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 3.
+[22:32:13] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 7.
+[22:32:13] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 3.
+[22:32:13] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[22:32:13] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[22:32:13] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[22:32:13] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[22:32:13] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[22:32:13] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[22:32:13] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[22:32:13] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[22:32:14] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 1.
+[22:32:14] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 1.
+[22:32:14] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 1.
+[22:32:14] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[22:32:14] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[22:32:14] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[22:32:14] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[22:32:14] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[22:32:14] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[22:32:14] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[22:32:14] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[22:32:14] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[22:32:14] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 1.
+[22:32:14] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [6788, 2769, 8129, 5541, 6702, 9561, 4090, 2168, 2543, 3006, 8061, 2537, 9538, 1792, 1364, 8410, 6758, 2848, 6271, 4624, 8270, 2580, 4561, 2581, 7295, 8830], Total Packets: 26
+[22:32:14] [Device1Processor] [PROCESS] Device 1: Processed packets: [6788, 2769, 8129, 5541, 6702, 9561, 4090, 2168, 2543, 3006].
+[22:32:14] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 1.
+[22:32:14] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 1.
+[22:32:14] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [6869, 8825, 1914, 2243, 7817, 1732, 1669, 3254, 1835, 4922, 6580, 9933, 3034], Total Packets: 13
+[22:32:14] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[22:32:14] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[22:32:14] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[22:32:14] [Device2Processor] [PROCESS] Device 2: Processed packets: [6869, 8825, 1914, 2243, 7817, 1732, 1669, 3254, 1835, 4922].
+[22:32:14] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[22:32:14] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[22:32:14] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[22:32:14] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [8481, 1182, 2446, 9035, 8956, 7069, 8460, 6947, 8148, 6440, 7512, 7447, 2671, 2239, 2370, 4375, 7548, 3096, 9101, 4187, 9381, 2571, 4232, 3496, 3559, 4599, 8040, 7766, 5056, 9209, 8563, 2111], Total Packets: 32
+[22:32:14] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [2069, 6786, 9092, 1389, 7160, 4715, 5018, 8874, 1453, 6674, 8693, 4090, 9561, 9212, 1279, 8675, 8367, 6784, 7278, 1924, 5827, 2192, 2403, 4754, 2445, 9946, 7097, 5526, 2707, 1227, 7579, 2859, 8111, 6570, 3222, 2684, 1462, 4363, 8983, 4738, 3457, 3196, 7940, 6738, 1676, 5130, 7789, 1669, 3318, 8855, 8356, 7355, 9877, 6308, 4436, 2779, 5288], Total Packets: 57
+[22:32:14] [Device3Processor] [PROCESS] Device 3: Processed packets: [8481, 1182, 2446, 9035, 8956, 7069, 8460, 6947, 8148, 6440].
+[22:32:14] [Device4Processor] [PROCESS] Device 4: Processed packets: [2069, 6786, 9092, 1389, 7160, 4715, 5018, 8874, 1453, 6674].
+[22:32:14] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[22:32:14] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[22:32:14] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[22:32:15] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[22:32:15] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[22:32:15] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 1.
+[22:32:15] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[22:32:15] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 1.
+[22:32:15] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[22:32:15] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[22:32:15] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 1.
+[22:32:15] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[22:32:15] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[22:32:15] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[22:32:15] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[22:32:15] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[22:32:15] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[22:32:15] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[22:32:15] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[22:32:15] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[22:32:15] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[22:32:15] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [8061, 2537, 9538, 1792, 1364, 8410, 6758, 2848, 6271, 4624, 8270, 2580, 4561, 2581, 7295, 8830, 8516, 9111, 2471], Total Packets: 19
+[22:32:15] [Device1Processor] [PROCESS] Device 1: Processed packets: [8061, 2537, 9538, 1792, 1364, 8410, 6758, 2848, 6271, 4624].
+[22:32:15] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[22:32:15] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[22:32:15] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[22:32:15] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [6580, 9933, 3034, 9966, 3604, 4470, 8284, 8741, 6335, 4583, 8999, 2753, 8130, 5842, 6322, 3539], Total Packets: 16
+[22:32:15] [Device2Processor] [PROCESS] Device 2: Processed packets: [6580, 9933, 3034, 9966, 3604, 4470, 8284, 8741, 6335, 4583].
+[22:32:15] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [7512, 7447, 2671, 2239, 2370, 4375, 7548, 3096, 9101, 4187, 9381, 2571, 4232, 3496, 3559, 4599, 8040, 7766, 5056, 9209, 8563, 2111, 8439, 7628, 3241, 4925, 2030, 1616, 2093, 2863, 2035, 9148], Total Packets: 32
+[22:32:15] [Device3Processor] [PROCESS] Device 3: Processed packets: [7512, 7447, 2671, 2239, 2370, 4375, 7548, 3096, 9101, 4187].
+[22:32:15] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [8693, 4090, 9561, 9212, 1279, 8675, 8367, 6784, 7278, 1924, 5827, 2192, 2403, 4754, 2445, 9946, 7097, 5526, 2707, 1227, 7579, 2859, 8111, 6570, 3222, 2684, 1462, 4363, 8983, 4738, 3457, 3196, 7940, 6738, 1676, 5130, 7789, 1669, 3318, 8855, 8356, 7355, 9877, 6308, 4436, 2779, 5288, 2447, 9164, 2952, 1904, 8464, 6542, 2558, 6658, 6938, 9603, 1809, 7349, 7866, 3373, 5013, 4157, 6828], Total Packets: 64
+[22:32:15] [Device4Processor] [PROCESS] Device 4: Processed packets: [8693, 4090, 9561, 9212, 1279, 8675, 8367, 6784, 7278, 1924].
+[22:32:16] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:16] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:16] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:16] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[22:32:16] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[22:32:16] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[22:32:16] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[22:32:16] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[22:32:16] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[22:32:16] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[22:32:16] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[22:32:16] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[22:32:16] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[22:32:16] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[22:32:16] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[22:32:16] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[22:32:16] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[22:32:16] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[22:32:16] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[22:32:16] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [8270, 2580, 4561, 2581, 7295, 8830, 8516, 9111, 2471, 8282, 1868, 5325, 2142], Total Packets: 13
+[22:32:16] [Device1Processor] [PROCESS] Device 1: Processed packets: [8270, 2580, 4561, 2581, 7295, 8830, 8516, 9111, 2471, 8282].
+[22:32:16] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[22:32:16] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[22:32:16] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [8999, 2753, 8130, 5842, 6322, 3539, 5445, 2155, 6525, 7934, 3947, 5301, 9396, 7028, 9362, 8511], Total Packets: 16
+[22:32:16] [Device2Processor] [PROCESS] Device 2: Processed packets: [8999, 2753, 8130, 5842, 6322, 3539, 5445, 2155, 6525, 7934].
+[22:32:16] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [9381, 2571, 4232, 3496, 3559, 4599, 8040, 7766, 5056, 9209, 8563, 2111, 8439, 7628, 3241, 4925, 2030, 1616, 2093, 2863, 2035, 9148, 9907, 4316, 9123, 4680, 2235, 6308, 9886, 4444, 9703, 2884], Total Packets: 32
+[22:32:16] [Device3Processor] [PROCESS] Device 3: Processed packets: [9381, 2571, 4232, 3496, 3559, 4599, 8040, 7766, 5056, 9209].
+[22:32:16] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [5827, 2192, 2403, 4754, 2445, 9946, 7097, 5526, 2707, 1227, 7579, 2859, 8111, 6570, 3222, 2684, 1462, 4363, 8983, 4738, 3457, 3196, 7940, 6738, 1676, 5130, 7789, 1669, 3318, 8855, 8356, 7355, 9877, 6308, 4436, 2779, 5288, 2447, 9164, 2952, 1904, 8464, 6542, 2558, 6658, 6938, 9603, 1809, 7349, 7866, 3373, 5013, 4157, 6828, 8751, 5922, 3783, 9837, 9913, 3876, 4230, 3902, 7971, 6833], Total Packets: 64
+[22:32:16] [Device4Processor] [PROCESS] Device 4: Processed packets: [5827, 2192, 2403, 4754, 2445, 9946, 7097, 5526, 2707, 1227].
+[22:32:17] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[22:32:17] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[22:32:17] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[22:32:17] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[22:32:17] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[22:32:17] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[22:32:17] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[22:32:17] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[22:32:17] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[22:32:17] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[22:32:17] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[22:32:17] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[22:32:17] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[22:32:17] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[22:32:17] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[22:32:17] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [1868, 5325, 2142, 4355, 8809, 1109, 3950, 8031, 6878], Total Packets: 9
+[22:32:17] [Device1Processor] [PROCESS] Device 1: Processed packets: [1868, 5325, 2142, 4355, 8809, 1109, 3950, 8031, 6878].
+[22:32:17] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[22:32:17] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[22:32:17] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[22:32:17] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [3947, 5301, 9396, 7028, 9362, 8511, 6913, 6097, 4226, 8494, 6268, 8883, 8882, 7177, 8693, 9985], Total Packets: 16
+[22:32:17] [Device2Processor] [PROCESS] Device 2: Processed packets: [3947, 5301, 9396, 7028, 9362, 8511, 6913, 6097, 4226, 8494].
+[22:32:17] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [8563, 2111, 8439, 7628, 3241, 4925, 2030, 1616, 2093, 2863, 2035, 9148, 9907, 4316, 9123, 4680, 2235, 6308, 9886, 4444, 9703, 2884, 1617, 2409, 1702, 2627, 1121, 8294, 1364, 6447, 8396, 6554], Total Packets: 32
+[22:32:17] [Device3Processor] [PROCESS] Device 3: Processed packets: [8563, 2111, 8439, 7628, 3241, 4925, 2030, 1616, 2093, 2863].
+[22:32:17] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [7579, 2859, 8111, 6570, 3222, 2684, 1462, 4363, 8983, 4738, 3457, 3196, 7940, 6738, 1676, 5130, 7789, 1669, 3318, 8855, 8356, 7355, 9877, 6308, 4436, 2779, 5288, 2447, 9164, 2952, 1904, 8464, 6542, 2558, 6658, 6938, 9603, 1809, 7349, 7866, 3373, 5013, 4157, 6828, 8751, 5922, 3783, 9837, 9913, 3876, 4230, 3902, 7971, 6833, 7650, 5849, 5203, 2625], Total Packets: 58
+[22:32:17] [Device4Processor] [PROCESS] Device 4: Processed packets: [7579, 2859, 8111, 6570, 3222, 2684, 1462, 4363, 8983, 4738].
+[22:32:18] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 4.
+[22:32:18] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 4.
+[22:32:18] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 4.
+[22:32:18] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[22:32:18] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[22:32:18] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[22:32:18] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[22:32:18] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[22:32:18] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[22:32:18] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [3070, 9822, 2464, 1534, 1766, 1932, 4154, 1362, 1110], Total Packets: 9
+[22:32:18] [Device1Processor] [PROCESS] Device 1: Processed packets: [3070, 9822, 2464, 1534, 1766, 1932, 4154, 1362, 1110, 3942].
+[22:32:18] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
+[22:32:18] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
+[22:32:18] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
+[22:32:18] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[22:32:18] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[22:32:18] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[22:32:18] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:18] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[22:32:18] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [6268, 8883, 8882, 7177, 8693, 9985, 2807], Total Packets: 7
+[22:32:18] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:18] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:18] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[22:32:18] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [3457, 3196, 7940, 6738, 1676, 5130, 7789, 1669, 3318, 8855, 8356, 7355, 9877, 6308, 4436, 2779, 5288, 2447, 9164, 2952, 1904, 8464, 6542, 2558, 6658, 6938, 9603, 1809, 7349, 7866, 3373, 5013, 4157, 6828, 8751, 5922, 3783, 9837, 9913, 3876, 4230, 3902, 7971, 6833, 7650, 5849, 5203, 2625, 3301, 2594, 6336], Total Packets: 51
+[22:32:18] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [2035, 9148, 9907, 4316, 9123, 4680, 2235, 6308, 9886, 4444, 9703, 2884, 1617, 2409, 1702, 2627, 1121, 8294, 1364, 6447, 8396, 6554, 6709, 8110, 7285, 1034, 4777], Total Packets: 27
+[22:32:18] [Device2Processor] [PROCESS] Device 2: Processed packets: [6268, 8883, 8882, 7177, 8693, 9985, 2807, 3816].
+[22:32:18] [Device4Processor] [PROCESS] Device 4: Processed packets: [3457, 3196, 7940, 6738, 1676, 5130, 7789, 1669, 3318, 8855].
+[22:32:18] [Device3Processor] [PROCESS] Device 3: Processed packets: [2035, 9148, 9907, 4316, 9123, 4680, 2235, 6308, 9886, 4444].
+[22:32:19] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [1476, 6838, 4063, 4000, 4445, 9020, 5731, 9612, 1593, 4304, 3385], Total Packets: 11
+[22:32:19] [Device1Processor] [PROCESS] Device 1: Processed packets: [1476, 6838, 4063, 4000, 4445, 9020, 5731, 9612, 1593, 4304].
+[22:32:19] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[22:32:19] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:19] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:19] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:19] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[22:32:19] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[22:32:19] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[22:32:19] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[22:32:19] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[22:32:19] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[22:32:19] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
+[22:32:19] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
+[22:32:19] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[22:32:19] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[22:32:19] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
+[22:32:19] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[22:32:19] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [9983, 9516, 4986], Total Packets: 3
+[22:32:19] [Device2Processor] [PROCESS] Device 2: Processed packets: [9983, 9516, 4986].
+[22:32:19] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [8356, 7355, 9877, 6308, 4436, 2779, 5288, 2447, 9164, 2952, 1904, 8464, 6542, 2558, 6658, 6938, 9603, 1809, 7349, 7866, 3373, 5013, 4157, 6828, 8751, 5922, 3783, 9837, 9913, 3876, 4230, 3902, 7971, 6833, 7650, 5849, 5203, 2625, 3301, 2594, 6336, 1304, 6213, 1842, 4450], Total Packets: 45
+[22:32:19] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [9703, 2884, 1617, 2409, 1702, 2627, 1121, 8294, 1364, 6447, 8396, 6554, 6709, 8110, 7285, 1034, 4777, 7767, 2739, 1513], Total Packets: 20
+[22:32:19] [Device4Processor] [PROCESS] Device 4: Processed packets: [8356, 7355, 9877, 6308, 4436, 2779, 5288, 2447, 9164, 2952].
+[22:32:19] [Device3Processor] [PROCESS] Device 3: Processed packets: [9703, 2884, 1617, 2409, 1702, 2627, 1121, 8294, 1364, 6447].
+[22:32:20] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [3385, 9193, 6888, 7026], Total Packets: 4
+[22:32:20] [Device1Processor] [PROCESS] Device 1: Processed packets: [3385, 9193, 6888, 7026].
+[22:32:20] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[22:32:20] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[22:32:20] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[22:32:20] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[22:32:20] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[22:32:20] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[22:32:20] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[22:32:20] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[22:32:20] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[22:32:20] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 3.
+[22:32:20] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 3.
+[22:32:20] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 3.
+[22:32:20] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[22:32:20] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[22:32:20] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[22:32:20] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [5886, 8723, 4221, 5835, 2941, 9439], Total Packets: 6
+[22:32:20] [Device2Processor] [PROCESS] Device 2: Processed packets: [5886, 8723, 4221, 5835, 2941, 9439].
+[22:32:20] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [1904, 8464, 6542, 2558, 6658, 6938, 9603, 1809, 7349, 7866, 3373, 5013, 4157, 6828, 8751, 5922, 3783, 9837, 9913, 3876, 4230, 3902, 7971, 6833, 7650, 5849, 5203, 2625, 3301, 2594, 6336, 1304, 6213, 1842, 4450, 5684, 5607, 5002, 6003, 2622, 3366], Total Packets: 41
+[22:32:20] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [8396, 6554, 6709, 8110, 7285, 1034, 4777, 7767, 2739, 1513, 8000, 4954, 3386], Total Packets: 13
+[22:32:20] [Device4Processor] [PROCESS] Device 4: Processed packets: [1904, 8464, 6542, 2558, 6658, 6938, 9603, 1809, 7349, 7866].
+[22:32:20] [Device3Processor] [PROCESS] Device 3: Processed packets: [8396, 6554, 6709, 8110, 7285, 1034, 4777, 7767, 2739, 1513].
+[22:32:21] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [3098, 2946, 4784, 5366, 4019, 2835, 1050], Total Packets: 7
+[22:32:21] [Device1Processor] [PROCESS] Device 1: Processed packets: [3098, 2946, 4784, 5366, 4019, 2835, 1050, 7713].
+[22:32:21] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:21] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:21] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:21] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:21] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:21] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:21] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[22:32:21] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[22:32:21] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[22:32:21] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 3.
+[22:32:21] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 3.
+[22:32:21] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 3.
+[22:32:21] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
+[22:32:21] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
+[22:32:21] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
+[22:32:21] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [2607, 4797, 5183, 2690, 1376, 3387, 4004, 8687, 9976], Total Packets: 9
+[22:32:21] [Device2Processor] [PROCESS] Device 2: Processed packets: [2607, 4797, 5183, 2690, 1376, 3387, 4004, 8687, 9976].
+[22:32:21] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [3373, 5013, 4157, 6828, 8751, 5922, 3783, 9837, 9913, 3876, 4230, 3902, 7971, 6833, 7650, 5849, 5203, 2625, 3301, 2594, 6336, 1304, 6213, 1842, 4450, 5684, 5607, 5002, 6003, 2622, 3366, 3369, 6400, 7122], Total Packets: 34
+[22:32:22] [Device4Processor] [PROCESS] Device 4: Processed packets: [3373, 5013, 4157, 6828, 8751, 5922, 3783, 9837, 9913, 3876].
+[22:32:22] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [8000, 4954, 3386, 4493, 1170, 7523, 4856, 1217, 8621], Total Packets: 9
+[22:32:22] [Device3Processor] [PROCESS] Device 3: Processed packets: [8000, 4954, 3386, 4493, 1170, 7523, 4856, 1217, 8621].
+[22:32:22] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [2289, 9499, 6410, 4688, 4750, 3350, 6088], Total Packets: 7
+[22:32:22] [Device1Processor] [PROCESS] Device 1: Processed packets: [2289, 9499, 6410, 4688, 4750, 3350, 6088].
+[22:32:22] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:22] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:22] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:22] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[22:32:22] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[22:32:22] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[22:32:22] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[22:32:22] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[22:32:22] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[22:32:22] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:22] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:22] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:22] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[22:32:22] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[22:32:22] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[22:32:22] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 4.
+[22:32:22] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 4.
+[22:32:22] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 4.
+[22:32:22] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 3.
+[22:32:22] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 3.
+[22:32:22] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 3.
+[22:32:22] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [3096, 2501, 8962, 1054, 7070, 3865, 3304, 6651, 5865, 2468, 8902, 1453], Total Packets: 12
+[22:32:22] [Device2Processor] [PROCESS] Device 2: Processed packets: [3096, 2501, 8962, 1054, 7070, 3865, 3304, 6651, 5865, 2468].
+[22:32:23] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [4230, 3902, 7971, 6833, 7650, 5849, 5203, 2625, 3301, 2594, 6336, 1304, 6213, 1842, 4450, 5684, 5607, 5002, 6003, 2622, 3366, 3369, 6400, 7122, 5336, 8713, 7010, 8436, 8501, 6113], Total Packets: 30
+[22:32:23] [Device4Processor] [PROCESS] Device 4: Processed packets: [4230, 3902, 7971, 6833, 7650, 5849, 5203, 2625, 3301, 2594].
+[22:32:23] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [9565, 3364, 1007, 5753, 9042, 5532, 4414, 8467, 8579], Total Packets: 9
+[22:32:23] [Device3Processor] [PROCESS] Device 3: Processed packets: [9565, 3364, 1007, 5753, 9042, 5532, 4414, 8467, 8579].
+[22:32:23] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [2523, 5506, 2309, 6581, 1228, 3571], Total Packets: 6
+[22:32:23] [Device1Processor] [PROCESS] Device 1: Processed packets: [2523, 5506, 2309, 6581, 1228, 3571].
+[22:32:23] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[22:32:23] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[22:32:23] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[22:32:23] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 2.
+[22:32:23] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 2.
+[22:32:23] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 2.
+[22:32:23] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[22:32:23] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[22:32:23] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[22:32:23] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[22:32:23] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[22:32:23] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[22:32:23] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[22:32:23] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[22:32:23] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 3.
+[22:32:23] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 3.
+[22:32:23] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 3.
+[22:32:23] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[22:32:23] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
+[22:32:23] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
+[22:32:23] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
+[22:32:24] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [8902, 1453, 5731, 6997, 5810, 9022, 6715, 1785], Total Packets: 8
+[22:32:24] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [6336, 1304, 6213, 1842, 4450, 5684, 5607, 5002, 6003, 2622, 3366, 3369, 6400, 7122, 5336, 8713, 7010, 8436, 8501, 6113, 1645, 1170, 1746, 8979, 8207, 9750, 9949, 1437, 5682], Total Packets: 29
+[22:32:24] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [6313, 3226, 9247, 2530, 1700, 9696, 5399, 3483, 1447, 9827, 9926, 2962], Total Packets: 12
+[22:32:24] [Device2Processor] [PROCESS] Device 2: Processed packets: [8902, 1453, 5731, 6997, 5810, 9022, 6715, 1785].
+[22:32:24] [Device4Processor] [PROCESS] Device 4: Processed packets: [6336, 1304, 6213, 1842, 4450, 5684, 5607, 5002, 6003, 2622].
+[22:32:24] [Device3Processor] [PROCESS] Device 3: Processed packets: [6313, 3226, 9247, 2530, 1700, 9696, 5399, 3483, 1447, 9827].
+[22:32:24] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [9097, 4518, 5885, 9685, 5725, 3607, 7384, 1626], Total Packets: 8
+[22:32:24] [Device1Processor] [PROCESS] Device 1: Processed packets: [9097, 4518, 5885, 9685, 5725, 3607, 7384, 1626].
+[22:32:24] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[22:32:24] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[22:32:24] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[22:32:24] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 4.
+[22:32:24] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 4.
+[22:32:24] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[22:32:24] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 4.
+[22:32:24] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[22:32:24] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 4.
+[22:32:24] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 4.
+[22:32:24] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 4.
+[22:32:24] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 3.
+[22:32:24] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[22:32:25] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 3.
+[22:32:25] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 3.
+[22:32:25] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [1491, 6057, 8513, 9072, 2154, 8496], Total Packets: 6
+[22:32:25] [Device2Processor] [PROCESS] Device 2: Processed packets: [1491, 6057, 8513, 9072, 2154, 8496].
+[22:32:25] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [9926, 2962, 2328, 6655, 6602, 6108, 7206, 4114, 2647, 4967, 5571], Total Packets: 11
+[22:32:25] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [3366, 3369, 6400, 7122, 5336, 8713, 7010, 8436, 8501, 6113, 1645, 1170, 1746, 8979, 8207, 9750, 9949, 1437, 5682, 5134, 1851, 5228, 9774, 7208, 8985], Total Packets: 25
+[22:32:25] [Device3Processor] [PROCESS] Device 3: Processed packets: [9926, 2962, 2328, 6655, 6602, 6108, 7206, 4114, 2647, 4967].
+[22:32:25] [Device4Processor] [PROCESS] Device 4: Processed packets: [3366, 3369, 6400, 7122, 5336, 8713, 7010, 8436, 8501, 6113].
+[22:32:25] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [2906, 1605, 2695, 5517, 1323, 4455, 7683], Total Packets: 7
+[22:32:25] [Device1Processor] [PROCESS] Device 1: Processed packets: [2906, 1605, 2695, 5517, 1323, 4455, 7683].
+[22:32:25] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[22:32:25] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[22:32:25] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[22:32:25] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:25] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:25] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:25] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 2.
+[22:32:25] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 2.
+[22:32:25] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 2.
+[22:32:25] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[22:32:25] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[22:32:25] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[22:32:25] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:25] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:25] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:25] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[22:32:25] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[22:32:25] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[22:32:25] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[22:32:25] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[22:32:26] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[22:32:26] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 4.
+[22:32:26] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 4.
+[22:32:26] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 4.
+[22:32:26] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [6373, 7480, 7713, 4124, 7712, 6606], Total Packets: 6
+[22:32:26] [Device2Processor] [PROCESS] Device 2: Processed packets: [6373, 7480, 7713, 4124, 7712, 6606].
+[22:32:26] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [5571, 8713, 2665, 5166, 4361, 4749, 7662, 8140, 1335, 7368, 6186, 8841, 3178], Total Packets: 13
+[22:32:26] [Device3Processor] [PROCESS] Device 3: Processed packets: [5571, 8713, 2665, 5166, 4361, 4749, 7662, 8140, 1335, 7368].
+[22:32:26] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [1645, 1170, 1746, 8979, 8207, 9750, 9949, 1437, 5682, 5134, 1851, 5228, 9774, 7208, 8985, 7284, 6049, 4812, 8161, 7563, 1855, 1055, 9103, 9008], Total Packets: 24
+[22:32:26] [Device4Processor] [PROCESS] Device 4: Processed packets: [1645, 1170, 1746, 8979, 8207, 9750, 9949, 1437, 5682, 5134].
+[22:32:26] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [9499, 6726, 1834, 3342, 7691, 7214, 1170, 5328, 5189, 9812, 9298, 6319], Total Packets: 12
+[22:32:26] [Device1Processor] [PROCESS] Device 1: Processed packets: [9499, 6726, 1834, 3342, 7691, 7214, 1170, 5328, 5189, 9812].
+[22:32:27] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[22:32:27] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[22:32:27] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[22:32:27] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[22:32:27] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 3.
+[22:32:27] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[22:32:27] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[22:32:27] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 5.
+[22:32:27] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 3.
+[22:32:27] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 3.
+[22:32:27] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [9759, 6772, 7687, 4052, 4462, 7332, 5663, 2674, 7951], Total Packets: 9
+[22:32:27] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 5.
+[22:32:27] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 5.
+[22:32:27] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [6186, 8841, 3178, 6240, 7248, 4503, 4059, 7794, 5221], Total Packets: 9
+[22:32:27] [Device2Processor] [PROCESS] Device 2: Processed packets: [9759, 6772, 7687, 4052, 4462, 7332, 5663, 2674, 7951].
+[22:32:27] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [1851, 5228, 9774, 7208, 8985, 7284, 6049, 4812, 8161, 7563, 1855, 1055, 9103, 9008, 4389, 7993, 7134, 2032, 6427, 2843, 9556, 4175, 7742, 1788, 6839, 4292], Total Packets: 26
+[22:32:27] [Device3Processor] [PROCESS] Device 3: Processed packets: [6186, 8841, 3178, 6240, 7248, 4503, 4059, 7794, 5221].
+[22:32:27] [Device4Processor] [PROCESS] Device 4: Processed packets: [1851, 5228, 9774, 7208, 8985, 7284, 6049, 4812, 8161, 7563].
+[22:32:27] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [9298, 6319, 7866, 5350, 2591, 2430, 1829, 8306], Total Packets: 8
+[22:32:27] [Device1Processor] [PROCESS] Device 1: Processed packets: [9298, 6319, 7866, 5350, 2591, 2430, 1829, 8306, 1551].
+[22:32:27] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[22:32:27] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[22:32:27] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[22:32:27] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[22:32:27] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[22:32:27] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[22:32:27] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 2.
+[22:32:27] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 2.
+[22:32:27] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 2.
+[22:32:27] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[22:32:27] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[22:32:27] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[22:32:28] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 4.
+[22:32:28] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 4.
+[22:32:28] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 4.
+[22:32:28] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[22:32:28] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[22:32:28] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[22:32:28] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 4.
+[22:32:28] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
+[22:32:28] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 4.
+[22:32:28] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 4.
+[22:32:28] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
+[22:32:28] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
+[22:32:28] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [4743, 3347, 8811, 2268, 5789, 7426, 2781, 1481, 7911, 7327, 4015, 3864], Total Packets: 12
+[22:32:28] [Device2Processor] [PROCESS] Device 2: Processed packets: [4743, 3347, 8811, 2268, 5789, 7426, 2781, 1481, 7911, 7327].
+[22:32:28] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [3568, 5153, 1010, 8579, 7116, 1232, 8463, 3694, 7494], Total Packets: 9
+[22:32:28] [Device3Processor] [PROCESS] Device 3: Processed packets: [3568, 5153, 1010, 8579, 7116, 1232, 8463, 3694, 7494].
+[22:32:28] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [1855, 1055, 9103, 9008, 4389, 7993, 7134, 2032, 6427, 2843, 9556, 4175, 7742, 1788, 6839, 4292, 2588, 1289, 2827, 6462, 8405, 6059, 4624, 5082, 5597, 5394, 1988, 5701, 3520, 8173, 7860], Total Packets: 31
+[22:32:28] [Device4Processor] [PROCESS] Device 4: Processed packets: [1855, 1055, 9103, 9008, 4389, 7993, 7134, 2032, 6427, 2843].
+[22:32:28] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [7129, 5262, 4367, 7111, 4594, 4323, 7559, 3599], Total Packets: 8
+[22:32:28] [Device1Processor] [PROCESS] Device 1: Processed packets: [7129, 5262, 4367, 7111, 4594, 4323, 7559, 3599].
+[22:32:28] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[22:32:28] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[22:32:28] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[22:32:28] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:28] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:28] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:29] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:29] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:29] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:29] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[22:32:29] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 5.
+[22:32:29] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[22:32:29] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[22:32:29] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 5.
+[22:32:29] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 3.
+[22:32:29] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 5.
+[22:32:29] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 3.
+[22:32:29] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 3.
+[22:32:29] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [4015, 3864, 6360, 6618, 5153, 2115, 2900, 4388], Total Packets: 8
+[22:32:29] [Device2Processor] [PROCESS] Device 2: Processed packets: [4015, 3864, 6360, 6618, 5153, 2115, 2900, 4388].
+[22:32:29] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [6889, 6651, 5256, 7564, 7215, 2066, 8384, 7147, 4066, 9414, 9404, 9935], Total Packets: 12
+[22:32:29] [Device3Processor] [PROCESS] Device 3: Processed packets: [6889, 6651, 5256, 7564, 7215, 2066, 8384, 7147, 4066, 9414].
+[22:32:29] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [9556, 4175, 7742, 1788, 6839, 4292, 2588, 1289, 2827, 6462, 8405, 6059, 4624, 5082, 5597, 5394, 1988, 5701, 3520, 8173, 7860, 7273, 3565, 6751, 2523, 1122, 5597], Total Packets: 27
+[22:32:29] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [5641, 9863, 8517, 8417, 8832, 7581, 1700, 9169, 5308, 8898, 3998, 1471, 8331], Total Packets: 13
+[22:32:29] [Device4Processor] [PROCESS] Device 4: Processed packets: [9556, 4175, 7742, 1788, 6839, 4292, 2588, 1289, 2827, 6462].
+[22:32:29] [Device1Processor] [PROCESS] Device 1: Processed packets: [5641, 9863, 8517, 8417, 8832, 7581, 1700, 9169, 5308, 8898].
+[22:32:29] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 2.
+[22:32:29] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 2.
+[22:32:29] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 2.
+[22:32:29] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[22:32:29] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[22:32:29] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[22:32:30] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[22:32:30] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[22:32:30] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[22:32:30] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[22:32:30] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[22:32:30] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[22:32:30] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[22:32:30] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[22:32:30] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 4.
+[22:32:30] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[22:32:30] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 4.
+[22:32:30] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 4.
+[22:32:30] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [6321, 3183, 4614, 8486, 9401, 6006, 5124, 5656, 5196], Total Packets: 9
+[22:32:30] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [3998, 1471, 8331, 2145, 7304, 6614, 6333, 9112], Total Packets: 8
+[22:32:30] [Device2Processor] [PROCESS] Device 2: Processed packets: [6321, 3183, 4614, 8486, 9401, 6006, 5124, 5656, 5196].
+[22:32:30] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [9404, 9935, 7983, 8452, 5580, 1789, 9473, 9126, 5616, 4621, 9653, 1438, 9812, 5667, 9335, 7428, 6520], Total Packets: 17
+[22:32:30] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [8405, 6059, 4624, 5082, 5597, 5394, 1988, 5701, 3520, 8173, 7860, 7273, 3565, 6751, 2523, 1122, 5597, 4393, 1225, 9535, 8887, 8772, 8879, 5311, 3138, 6505], Total Packets: 26
+[22:32:30] [Device1Processor] [PROCESS] Device 1: Processed packets: [3998, 1471, 8331, 2145, 7304, 6614, 6333, 9112, 1012].
+[22:32:30] [Device3Processor] [PROCESS] Device 3: Processed packets: [9404, 9935, 7983, 8452, 5580, 1789, 9473, 9126, 5616, 4621].
+[22:32:30] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[22:32:30] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[22:32:30] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[22:32:30] [Device4Processor] [PROCESS] Device 4: Processed packets: [8405, 6059, 4624, 5082, 5597, 5394, 1988, 5701, 3520, 8173].
+[22:32:30] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[22:32:30] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[22:32:30] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[22:32:31] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 4.
+[22:32:31] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[22:32:31] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 4.
+[22:32:31] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 4.
+[22:32:31] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[22:32:31] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 3.
+[22:32:31] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 5.
+[22:32:31] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[22:32:31] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 5.
+[22:32:31] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [8153, 9316, 9987, 4649, 1795, 6313, 1193, 9352, 8243, 5773, 2681, 2641], Total Packets: 12
+[22:32:31] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 3.
+[22:32:31] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 3.
+[22:32:31] [Device2Processor] [PROCESS] Device 2: Processed packets: [8153, 9316, 9987, 4649, 1795, 6313, 1193, 9352, 8243, 5773].
+[22:32:31] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 5.
+[22:32:31] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [7130, 5964, 4368, 3417, 5595, 5335, 8854, 3077, 1749, 2079, 2470, 2413, 1195, 2843, 7213, 2693], Total Packets: 16
+[22:32:31] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [9653, 1438, 9812, 5667, 9335, 7428, 6520, 4290, 3537, 5949, 9860, 3035, 7404, 8006], Total Packets: 14
+[22:32:31] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[22:32:31] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[22:32:31] [Device1Processor] [PROCESS] Device 1: Processed packets: [7130, 5964, 4368, 3417, 5595, 5335, 8854, 3077, 1749, 2079].
+[22:32:31] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[22:32:31] [Device3Processor] [PROCESS] Device 3: Processed packets: [9653, 1438, 9812, 5667, 9335, 7428, 6520, 4290, 3537, 5949].
+[22:32:31] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [7860, 7273, 3565, 6751, 2523, 1122, 5597, 4393, 1225, 9535, 8887, 8772, 8879, 5311, 3138, 6505, 6071, 8642, 9700, 4574, 1320, 8216, 7804, 1737, 6001, 2393, 8944, 3315], Total Packets: 28
+[22:32:31] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:31] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:31] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[22:32:31] [Device4Processor] [PROCESS] Device 4: Processed packets: [7860, 7273, 3565, 6751, 2523, 1122, 5597, 4393, 1225, 9535].
+[22:32:31] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 2.
+[22:32:31] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 2.
+[22:32:31] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 2.
+[22:32:31] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[22:32:31] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[22:32:31] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[22:32:32] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:32] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:32] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[22:32:32] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[22:32:32] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[22:32:32] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[22:32:32] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 4.
+[22:32:32] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
+[22:32:32] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 4.
+[22:32:32] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 4.
+[22:32:32] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
+[22:32:32] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 2.
+[22:32:32] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs): [2681, 2641, 1136, 6460, 9516, 9947, 3505, 1782, 1800, 2730, 5520, 1604, 6701, 8648, 7250, 6689, 5424], Total Packets: 17
+[22:32:32] [Device2Processor] [PROCESS] Device 2: Processed packets: [2681, 2641, 1136, 6460, 9516, 9947, 3505, 1782, 1800, 2730].
+[22:32:32] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs): [9860, 3035, 7404, 8006, 8593, 2304, 9223, 4742, 3956, 2908, 1779, 6609, 2216, 8731, 7051, 7190, 5422, 2996, 6793, 7654, 9559, 2950, 7043], Total Packets: 23
+[22:32:32] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs): [2470, 2413, 1195, 2843, 7213, 2693, 7862, 4464, 9155, 2433, 5322, 2096, 1131, 7108, 4510, 3251], Total Packets: 16
+[22:32:32] [Device3Processor] [PROCESS] Device 3: Processed packets: [9860, 3035, 7404, 8006, 8593, 2304, 9223, 4742, 3956, 2908].
+[22:32:32] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs): [8887, 8772, 8879, 5311, 3138, 6505, 6071, 8642, 9700, 4574, 1320, 8216, 7804, 1737, 6001, 2393, 8944, 3315, 8171, 6784, 6514, 4819, 4153, 4224, 3101, 7449, 3225, 9024, 6224, 1327, 4274, 1333, 3436, 3086, 6059, 2690], Total Packets: 36
+[22:32:32] [Device1Processor] [PROCESS] Device 1: Processed packets: [2470, 2413, 1195, 2843, 7213, 2693, 7862, 4464, 9155, 2433].
+[22:32:32] [Device4Processor] [PROCESS] Device 4: Processed packets: [8887, 8772, 8879, 5311, 3138, 6505, 6071, 8642, 9700, 4574].
+[22:32:33] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[22:32:33] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[22:32:33] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[22:32:33] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[22:32:33] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[22:32:33] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 4.

@@ -120,7 +120,7 @@ class Switch:
                 self.outgoing_queues[target_device].put(packet)
                 self.logger.info(
                     f"Switch: {packet_type} packet from Device {source_device} to Device {target_device} sent. "
-                    f"Remaining buffer for Device {target_device}: {self.buffers[target_device]} bytes."
+                    f"Remaining buffer for Device {target_device}: {self.buffers[target_device]} bits."
                 )
 
                 # Check if buffer usage exceeds threshold
@@ -185,7 +185,3 @@ class Switch:
                     self.logger.process(
                         f"Switch: Continued backpressure for Device {device_id} due to high buffer utilization."
                     )
-
-    def stop(self):
-        self.logger.info("Switch: Stopping switch operations...")
-        self.running = False

@@ -11,10 +11,6 @@ TRANSMISSION_RATES = {
 
 PROCESS_RATE = 10
 
-TRANSITION_DURATION = 60
-
-import threading
-
 
 class Device:
     def __init__(self, device_id, switch_queue, logger, RATIO, DURATION):
@@ -30,7 +26,6 @@ class Device:
         self.alert_thread = None  # Thread for alert handling
 
     def check_alerts(self):
-        """Continuously check for and handle all alert packets in the buffer with high priority."""
         start_time = time.time()
         while self.running and time.time() - start_time < self.DURATION:
             try:
@@ -50,7 +45,8 @@ class Device:
                             self.outgoing_packets[target_device] = max(1, current_rate // 2)
                             if current_rate != 1:
                                 self.logger.warning(
-                                    f"Device {self.device_id}: Received BACKPRESSURE signal. Slowing down transmission to "
+                                    f"Device {self.device_id}: Received BACKPRESSURE signal. Slowing down "
+                                    f"transmission to"
                                     f"Device {target_device} to {self.outgoing_packets[target_device]}."
                                 )
                         elif packet['id'] == "RESTORE":
@@ -66,7 +62,8 @@ class Device:
                             self.outgoing_packets[target_device] = 0
                             if current_rate != 0:
                                 self.logger.critical(
-                                    f"Device {self.device_id}: Received CRITICAL_BACKPRESSURE signal. Stopping transmission "
+                                    f"Device {self.device_id}: Received CRITICAL_BACKPRESSURE signal. Stopping "
+                                    f"transmission"
                                     f"to Device {target_device}."
                                 )
             except Exception as e:
@@ -89,7 +86,8 @@ class Device:
                 buffer_size = len(buffer_ids)
 
                 self.logger.info(
-                    f"Buffer Status: Device {self.device_id}: Buffer Content (IDs): {buffer_ids}, Total Packets: {buffer_size}"
+                    f"Buffer Status: Device {self.device_id}: Buffer Content (IDs): {buffer_ids}, "
+                    f"Total Packets: {buffer_size}"
                 )
 
             processed_packets = []
@@ -143,8 +141,3 @@ class Device:
 
             packets_to_send.clear()  # Clear the list for the next round
             time.sleep(1)  # Wait for 1 second before sending
-
-    def stop(self):
-        """Stop the device."""
-        self.logger.info(f"Device {self.device_id}: Stopping operations.")
-        self.running = False

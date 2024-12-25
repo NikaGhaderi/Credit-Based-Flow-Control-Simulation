@@ -146,9 +146,13 @@ class Switch:
             else:
                 # Packet is dropped due to insufficient buffer space
                 self.logger.warning(
-                    f"Switch: Packet from Device {source_device} to Device {target_device} dropped due to buffer "
-                    f"overflow."
+                    f"Switch: Packet from Device {source_device} to Device {target_device} dropped due to buffer overflow. "
                     f"Buffer space remaining: {self.buffers[target_device]} bits, Packet size: {packet_size} bits."
+                )
+                # Re-add the packet to the source device's queue
+                self.incoming_queues[source_device].put(packet)
+                self.logger.info(
+                    f"Switch: Re-queued packet {packet['id']} from Device {source_device} back to incoming queue."
                 )
 
     def restore_buffers(self):

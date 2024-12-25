@@ -82,11 +82,19 @@ class Device:
                                                                                             "CRITICAL_BACKPRESSURE"]]
 
             if filtered_buffer:
-                buffer_ids = [packet['id'] for packet in filtered_buffer]
-                buffer_size = len(buffer_ids)
+                buffer_details = [{"id": packet['id'], "type": packet['type']} for packet in filtered_buffer]
+                buffer_size = len(buffer_details)
+
+                # Format the buffer details into a multi-line string if it exceeds 120 characters
+                buffer_details_str = str(buffer_details)
+                max_line_length = 120
+                wrapped_buffer_details = '\n'.join(
+                    [buffer_details_str[i:i + max_line_length] for i in
+                     range(0, len(buffer_details_str), max_line_length)]
+                )
 
                 self.logger.info(
-                    f"Buffer Status: Device {self.device_id}: Buffer Content (IDs): {buffer_ids}, "
+                    f"Buffer Status: Device {self.device_id}: Buffer Content (IDs and Types):\n{wrapped_buffer_details} "
                     f"Total Packets: {buffer_size}"
                 )
 

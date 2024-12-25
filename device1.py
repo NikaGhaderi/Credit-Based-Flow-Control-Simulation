@@ -106,6 +106,7 @@ class Device:
 
                     # Ignore alert packets here (handled by `check_alerts`)
                     if packet['id'] in ["BACKPRESSURE", "RESTORE", "CRITICAL_BACKPRESSURE"]:
+                        self.received_packets.put(packet)
                         continue
                     counter += 1
                     processed_packets.append(packet)
@@ -115,8 +116,20 @@ class Device:
                     break
 
             if processed_packets:
-                packet_ids = [p['id'] for p in processed_packets]
-                self.logger.process(f"Device {self.device_id}: Processed packets: {packet_ids}.")
+                # Include both packet ID and type in the log
+                processed_details = [{"id": packet['id'], "type": packet['type']} for packet in processed_packets]
+
+                # Convert the processed details into a string and wrap lines if necessary
+                processed_details_str = str(processed_details)
+                max_line_length = 120
+                wrapped_processed_details = '\n'.join(
+                    [processed_details_str[i:i + max_line_length] for i in
+                     range(0, len(processed_details_str), max_line_length)]
+                )
+
+                self.logger.process(
+                    f"Device {self.device_id}: Processed packets (IDs and Types):\n{wrapped_processed_details}."
+                )
 
             time.sleep(1)  # Process packets every second
 

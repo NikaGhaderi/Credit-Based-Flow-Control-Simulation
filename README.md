@@ -10,11 +10,11 @@
 - [License](#license)
 - [Contact](#contact)
 
-## 🌟 Overview
+##  Overview
 
 **Credit-Based Flow Control Simulation** is a Python-based project that models a network environment where a central switch manages data transmission between four devices. The simulation employs a credit-based mechanism to regulate the flow of packets, preventing buffer overflows and ensuring efficient communication.
 
-## 🎯 Features
+##  Features
 
 - **Credit-Based Flow Control:** Implements a mechanism where each device maintains a credit count, ensuring that the sender does not overwhelm the receiver's buffer.
 - **Central Switch:** Manages incoming and outgoing packets, handling buffer allocations and restorations.
@@ -23,7 +23,7 @@
   - `simulation.log` for general simulation and switch-related logs.
   - `memory.log` for device-specific logs.
 
-## 🏗️ Architecture
+##  Architecture
 
 The simulation comprises the following components:
 
@@ -40,14 +40,14 @@ The simulation comprises the following components:
    - Each device can send packets to other devices via the switch.
    - Processes incoming packets from the switch, simulating data handling.
 
-## 🛠️ Installation
+##  Installation
 
 ### **Prerequisites**
 
 - **Python 3.8 or higher**: Ensure you have Python installed. You can download it from [Python.org](https://www.python.org/downloads/).
 
 
-## 📄 Logging
+## Logging
 ### Simulation Logs (simulation.log)
 Location: Root directory of the project.
 Content:
@@ -60,10 +60,10 @@ Device activities, including packet transmissions and processing.
 Device-specific shutdown messages.
 Ensure that both simulation.log and memory.log are present in the root directory after running the simulation.
 
-## 📜 License
+##  License
 This project is licensed under the MIT License.
 
-## 📫 Contact
+## Contact
 For any inquiries or feedback, please contact nika_ghaderi@yahoo.com.
 
 

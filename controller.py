@@ -147,10 +147,10 @@ if __name__ == "__main__":
     }
 
     devices = [
-        Device1(1, incoming_queues[1], memory_logger, RATIO, DURATION, STATE, PRIORITY_OPTION),
-        Device2(2, incoming_queues[2], memory_logger, RATIO, DURATION, STATE, PRIORITY_OPTION),
-        Device3(3, incoming_queues[3], memory_logger, RATIO, DURATION, STATE, PRIORITY_OPTION),
-        Device4(4, incoming_queues[4], memory_logger, RATIO, DURATION, STATE, PRIORITY_OPTION)
+        Device1(1, incoming_queues[1], memory_logger, RATIO, DURATION),
+        Device2(2, incoming_queues[2], memory_logger, RATIO, DURATION),
+        Device3(3, incoming_queues[3], memory_logger, RATIO, DURATION),
+        Device4(4, incoming_queues[4], memory_logger, RATIO, DURATION)
     ]
 
     outgoing_queues = {

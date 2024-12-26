@@ -11,18 +11,12 @@ TRANSMISSION_RATES = {
     4: {1: 10, 2: 20, 3: 30}
 }
 
-BUFFER_SIZES = {
-    1: 1 * 1024 * 8,
-    2: 1 * 1024 * 8,
-    3: 2 * 1024 * 8,
-    4: 4 * 1024 * 8
-}
 
 PROCESS_RATE = 10
 
 
 class Device:
-    def __init__(self, device_id, switch_queue, logger, RATIO, DURATION, STATE, PRIORITY_OPTION):
+    def __init__(self, device_id, switch_queue, logger, RATIO, DURATION):
         self.device_id = device_id
         self.received_packets = queue.Queue()
         self.switch_queue = switch_queue
@@ -33,8 +27,6 @@ class Device:
         self.RATIO = RATIO
         self.DURATION = DURATION
         self.lock = threading.Lock()
-        self.STATE = STATE
-        self.PRIORITY_MODE = PRIORITY_OPTION
 
     def check_alerts(self):
         start_time = time.time()

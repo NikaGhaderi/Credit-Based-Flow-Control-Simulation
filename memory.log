@@ -1,0 +1,1279 @@
+[20:11:22] [MainThread] [INFO] Memory is running. Ready to process packets...
+[20:11:25] [Device1Sender] [INFO] Device 1: Sent 60 packets to the switch.
+[20:11:25] [Device2Sender] [INFO] Device 2: Sent 60 packets to the switch.
+[20:11:25] [Device3Sender] [INFO] Device 3: Sent 60 packets to the switch.
+[20:11:25] [Device4Sender] [INFO] Device 4: Sent 60 packets to the switch.
+[20:11:26] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 5.
+[20:11:26] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[20:11:26] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:26] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 5.
+[20:11:26] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[20:11:26] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:26] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 5.
+[20:11:26] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[20:11:26] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:26] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 1.
+[20:11:26] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 1.
+[20:11:26] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 1.
+[20:11:26] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 5.
+[20:11:26] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 10.
+[20:11:26] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 10.
+[20:11:26] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 5.
+[20:11:26] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[20:11:26] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 5.
+[20:11:26] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[20:11:26] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[20:11:26] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[20:11:26] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[20:11:26] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[20:11:26] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[20:11:26] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[20:11:26] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[20:11:26] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 1.
+[20:11:26] [Device1Sender] [INFO] Device 1: Sent 50 packets to the switch.
+[20:11:26] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[20:11:26] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 1.
+[20:11:26] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 1.
+[20:11:26] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs and Types):
+[{'id': 7451, 'type': 'type1'}, {'id': 3355, 'type': 'type1'}, {'id': 4855, 'type': 'type1'}, {'id': 3797, 'type': 'type
+2'}, {'id': 4180, 'type': 'type2'}, {'id': 3169, 'type': 'type2'}, {'id': 7957, 'type': 'type1'}, {'id': 3652, 'type': '
+type1'}, {'id': 3159, 'type': 'type1'}, {'id': 8977, 'type': 'type2'}, {'id': 9841, 'type': 'type2'}, {'id': 4490, 'type
+': 'type2'}, {'id': 6597, 'type': 'type1'}, {'id': 1720, 'type': 'type1'}, {'id': 3168, 'type': 'type1'}, {'id': 2812, '
+type': 'type2'}] Total Packets: 16
+[20:11:26] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[20:11:26] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs and Types):
+[{'id': 5261, 'type': 'type1'}, {'id': 6176, 'type': 'type2'}, {'id': 4527, 'type': 'type1'}, {'id': 7669, 'type': 'type
+2'}, {'id': 4677, 'type': 'type1'}, {'id': 5114, 'type': 'type2'}, {'id': 7202, 'type': 'type1'}, {'id': 3905, 'type': '
+type2'}, {'id': 2244, 'type': 'type1'}, {'id': 8865, 'type': 'type2'}, {'id': 8499, 'type': 'type1'}, {'id': 6550, 'type
+': 'type1'}, {'id': 3944, 'type': 'type2'}, {'id': 8488, 'type': 'type2'}, {'id': 5610, 'type': 'type1'}, {'id': 2650, '
+type': 'type1'}] Total Packets: 16
+[20:11:26] [Device2Sender] [INFO] Device 2: Sent 51 packets to the switch.
+[20:11:26] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs and Types):
+[{'id': 5240, 'type': 'type1'}, {'id': 9513, 'type': 'type1'}, {'id': 4358, 'type': 'type2'}, {'id': 4180, 'type': 'type
+2'}, {'id': 8224, 'type': 'type1'}, {'id': 6987, 'type': 'type1'}, {'id': 2048, 'type': 'type2'}, {'id': 6249, 'type': '
+type2'}, {'id': 3158, 'type': 'type1'}, {'id': 7631, 'type': 'type1'}, {'id': 7602, 'type': 'type2'}, {'id': 1469, 'type
+': 'type2'}, {'id': 8591, 'type': 'type1'}, {'id': 6839, 'type': 'type1'}, {'id': 3738, 'type': 'type2'}, {'id': 8941, '
+type': 'type2'}, {'id': 5161, 'type': 'type1'}, {'id': 9167, 'type': 'type1'}] Total Packets: 18
+[20:11:26] [Device3Sender] [INFO] Device 3: Sent 32 packets to the switch.
+[20:11:26] [Device4Sender] [INFO] Device 4: Sent 31 packets to the switch.
+[20:11:26] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[20:11:26] [Device1Processor] [PROCESS] Device 1: Processed packets: [7451, 3355, 4855, 3797, 4180, 3169, 7957, 3652, 3159, 8977].
+[20:11:27] [Device2Processor] [PROCESS] Device 2: Processed packets: [5261, 6176, 4527, 7669, 4677, 5114, 7202, 3905, 2244, 8865].
+[20:11:27] [Device3Processor] [PROCESS] Device 3: Processed packets: [5240, 9513, 4358, 4180, 8224, 6987, 2048, 6249, 3158, 7631].
+[20:11:27] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[20:11:27] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[20:11:27] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[20:11:27] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 15.
+[20:11:27] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 10.
+[20:11:27] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 10.
+[20:11:27] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 5.
+[20:11:27] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 2.
+[20:11:27] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 5.
+[20:11:27] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 2.
+[20:11:27] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 7.
+[20:11:27] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 3.
+[20:11:27] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[20:11:27] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[20:11:27] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[20:11:27] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:27] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:27] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:27] [Device1Sender] [INFO] Device 1: Sent 30 packets to the switch.
+[20:11:27] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:27] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:27] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:27] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[20:11:27] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[20:11:27] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:27] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:27] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[20:11:27] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:28] [Device2Sender] [INFO] Device 2: Sent 33 packets to the switch.
+[20:11:28] [Device3Sender] [INFO] Device 3: Sent 33 packets to the switch.
+[20:11:28] [Device4Sender] [INFO] Device 4: Sent 4 packets to the switch.
+[20:11:28] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs and Types):
+[{'id': 4850, 'type': 'type1'}, {'id': 1060, 'type': 'type1'}, {'id': 5811, 'type': 'type1'}, {'id': 5637, 'type': 'type
+2'}, {'id': 1231, 'type': 'type2'}, {'id': 8410, 'type': 'type2'}, {'id': 8471, 'type': 'type1'}, {'id': 5285, 'type': '
+type1'}, {'id': 8510, 'type': 'type1'}, {'id': 9610, 'type': 'type2'}, {'id': 7046, 'type': 'type2'}, {'id': 7043, 'type
+': 'type2'}, {'id': 4439, 'type': 'type1'}, {'id': 8229, 'type': 'type1'}, {'id': 5317, 'type': 'type1'}, {'id': 3513, '
+type': 'type2'}, {'id': 9959, 'type': 'type2'}, {'id': 5298, 'type': 'type2'}, {'id': 3121, 'type': 'type1'}, {'id': 625
+5, 'type': 'type1'}, {'id': 3391, 'type': 'type1'}, {'id': 1558, 'type': 'type2'}, {'id': 6075, 'type': 'type2'}, {'id':
+ 4049, 'type': 'type2'}, {'id': 4585, 'type': 'type1'}, {'id': 6603, 'type': 'type1'}, {'id': 8728, 'type': 'type1'}, {'
+id': 5645, 'type': 'type2'}, {'id': 1693, 'type': 'type2'}, {'id': 4855, 'type': 'type2'}, {'id': 6889, 'type': 'type1'}
+, {'id': 7295, 'type': 'type1'}, {'id': 2490, 'type': 'type1'}] Total Packets: 33
+[20:11:28] [Device4Processor] [PROCESS] Device 4: Processed packets: [4850, 1060, 5811, 5637, 1231, 8410, 8471, 5285, 8510, 9610].
+[20:11:28] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs and Types):
+[{'id': 8499, 'type': 'type1'}, {'id': 6550, 'type': 'type1'}, {'id': 3944, 'type': 'type2'}, {'id': 8488, 'type': 'type
+2'}, {'id': 5610, 'type': 'type1'}, {'id': 2650, 'type': 'type1'}, {'id': 4589, 'type': 'type2'}, {'id': 5615, 'type': '
+type2'}, {'id': 7599, 'type': 'type1'}, {'id': 1312, 'type': 'type1'}, {'id': 9514, 'type': 'type2'}, {'id': 1373, 'type
+': 'type2'}, {'id': 5113, 'type': 'type1'}, {'id': 8062, 'type': 'type1'}, {'id': 3302, 'type': 'type2'}, {'id': 1050, '
+type': 'type2'}] Total Packets: 16
+[20:11:28] [Device2Processor] [PROCESS] Device 2: Processed packets: [8499, 6550, 3944, 8488, 5610, 2650, 4589, 5615, 7599, 1312].
+[20:11:28] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs and Types):
+[{'id': 7602, 'type': 'type2'}, {'id': 1469, 'type': 'type2'}, {'id': 8591, 'type': 'type1'}, {'id': 6839, 'type': 'type
+1'}, {'id': 3738, 'type': 'type2'}, {'id': 8941, 'type': 'type2'}, {'id': 5161, 'type': 'type1'}, {'id': 9167, 'type': '
+type1'}, {'id': 4233, 'type': 'type2'}, {'id': 2879, 'type': 'type2'}, {'id': 6515, 'type': 'type1'}, {'id': 6565, 'type
+': 'type1'}, {'id': 5275, 'type': 'type2'}, {'id': 1641, 'type': 'type2'}, {'id': 4279, 'type': 'type1'}, {'id': 5644, '
+type': 'type1'}, {'id': 3449, 'type': 'type2'}, {'id': 5620, 'type': 'type2'}, {'id': 9993, 'type': 'type1'}, {'id': 894
+5, 'type': 'type1'}, {'id': 7129, 'type': 'type2'}, {'id': 3851, 'type': 'type2'}, {'id': 1668, 'type': 'type1'}, {'id':
+ 7207, 'type': 'type1'}, {'id': 1352, 'type': 'type2'}, {'id': 1177, 'type': 'type2'}, {'id': 2652, 'type': 'type1'}, {'
+id': 9035, 'type': 'type1'}, {'id': 1713, 'type': 'type2'}, {'id': 3579, 'type': 'type2'}, {'id': 7008, 'type': 'type1'}
+, {'id': 7514, 'type': 'type2'}, {'id': 7244, 'type': 'type1'}, {'id': 9061, 'type': 'type2'}, {'id': 1989, 'type': 'typ
+e1'}, {'id': 5848, 'type': 'type2'}, {'id': 8434, 'type': 'type1'}] Total Packets: 37
+[20:11:28] [Device3Processor] [PROCESS] Device 3: Processed packets: [7602, 1469, 8591, 6839, 3738, 8941, 5161, 9167, 4233, 2879].
+[20:11:28] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs and Types):
+[{'id': 9841, 'type': 'type2'}, {'id': 4490, 'type': 'type2'}, {'id': 6597, 'type': 'type1'}, {'id': 1720, 'type': 'type
+1'}, {'id': 3168, 'type': 'type1'}, {'id': 2812, 'type': 'type2'}] Total Packets: 6
+[20:11:28] [Device1Processor] [PROCESS] Device 1: Processed packets: [9841, 4490, 6597, 1720, 3168, 2812].
+[20:11:28] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:28] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:28] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:28] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 15.
+[20:11:28] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 15.
+[20:11:28] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 15.
+[20:11:28] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 7.
+[20:11:28] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 3.
+[20:11:28] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 7.
+[20:11:28] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 3.
+[20:11:28] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 7.
+[20:11:28] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 3.
+[20:11:28] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[20:11:28] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[20:11:28] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 4 to 1.
+[20:11:28] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:28] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:28] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:28] [Device1Sender] [INFO] Device 1: Sent 1 packets to the switch.
+[20:11:28] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[20:11:28] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[20:11:28] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[20:11:28] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[20:11:28] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[20:11:28] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:28] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:28] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[20:11:28] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:28] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:28] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:28] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:29] [Device2Sender] [INFO] Device 2: Sent 5 packets to the switch.
+[20:11:29] [Device3Sender] [INFO] Device 3: Sent 6 packets to the switch.
+[20:11:29] [Device4Sender] [INFO] Device 4: Sent 6 packets to the switch.
+[20:11:29] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:29] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:29] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:29] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs and Types):
+[{'id': 7046, 'type': 'type2'}, {'id': 7043, 'type': 'type2'}, {'id': 4439, 'type': 'type1'}, {'id': 8229, 'type': 'type
+1'}, {'id': 5317, 'type': 'type1'}, {'id': 3513, 'type': 'type2'}, {'id': 9959, 'type': 'type2'}, {'id': 5298, 'type': '
+type2'}, {'id': 3121, 'type': 'type1'}, {'id': 6255, 'type': 'type1'}, {'id': 3391, 'type': 'type1'}, {'id': 1558, 'type
+': 'type2'}, {'id': 6075, 'type': 'type2'}, {'id': 4049, 'type': 'type2'}, {'id': 4585, 'type': 'type1'}, {'id': 6603, '
+type': 'type1'}, {'id': 8728, 'type': 'type1'}, {'id': 5645, 'type': 'type2'}, {'id': 1693, 'type': 'type2'}, {'id': 485
+5, 'type': 'type2'}, {'id': 6889, 'type': 'type1'}, {'id': 7295, 'type': 'type1'}, {'id': 2490, 'type': 'type1'}, {'id':
+ 9266, 'type': 'type2'}, {'id': 3963, 'type': 'type2'}, {'id': 3889, 'type': 'type2'}, {'id': 9811, 'type': 'type1'}, {'
+id': 4431, 'type': 'type1'}, {'id': 8192, 'type': 'type1'}, {'id': 2259, 'type': 'type2'}, {'id': 1683, 'type': 'type2'}
+, {'id': 4401, 'type': 'type2'}, {'id': 3858, 'type': 'type1'}, {'id': 8696, 'type': 'type1'}, {'id': 8574, 'type': 'typ
+e1'}, {'id': 9703, 'type': 'type2'}, {'id': 4191, 'type': 'type2'}, {'id': 6305, 'type': 'type2'}, {'id': 4275, 'type': 
+'type1'}, {'id': 3889, 'type': 'type1'}, {'id': 8610, 'type': 'type1'}, {'id': 5871, 'type': 'type2'}, {'id': 2556, 'typ
+e': 'type2'}, {'id': 6607, 'type': 'type2'}, {'id': 5113, 'type': 'type1'}, {'id': 9127, 'type': 'type1'}, {'id': 7444, 
+'type': 'type1'}, {'id': 1968, 'type': 'type2'}, {'id': 8400, 'type': 'type2'}, {'id': 6391, 'type': 'type2'}, {'id': 73
+24, 'type': 'type1'}, {'id': 4126, 'type': 'type1'}, {'id': 6947, 'type': 'type1'}, {'id': 2067, 'type': 'type2'}, {'id'
+: 2992, 'type': 'type2'}, {'id': 8488, 'type': 'type2'}, {'id': 9614, 'type': 'type1'}, {'id': 7726, 'type': 'type1'}, {
+'id': 9405, 'type': 'type1'}, {'id': 3405, 'type': 'type2'}, {'id': 2618, 'type': 'type2'}, {'id': 9886, 'type': 'type2'
+}, {'id': 8974, 'type': 'type1'}, {'id': 5387, 'type': 'type1'}, {'id': 6682, 'type': 'type2'}, {'id': 9210, 'type': 'ty
+pe2'}, {'id': 1486, 'type': 'type2'}, {'id': 8024, 'type': 'type1'}, {'id': 2287, 'type': 'type1'}, {'id': 5261, 'type':
+ 'type1'}, {'id': 1262, 'type': 'type2'}, {'id': 2606, 'type': 'type2'}, {'id': 3704, 'type': 'type2'}, {'id': 9673, 'ty
+pe': 'type1'}] Total Packets: 74
+[20:11:29] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs and Types):
+[{'id': 9514, 'type': 'type2'}, {'id': 1373, 'type': 'type2'}, {'id': 5113, 'type': 'type1'}, {'id': 8062, 'type': 'type
+1'}, {'id': 3302, 'type': 'type2'}, {'id': 1050, 'type': 'type2'}] Total Packets: 6
+[20:11:29] [Device4Processor] [PROCESS] Device 4: Processed packets: [7046, 7043, 4439, 8229, 5317, 3513, 9959, 5298, 3121, 6255].
+[20:11:29] [Device2Processor] [PROCESS] Device 2: Processed packets: [9514, 1373, 5113, 8062, 3302, 1050].
+[20:11:29] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs and Types):
+[{'id': 6515, 'type': 'type1'}, {'id': 6565, 'type': 'type1'}, {'id': 5275, 'type': 'type2'}, {'id': 1641, 'type': 'type
+2'}, {'id': 4279, 'type': 'type1'}, {'id': 5644, 'type': 'type1'}, {'id': 3449, 'type': 'type2'}, {'id': 5620, 'type': '
+type2'}, {'id': 9993, 'type': 'type1'}, {'id': 8945, 'type': 'type1'}, {'id': 7129, 'type': 'type2'}, {'id': 3851, 'type
+': 'type2'}, {'id': 1668, 'type': 'type1'}, {'id': 7207, 'type': 'type1'}, {'id': 1352, 'type': 'type2'}, {'id': 1177, '
+type': 'type2'}, {'id': 2652, 'type': 'type1'}, {'id': 9035, 'type': 'type1'}, {'id': 1713, 'type': 'type2'}, {'id': 357
+9, 'type': 'type2'}, {'id': 7008, 'type': 'type1'}, {'id': 7514, 'type': 'type2'}, {'id': 7244, 'type': 'type1'}, {'id':
+ 9061, 'type': 'type2'}, {'id': 1989, 'type': 'type1'}, {'id': 5848, 'type': 'type2'}, {'id': 8434, 'type': 'type1'}, {'
+id': 5713, 'type': 'type2'}, {'id': 2561, 'type': 'type1'}, {'id': 8042, 'type': 'type2'}, {'id': 3177, 'type': 'type1'}
+, {'id': 5396, 'type': 'type2'}, {'id': 1056, 'type': 'type2'}, {'id': 6598, 'type': 'type1'}, {'id': 6954, 'type': 'typ
+e2'}, {'id': 8132, 'type': 'type1'}] Total Packets: 36
+[20:11:29] [Device3Processor] [PROCESS] Device 3: Processed packets: [6515, 6565, 5275, 1641, 4279, 5644, 3449, 5620, 9993, 8945].
+[20:11:29] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:29] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:29] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:29] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:29] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:29] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:29] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[20:11:29] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[20:11:29] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[20:11:29] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 1.
+[20:11:29] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 1.
+[20:11:29] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 1.
+[20:11:29] [Device1Sender] [INFO] Device 1: Sent 1 packets to the switch.
+[20:11:29] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 1.
+[20:11:29] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[20:11:29] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 1.
+[20:11:29] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[20:11:29] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 1.
+[20:11:29] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:29] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[20:11:29] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:30] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:30] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:30] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:30] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:30] [Device2Sender] [INFO] Device 2: Sent 3 packets to the switch.
+[20:11:30] [Device3Sender] [INFO] Device 3: Sent 4 packets to the switch.
+[20:11:30] [Device4Sender] [INFO] Device 4: Sent 4 packets to the switch.
+[20:11:30] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:30] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:30] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:30] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs and Types):
+[{'id': 5206, 'type': 'type1'}, {'id': 3348, 'type': 'type2'}, {'id': 6673, 'type': 'type2'}, {'id': 7599, 'type': 'type
+2'}, {'id': 3257, 'type': 'type1'}, {'id': 6437, 'type': 'type1'}, {'id': 1836, 'type': 'type1'}, {'id': 7145, 'type': '
+type2'}, {'id': 1017, 'type': 'type2'}, {'id': 4014, 'type': 'type2'}, {'id': 7546, 'type': 'type1'}, {'id': 9898, 'type
+': 'type1'}, {'id': 8794, 'type': 'type1'}, {'id': 3138, 'type': 'type2'}, {'id': 8849, 'type': 'type2'}, {'id': 8437, '
+type': 'type1'}] Total Packets: 16
+[20:11:30] [Device1Processor] [PROCESS] Device 1: Processed packets: [5206, 3348, 6673, 7599, 3257, 6437, 1836, 7145, 1017, 4014].
+[20:11:30] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs and Types):
+[{'id': 3391, 'type': 'type1'}, {'id': 1558, 'type': 'type2'}, {'id': 6075, 'type': 'type2'}, {'id': 4049, 'type': 'type
+2'}, {'id': 4585, 'type': 'type1'}, {'id': 6603, 'type': 'type1'}, {'id': 8728, 'type': 'type1'}, {'id': 5645, 'type': '
+type2'}, {'id': 1693, 'type': 'type2'}, {'id': 4855, 'type': 'type2'}, {'id': 6889, 'type': 'type1'}, {'id': 7295, 'type
+': 'type1'}, {'id': 2490, 'type': 'type1'}, {'id': 9266, 'type': 'type2'}, {'id': 3963, 'type': 'type2'}, {'id': 3889, '
+type': 'type2'}, {'id': 9811, 'type': 'type1'}, {'id': 4431, 'type': 'type1'}, {'id': 8192, 'type': 'type1'}, {'id': 225
+9, 'type': 'type2'}, {'id': 1683, 'type': 'type2'}, {'id': 4401, 'type': 'type2'}, {'id': 3858, 'type': 'type1'}, {'id':
+ 8696, 'type': 'type1'}, {'id': 8574, 'type': 'type1'}, {'id': 9703, 'type': 'type2'}, {'id': 4191, 'type': 'type2'}, {'
+id': 6305, 'type': 'type2'}, {'id': 4275, 'type': 'type1'}, {'id': 3889, 'type': 'type1'}, {'id': 8610, 'type': 'type1'}
+, {'id': 5871, 'type': 'type2'}, {'id': 2556, 'type': 'type2'}, {'id': 6607, 'type': 'type2'}, {'id': 5113, 'type': 'typ
+e1'}, {'id': 9127, 'type': 'type1'}, {'id': 7444, 'type': 'type1'}, {'id': 1968, 'type': 'type2'}, {'id': 8400, 'type': 
+'type2'}, {'id': 6391, 'type': 'type2'}, {'id': 7324, 'type': 'type1'}, {'id': 4126, 'type': 'type1'}, {'id': 6947, 'typ
+e': 'type1'}, {'id': 2067, 'type': 'type2'}, {'id': 2992, 'type': 'type2'}, {'id': 8488, 'type': 'type2'}, {'id': 9614, 
+'type': 'type1'}, {'id': 7726, 'type': 'type1'}, {'id': 9405, 'type': 'type1'}, {'id': 3405, 'type': 'type2'}, {'id': 26
+18, 'type': 'type2'}, {'id': 9886, 'type': 'type2'}, {'id': 8974, 'type': 'type1'}, {'id': 5387, 'type': 'type1'}, {'id'
+: 6682, 'type': 'type2'}, {'id': 9210, 'type': 'type2'}, {'id': 1486, 'type': 'type2'}, {'id': 8024, 'type': 'type1'}, {
+'id': 2287, 'type': 'type1'}, {'id': 5261, 'type': 'type1'}, {'id': 1262, 'type': 'type2'}, {'id': 2606, 'type': 'type2'
+}, {'id': 3704, 'type': 'type2'}, {'id': 9673, 'type': 'type1'}, {'id': 8207, 'type': 'type1'}, {'id': 4906, 'type': 'ty
+pe2'}, {'id': 5396, 'type': 'type1'}, {'id': 8795, 'type': 'type2'}] Total Packets: 68
+[20:11:30] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs and Types):
+[{'id': 5762, 'type': 'type2'}, {'id': 4184, 'type': 'type2'}, {'id': 2005, 'type': 'type1'}, {'id': 2519, 'type': 'type
+1'}, {'id': 5798, 'type': 'type2'}, {'id': 1726, 'type': 'type2'}, {'id': 3493, 'type': 'type1'}, {'id': 2611, 'type': '
+type1'}, {'id': 8238, 'type': 'type2'}, {'id': 2084, 'type': 'type2'}, {'id': 3437, 'type': 'type1'}, {'id': 1826, 'type
+': 'type1'}, {'id': 3978, 'type': 'type2'}] Total Packets: 13
+[20:11:30] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs and Types):
+[{'id': 7129, 'type': 'type2'}, {'id': 3851, 'type': 'type2'}, {'id': 1668, 'type': 'type1'}, {'id': 7207, 'type': 'type
+1'}, {'id': 1352, 'type': 'type2'}, {'id': 1177, 'type': 'type2'}, {'id': 2652, 'type': 'type1'}, {'id': 9035, 'type': '
+type1'}, {'id': 1713, 'type': 'type2'}, {'id': 3579, 'type': 'type2'}, {'id': 7008, 'type': 'type1'}, {'id': 7514, 'type
+': 'type2'}, {'id': 7244, 'type': 'type1'}, {'id': 9061, 'type': 'type2'}, {'id': 1989, 'type': 'type1'}, {'id': 5848, '
+type': 'type2'}, {'id': 8434, 'type': 'type1'}, {'id': 5713, 'type': 'type2'}, {'id': 2561, 'type': 'type1'}, {'id': 804
+2, 'type': 'type2'}, {'id': 3177, 'type': 'type1'}, {'id': 5396, 'type': 'type2'}, {'id': 1056, 'type': 'type2'}, {'id':
+ 6598, 'type': 'type1'}, {'id': 6954, 'type': 'type2'}, {'id': 8132, 'type': 'type1'}, {'id': 9613, 'type': 'type2'}, {'
+id': 3405, 'type': 'type1'}, {'id': 8451, 'type': 'type2'}, {'id': 2407, 'type': 'type1'}, {'id': 2176, 'type': 'type2'}
+, {'id': 3883, 'type': 'type1'}, {'id': 9870, 'type': 'type2'}, {'id': 4051, 'type': 'type2'}, {'id': 7383, 'type': 'typ
+e1'}, {'id': 6618, 'type': 'type1'}, {'id': 8130, 'type': 'type1'}, {'id': 6895, 'type': 'type2'}, {'id': 4801, 'type': 
+'type2'}, {'id': 8582, 'type': 'type2'}, {'id': 2710, 'type': 'type1'}, {'id': 3597, 'type': 'type1'}] Total Packets: 42
+[20:11:30] [Device4Processor] [PROCESS] Device 4: Processed packets: [3391, 1558, 6075, 4049, 4585, 6603, 8728, 5645, 1693, 4855].
+[20:11:30] [Device2Processor] [PROCESS] Device 2: Processed packets: [5762, 4184, 2005, 2519, 5798, 1726, 3493, 2611, 8238, 2084].
+[20:11:30] [Device3Processor] [PROCESS] Device 3: Processed packets: [7129, 3851, 1668, 7207, 1352, 1177, 2652, 9035, 1713, 3579].
+[20:11:30] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:30] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:30] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:30] [Device1Sender] [INFO] Device 1: Sent 2 packets to the switch.
+[20:11:31] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:31] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[20:11:31] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:31] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:31] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[20:11:31] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:31] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:31] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:31] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:31] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[20:11:31] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:31] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:31] [Device2Sender] [INFO] Device 2: Sent 4 packets to the switch.
+[20:11:31] [Device3Sender] [INFO] Device 3: Sent 6 packets to the switch.
+[20:11:31] [Device4Sender] [INFO] Device 4: Sent 6 packets to the switch.
+[20:11:31] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:31] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:31] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:31] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs and Types):
+[{'id': 7546, 'type': 'type1'}, {'id': 9898, 'type': 'type1'}, {'id': 8794, 'type': 'type1'}, {'id': 3138, 'type': 'type
+2'}, {'id': 8849, 'type': 'type2'}, {'id': 8437, 'type': 'type1'}] Total Packets: 6
+[20:11:31] [Device1Processor] [PROCESS] Device 1: Processed packets: [7546, 9898, 8794, 3138, 8849, 8437].
+[20:11:31] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs and Types):
+[{'id': 3437, 'type': 'type1'}, {'id': 1826, 'type': 'type1'}, {'id': 3978, 'type': 'type2'}] Total Packets: 3
+[20:11:31] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs and Types):
+[{'id': 6889, 'type': 'type1'}, {'id': 7295, 'type': 'type1'}, {'id': 2490, 'type': 'type1'}, {'id': 9266, 'type': 'type
+2'}, {'id': 3963, 'type': 'type2'}, {'id': 3889, 'type': 'type2'}, {'id': 9811, 'type': 'type1'}, {'id': 4431, 'type': '
+type1'}, {'id': 8192, 'type': 'type1'}, {'id': 2259, 'type': 'type2'}, {'id': 1683, 'type': 'type2'}, {'id': 4401, 'type
+': 'type2'}, {'id': 3858, 'type': 'type1'}, {'id': 8696, 'type': 'type1'}, {'id': 8574, 'type': 'type1'}, {'id': 9703, '
+type': 'type2'}, {'id': 4191, 'type': 'type2'}, {'id': 6305, 'type': 'type2'}, {'id': 4275, 'type': 'type1'}, {'id': 388
+9, 'type': 'type1'}, {'id': 8610, 'type': 'type1'}, {'id': 5871, 'type': 'type2'}, {'id': 2556, 'type': 'type2'}, {'id':
+ 6607, 'type': 'type2'}, {'id': 5113, 'type': 'type1'}, {'id': 9127, 'type': 'type1'}, {'id': 7444, 'type': 'type1'}, {'
+id': 1968, 'type': 'type2'}, {'id': 8400, 'type': 'type2'}, {'id': 6391, 'type': 'type2'}, {'id': 7324, 'type': 'type1'}
+, {'id': 4126, 'type': 'type1'}, {'id': 6947, 'type': 'type1'}, {'id': 2067, 'type': 'type2'}, {'id': 2992, 'type': 'typ
+e2'}, {'id': 8488, 'type': 'type2'}, {'id': 9614, 'type': 'type1'}, {'id': 7726, 'type': 'type1'}, {'id': 9405, 'type': 
+'type1'}, {'id': 3405, 'type': 'type2'}, {'id': 2618, 'type': 'type2'}, {'id': 9886, 'type': 'type2'}, {'id': 8974, 'typ
+e': 'type1'}, {'id': 5387, 'type': 'type1'}, {'id': 6682, 'type': 'type2'}, {'id': 9210, 'type': 'type2'}, {'id': 1486, 
+'type': 'type2'}, {'id': 8024, 'type': 'type1'}, {'id': 2287, 'type': 'type1'}, {'id': 5261, 'type': 'type1'}, {'id': 12
+62, 'type': 'type2'}, {'id': 2606, 'type': 'type2'}, {'id': 3704, 'type': 'type2'}, {'id': 9673, 'type': 'type1'}, {'id'
+: 8207, 'type': 'type1'}, {'id': 4906, 'type': 'type2'}, {'id': 5396, 'type': 'type1'}, {'id': 8795, 'type': 'type2'}, {
+'id': 5156, 'type': 'type1'}, {'id': 6565, 'type': 'type2'}, {'id': 7384, 'type': 'type1'}, {'id': 6443, 'type': 'type1'
+}, {'id': 8815, 'type': 'type2'}, {'id': 5047, 'type': 'type2'}, {'id': 8429, 'type': 'type1'}, {'id': 9701, 'type': 'ty
+pe1'}, {'id': 4412, 'type': 'type2'}, {'id': 7059, 'type': 'type2'}, {'id': 1948, 'type': 'type2'}, {'id': 3586, 'type':
+ 'type1'}, {'id': 7310, 'type': 'type1'}, {'id': 8242, 'type': 'type1'}, {'id': 3753, 'type': 'type2'}, {'id': 1140, 'ty
+pe': 'type2'}] Total Packets: 74
+[20:11:31] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs and Types):
+[{'id': 7008, 'type': 'type1'}, {'id': 7514, 'type': 'type2'}, {'id': 7244, 'type': 'type1'}, {'id': 9061, 'type': 'type
+2'}, {'id': 1989, 'type': 'type1'}, {'id': 5848, 'type': 'type2'}, {'id': 8434, 'type': 'type1'}, {'id': 5713, 'type': '
+type2'}, {'id': 2561, 'type': 'type1'}, {'id': 8042, 'type': 'type2'}, {'id': 3177, 'type': 'type1'}, {'id': 5396, 'type
+': 'type2'}, {'id': 1056, 'type': 'type2'}, {'id': 6598, 'type': 'type1'}, {'id': 6954, 'type': 'type2'}, {'id': 8132, '
+type': 'type1'}, {'id': 9613, 'type': 'type2'}, {'id': 3405, 'type': 'type1'}, {'id': 8451, 'type': 'type2'}, {'id': 240
+7, 'type': 'type1'}, {'id': 2176, 'type': 'type2'}, {'id': 3883, 'type': 'type1'}, {'id': 9870, 'type': 'type2'}, {'id':
+ 4051, 'type': 'type2'}, {'id': 7383, 'type': 'type1'}, {'id': 6618, 'type': 'type1'}, {'id': 8130, 'type': 'type1'}, {'
+id': 6895, 'type': 'type2'}, {'id': 4801, 'type': 'type2'}, {'id': 8582, 'type': 'type2'}, {'id': 2710, 'type': 'type1'}
+, {'id': 3597, 'type': 'type1'}, {'id': 3187, 'type': 'type2'}, {'id': 8484, 'type': 'type1'}, {'id': 7431, 'type': 'typ
+e2'}, {'id': 6028, 'type': 'type1'}] Total Packets: 36
+[20:11:31] [Device2Processor] [PROCESS] Device 2: Processed packets: [3437, 1826, 3978].
+[20:11:31] [Device4Processor] [PROCESS] Device 4: Processed packets: [6889, 7295, 2490, 9266, 3963, 3889, 9811, 4431, 8192, 2259].
+[20:11:31] [Device3Processor] [PROCESS] Device 3: Processed packets: [7008, 7514, 7244, 9061, 1989, 5848, 8434, 5713, 2561, 8042].
+[20:11:31] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:31] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:31] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:31] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[20:11:31] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[20:11:31] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[20:11:31] [Device1Sender] [INFO] Device 1: Sent 1 packets to the switch.
+[20:11:32] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[20:11:32] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:32] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:32] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[20:11:32] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[20:11:32] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:32] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[20:11:32] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[20:11:32] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[20:11:32] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:32] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:32] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:32] [Device2Sender] [INFO] Device 2: Sent 5 packets to the switch.
+[20:11:32] [Device3Sender] [INFO] Device 3: Sent 6 packets to the switch.
+[20:11:32] [Device4Sender] [INFO] Device 4: Sent 6 packets to the switch.
+[20:11:32] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:32] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:32] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:32] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs and Types):
+[{'id': 4042, 'type': 'type1'}, {'id': 8006, 'type': 'type2'}, {'id': 3937, 'type': 'type2'}, {'id': 5360, 'type': 'type
+1'}] Total Packets: 4
+[20:11:32] [Device1Processor] [PROCESS] Device 1: Processed packets: [4042, 8006, 3937, 5360].
+[20:11:32] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs and Types):
+[{'id': 7816, 'type': 'type1'}, {'id': 6649, 'type': 'type1'}, {'id': 3855, 'type': 'type2'}, {'id': 1440, 'type': 'type
+2'}, {'id': 2834, 'type': 'type1'}, {'id': 8770, 'type': 'type1'}, {'id': 8677, 'type': 'type2'}, {'id': 8714, 'type': '
+type2'}, {'id': 7452, 'type': 'type1'}, {'id': 5330, 'type': 'type1'}, {'id': 2402, 'type': 'type2'}, {'id': 4845, 'type
+': 'type2'}, {'id': 9698, 'type': 'type1'}, {'id': 3474, 'type': 'type2'}] Total Packets: 14
+[20:11:32] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs and Types):
+[{'id': 1683, 'type': 'type2'}, {'id': 4401, 'type': 'type2'}, {'id': 3858, 'type': 'type1'}, {'id': 8696, 'type': 'type
+1'}, {'id': 8574, 'type': 'type1'}, {'id': 9703, 'type': 'type2'}, {'id': 4191, 'type': 'type2'}, {'id': 6305, 'type': '
+type2'}, {'id': 4275, 'type': 'type1'}, {'id': 3889, 'type': 'type1'}, {'id': 8610, 'type': 'type1'}, {'id': 5871, 'type
+': 'type2'}, {'id': 2556, 'type': 'type2'}, {'id': 6607, 'type': 'type2'}, {'id': 5113, 'type': 'type1'}, {'id': 9127, '
+type': 'type1'}, {'id': 7444, 'type': 'type1'}, {'id': 1968, 'type': 'type2'}, {'id': 8400, 'type': 'type2'}, {'id': 639
+1, 'type': 'type2'}, {'id': 7324, 'type': 'type1'}, {'id': 4126, 'type': 'type1'}, {'id': 6947, 'type': 'type1'}, {'id':
+ 2067, 'type': 'type2'}, {'id': 2992, 'type': 'type2'}, {'id': 8488, 'type': 'type2'}, {'id': 9614, 'type': 'type1'}, {'
+id': 7726, 'type': 'type1'}, {'id': 9405, 'type': 'type1'}, {'id': 3405, 'type': 'type2'}, {'id': 2618, 'type': 'type2'}
+, {'id': 9886, 'type': 'type2'}, {'id': 8974, 'type': 'type1'}, {'id': 5387, 'type': 'type1'}, {'id': 6682, 'type': 'typ
+e2'}, {'id': 9210, 'type': 'type2'}, {'id': 1486, 'type': 'type2'}, {'id': 8024, 'type': 'type1'}, {'id': 2287, 'type': 
+'type1'}, {'id': 5261, 'type': 'type1'}, {'id': 1262, 'type': 'type2'}, {'id': 2606, 'type': 'type2'}, {'id': 3704, 'typ
+e': 'type2'}, {'id': 9673, 'type': 'type1'}, {'id': 8207, 'type': 'type1'}, {'id': 4906, 'type': 'type2'}, {'id': 5396, 
+'type': 'type1'}, {'id': 8795, 'type': 'type2'}, {'id': 5156, 'type': 'type1'}, {'id': 6565, 'type': 'type2'}, {'id': 73
+84, 'type': 'type1'}, {'id': 6443, 'type': 'type1'}, {'id': 8815, 'type': 'type2'}, {'id': 5047, 'type': 'type2'}, {'id'
+: 8429, 'type': 'type1'}, {'id': 9701, 'type': 'type1'}, {'id': 4412, 'type': 'type2'}, {'id': 7059, 'type': 'type2'}, {
+'id': 1948, 'type': 'type2'}, {'id': 3586, 'type': 'type1'}, {'id': 7310, 'type': 'type1'}, {'id': 8242, 'type': 'type1'
+}, {'id': 3753, 'type': 'type2'}, {'id': 1140, 'type': 'type2'}, {'id': 9384, 'type': 'type2'}, {'id': 5256, 'type': 'ty
+pe2'}, {'id': 6075, 'type': 'type1'}, {'id': 2565, 'type': 'type1'}, {'id': 7625, 'type': 'type2'}, {'id': 3921, 'type':
+ 'type2'}, {'id': 2890, 'type': 'type2'}, {'id': 2637, 'type': 'type1'}, {'id': 8006, 'type': 'type1'}, {'id': 7340, 'ty
+pe': 'type1'}] Total Packets: 74
+[20:11:32] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs and Types):
+[{'id': 3177, 'type': 'type1'}, {'id': 5396, 'type': 'type2'}, {'id': 1056, 'type': 'type2'}, {'id': 6598, 'type': 'type
+1'}, {'id': 6954, 'type': 'type2'}, {'id': 8132, 'type': 'type1'}, {'id': 9613, 'type': 'type2'}, {'id': 3405, 'type': '
+type1'}, {'id': 8451, 'type': 'type2'}, {'id': 2407, 'type': 'type1'}, {'id': 2176, 'type': 'type2'}, {'id': 3883, 'type
+': 'type1'}, {'id': 9870, 'type': 'type2'}, {'id': 4051, 'type': 'type2'}, {'id': 7383, 'type': 'type1'}, {'id': 6618, '
+type': 'type1'}, {'id': 8130, 'type': 'type1'}, {'id': 6895, 'type': 'type2'}, {'id': 4801, 'type': 'type2'}, {'id': 858
+2, 'type': 'type2'}, {'id': 2710, 'type': 'type1'}, {'id': 3597, 'type': 'type1'}, {'id': 3187, 'type': 'type2'}, {'id':
+ 8484, 'type': 'type1'}, {'id': 7431, 'type': 'type2'}, {'id': 6028, 'type': 'type1'}, {'id': 1310, 'type': 'type2'}, {'
+id': 1383, 'type': 'type1'}, {'id': 1278, 'type': 'type2'}, {'id': 4756, 'type': 'type1'}, {'id': 3363, 'type': 'type2'}
+, {'id': 9747, 'type': 'type1'}, {'id': 9070, 'type': 'type2'}] Total Packets: 33
+[20:11:32] [Device2Processor] [PROCESS] Device 2: Processed packets: [7816, 6649, 3855, 1440, 2834, 8770, 8677, 8714, 7452, 5330].
+[20:11:32] [Device4Processor] [PROCESS] Device 4: Processed packets: [1683, 4401, 3858, 8696, 8574, 9703, 4191, 6305, 4275, 3889].
+[20:11:32] [Device3Processor] [PROCESS] Device 3: Processed packets: [3177, 5396, 1056, 6598, 6954, 8132, 9613, 3405, 8451, 2407].
+[20:11:32] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:32] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:32] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:32] [Device1Sender] [INFO] Device 1: Sent 2 packets to the switch.
+[20:11:33] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 4.
+[20:11:33] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 4.
+[20:11:33] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 4.
+[20:11:33] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[20:11:33] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[20:11:33] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[20:11:33] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:33] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:33] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:33] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:33] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:33] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:33] [Device2Sender] [INFO] Device 2: Sent 6 packets to the switch.
+[20:11:33] [Device3Sender] [INFO] Device 3: Sent 8 packets to the switch.
+[20:11:33] [Device4Sender] [INFO] Device 4: Sent 8 packets to the switch.
+[20:11:33] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:33] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:33] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:33] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs and Types):
+[{'id': 8622, 'type': 'type2'}, {'id': 8084, 'type': 'type1'}, {'id': 5331, 'type': 'type2'}, {'id': 8170, 'type': 'type
+1'}, {'id': 9367, 'type': 'type2'}, {'id': 7633, 'type': 'type1'}] Total Packets: 6
+[20:11:33] [Device1Processor] [PROCESS] Device 1: Processed packets: [8622, 8084, 5331, 8170, 9367, 7633].
+[20:11:33] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs and Types):
+[{'id': 2402, 'type': 'type2'}, {'id': 4845, 'type': 'type2'}, {'id': 9698, 'type': 'type1'}, {'id': 3474, 'type': 'type
+2'}, {'id': 9993, 'type': 'type1'}, {'id': 2239, 'type': 'type2'}] Total Packets: 6
+[20:11:33] [Device2Processor] [PROCESS] Device 2: Processed packets: [2402, 4845, 9698, 3474, 9993, 2239].
+[20:11:33] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs and Types):
+[{'id': 8610, 'type': 'type1'}, {'id': 5871, 'type': 'type2'}, {'id': 2556, 'type': 'type2'}, {'id': 6607, 'type': 'type
+2'}, {'id': 5113, 'type': 'type1'}, {'id': 9127, 'type': 'type1'}, {'id': 7444, 'type': 'type1'}, {'id': 1968, 'type': '
+type2'}, {'id': 8400, 'type': 'type2'}, {'id': 6391, 'type': 'type2'}, {'id': 7324, 'type': 'type1'}, {'id': 4126, 'type
+': 'type1'}, {'id': 6947, 'type': 'type1'}, {'id': 2067, 'type': 'type2'}, {'id': 2992, 'type': 'type2'}, {'id': 8488, '
+type': 'type2'}, {'id': 9614, 'type': 'type1'}, {'id': 7726, 'type': 'type1'}, {'id': 9405, 'type': 'type1'}, {'id': 340
+5, 'type': 'type2'}, {'id': 2618, 'type': 'type2'}, {'id': 9886, 'type': 'type2'}, {'id': 8974, 'type': 'type1'}, {'id':
+ 5387, 'type': 'type1'}, {'id': 6682, 'type': 'type2'}, {'id': 9210, 'type': 'type2'}, {'id': 1486, 'type': 'type2'}, {'
+id': 8024, 'type': 'type1'}, {'id': 2287, 'type': 'type1'}, {'id': 5261, 'type': 'type1'}, {'id': 1262, 'type': 'type2'}
+, {'id': 2606, 'type': 'type2'}, {'id': 3704, 'type': 'type2'}, {'id': 9673, 'type': 'type1'}, {'id': 8207, 'type': 'typ
+e1'}, {'id': 4906, 'type': 'type2'}, {'id': 5396, 'type': 'type1'}, {'id': 8795, 'type': 'type2'}, {'id': 5156, 'type': 
+'type1'}, {'id': 6565, 'type': 'type2'}, {'id': 7384, 'type': 'type1'}, {'id': 6443, 'type': 'type1'}, {'id': 8815, 'typ
+e': 'type2'}, {'id': 5047, 'type': 'type2'}, {'id': 8429, 'type': 'type1'}, {'id': 9701, 'type': 'type1'}, {'id': 4412, 
+'type': 'type2'}, {'id': 7059, 'type': 'type2'}, {'id': 1948, 'type': 'type2'}, {'id': 3586, 'type': 'type1'}, {'id': 73
+10, 'type': 'type1'}, {'id': 8242, 'type': 'type1'}, {'id': 3753, 'type': 'type2'}, {'id': 1140, 'type': 'type2'}, {'id'
+: 9384, 'type': 'type2'}, {'id': 5256, 'type': 'type2'}, {'id': 6075, 'type': 'type1'}, {'id': 2565, 'type': 'type1'}, {
+'id': 7625, 'type': 'type2'}, {'id': 3921, 'type': 'type2'}, {'id': 2890, 'type': 'type2'}, {'id': 2637, 'type': 'type1'
+}, {'id': 8006, 'type': 'type1'}, {'id': 7340, 'type': 'type1'}, {'id': 1089, 'type': 'type2'}, {'id': 6967, 'type': 'ty
+pe2'}, {'id': 6491, 'type': 'type1'}, {'id': 9895, 'type': 'type1'}, {'id': 1045, 'type': 'type1'}, {'id': 7034, 'type':
+ 'type2'}, {'id': 9559, 'type': 'type2'}, {'id': 9802, 'type': 'type2'}, {'id': 7786, 'type': 'type1'}, {'id': 4469, 'ty
+pe': 'type1'}] Total Packets: 74
+[20:11:33] [Device4Processor] [PROCESS] Device 4: Processed packets: [8610, 5871, 2556, 6607, 5113, 9127, 7444, 1968, 8400, 6391].
+[20:11:33] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs and Types):
+[{'id': 2176, 'type': 'type2'}, {'id': 3883, 'type': 'type1'}, {'id': 9870, 'type': 'type2'}, {'id': 4051, 'type': 'type
+2'}, {'id': 7383, 'type': 'type1'}, {'id': 6618, 'type': 'type1'}, {'id': 8130, 'type': 'type1'}, {'id': 6895, 'type': '
+type2'}, {'id': 4801, 'type': 'type2'}, {'id': 8582, 'type': 'type2'}, {'id': 2710, 'type': 'type1'}, {'id': 3597, 'type
+': 'type1'}, {'id': 3187, 'type': 'type2'}, {'id': 8484, 'type': 'type1'}, {'id': 7431, 'type': 'type2'}, {'id': 6028, '
+type': 'type1'}, {'id': 1310, 'type': 'type2'}, {'id': 1383, 'type': 'type1'}, {'id': 1278, 'type': 'type2'}, {'id': 475
+6, 'type': 'type1'}, {'id': 3363, 'type': 'type2'}, {'id': 9747, 'type': 'type1'}, {'id': 9070, 'type': 'type2'}, {'id':
+ 7195, 'type': 'type1'}, {'id': 2940, 'type': 'type1'}, {'id': 9028, 'type': 'type2'}, {'id': 1950, 'type': 'type2'}, {'
+id': 5122, 'type': 'type1'}, {'id': 6956, 'type': 'type2'}, {'id': 1349, 'type': 'type1'}, {'id': 9061, 'type': 'type2'}
+, {'id': 8367, 'type': 'type1'}, {'id': 8533, 'type': 'type1'}, {'id': 9133, 'type': 'type2'}] Total Packets: 34
+[20:11:33] [Device3Processor] [PROCESS] Device 3: Processed packets: [2176, 3883, 9870, 4051, 7383, 6618, 8130, 6895, 4801, 8582].
+[20:11:33] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:33] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:33] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:33] [Device1Sender] [INFO] Device 1: Sent 3 packets to the switch.
+[20:11:34] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 5.
+[20:11:34] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 5.
+[20:11:34] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 5.
+[20:11:34] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[20:11:34] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[20:11:34] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:34] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[20:11:34] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:34] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:34] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:34] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:34] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:34] [Device2Sender] [INFO] Device 2: Sent 7 packets to the switch.
+[20:11:34] [Device3Sender] [INFO] Device 3: Sent 10 packets to the switch.
+[20:11:34] [Device4Sender] [INFO] Device 4: Sent 10 packets to the switch.
+[20:11:34] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs and Types):
+[{'id': 9191, 'type': 'type2'}, {'id': 2990, 'type': 'type2'}, {'id': 8469, 'type': 'type1'}, {'id': 5800, 'type': 'type
+2'}, {'id': 3123, 'type': 'type1'}, {'id': 8796, 'type': 'type2'}, {'id': 5443, 'type': 'type1'}, {'id': 5747, 'type': '
+type2'}] Total Packets: 8
+[20:11:34] [Device1Processor] [PROCESS] Device 1: Processed packets: [9191, 2990, 8469, 5800, 3123, 8796, 5443, 5747].
+[20:11:34] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs and Types):
+[{'id': 3342, 'type': 'type1'}, {'id': 4279, 'type': 'type2'}, {'id': 1185, 'type': 'type1'}, {'id': 1228, 'type': 'type
+1'}, {'id': 5741, 'type': 'type2'}, {'id': 8450, 'type': 'type2'}] Total Packets: 6
+[20:11:34] [Device2Processor] [PROCESS] Device 2: Processed packets: [3342, 4279, 1185, 1228, 5741, 8450].
+[20:11:34] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs and Types):
+[{'id': 7324, 'type': 'type1'}, {'id': 4126, 'type': 'type1'}, {'id': 6947, 'type': 'type1'}, {'id': 2067, 'type': 'type
+2'}, {'id': 2992, 'type': 'type2'}, {'id': 8488, 'type': 'type2'}, {'id': 9614, 'type': 'type1'}, {'id': 7726, 'type': '
+type1'}, {'id': 9405, 'type': 'type1'}, {'id': 3405, 'type': 'type2'}, {'id': 2618, 'type': 'type2'}, {'id': 9886, 'type
+': 'type2'}, {'id': 8974, 'type': 'type1'}, {'id': 5387, 'type': 'type1'}, {'id': 6682, 'type': 'type2'}, {'id': 9210, '
+type': 'type2'}, {'id': 1486, 'type': 'type2'}, {'id': 8024, 'type': 'type1'}, {'id': 2287, 'type': 'type1'}, {'id': 526
+1, 'type': 'type1'}, {'id': 1262, 'type': 'type2'}, {'id': 2606, 'type': 'type2'}, {'id': 3704, 'type': 'type2'}, {'id':
+ 9673, 'type': 'type1'}, {'id': 8207, 'type': 'type1'}, {'id': 4906, 'type': 'type2'}, {'id': 5396, 'type': 'type1'}, {'
+id': 8795, 'type': 'type2'}, {'id': 5156, 'type': 'type1'}, {'id': 6565, 'type': 'type2'}, {'id': 7384, 'type': 'type1'}
+, {'id': 6443, 'type': 'type1'}, {'id': 8815, 'type': 'type2'}, {'id': 5047, 'type': 'type2'}, {'id': 8429, 'type': 'typ
+e1'}, {'id': 9701, 'type': 'type1'}, {'id': 4412, 'type': 'type2'}, {'id': 7059, 'type': 'type2'}, {'id': 1948, 'type': 
+'type2'}, {'id': 3586, 'type': 'type1'}, {'id': 7310, 'type': 'type1'}, {'id': 8242, 'type': 'type1'}, {'id': 3753, 'typ
+e': 'type2'}, {'id': 1140, 'type': 'type2'}, {'id': 9384, 'type': 'type2'}, {'id': 5256, 'type': 'type2'}, {'id': 6075, 
+'type': 'type1'}, {'id': 2565, 'type': 'type1'}, {'id': 7625, 'type': 'type2'}, {'id': 3921, 'type': 'type2'}, {'id': 28
+90, 'type': 'type2'}, {'id': 2637, 'type': 'type1'}, {'id': 8006, 'type': 'type1'}, {'id': 7340, 'type': 'type1'}, {'id'
+: 1089, 'type': 'type2'}, {'id': 6967, 'type': 'type2'}, {'id': 6491, 'type': 'type1'}, {'id': 9895, 'type': 'type1'}, {
+'id': 1045, 'type': 'type1'}, {'id': 7034, 'type': 'type2'}, {'id': 9559, 'type': 'type2'}, {'id': 9802, 'type': 'type2'
+}, {'id': 7786, 'type': 'type1'}, {'id': 4469, 'type': 'type1'}, {'id': 2966, 'type': 'type1'}, {'id': 1307, 'type': 'ty
+pe1'}, {'id': 8005, 'type': 'type2'}] Total Packets: 67
+[20:11:34] [Device4Processor] [PROCESS] Device 4: Processed packets: [7324, 4126, 6947, 2067, 2992, 8488, 9614, 7726, 9405, 3405].
+[20:11:34] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs and Types):
+[{'id': 2710, 'type': 'type1'}, {'id': 3597, 'type': 'type1'}, {'id': 3187, 'type': 'type2'}, {'id': 8484, 'type': 'type
+1'}, {'id': 7431, 'type': 'type2'}, {'id': 6028, 'type': 'type1'}, {'id': 1310, 'type': 'type2'}, {'id': 1383, 'type': '
+type1'}, {'id': 1278, 'type': 'type2'}, {'id': 4756, 'type': 'type1'}, {'id': 3363, 'type': 'type2'}, {'id': 9747, 'type
+': 'type1'}, {'id': 9070, 'type': 'type2'}, {'id': 7195, 'type': 'type1'}, {'id': 2940, 'type': 'type1'}, {'id': 9028, '
+type': 'type2'}, {'id': 1950, 'type': 'type2'}, {'id': 5122, 'type': 'type1'}, {'id': 6956, 'type': 'type2'}, {'id': 134
+9, 'type': 'type1'}, {'id': 9061, 'type': 'type2'}, {'id': 8367, 'type': 'type1'}, {'id': 8533, 'type': 'type1'}, {'id':
+ 9133, 'type': 'type2'}, {'id': 4303, 'type': 'type1'}, {'id': 7246, 'type': 'type2'}, {'id': 4836, 'type': 'type1'}, {'
+id': 2867, 'type': 'type2'}, {'id': 6878, 'type': 'type1'}, {'id': 5182, 'type': 'type2'}, {'id': 5033, 'type': 'type2'}
+, {'id': 6137, 'type': 'type1'}, {'id': 9563, 'type': 'type2'}, {'id': 9411, 'type': 'type1'}, {'id': 2198, 'type': 'typ
+e1'}, {'id': 7044, 'type': 'type2'}, {'id': 2481, 'type': 'type1'}, {'id': 9785, 'type': 'type2'}, {'id': 4690, 'type': 
+'type2'}, {'id': 9188, 'type': 'type2'}] Total Packets: 40
+[20:11:34] [Device3Processor] [PROCESS] Device 3: Processed packets: [2710, 3597, 3187, 8484, 7431, 6028, 1310, 1383, 1278, 4756].
+[20:11:34] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:34] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:34] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:34] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:34] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:34] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:34] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[20:11:34] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[20:11:34] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[20:11:34] [Device1Sender] [INFO] Device 1: Sent 4 packets to the switch.
+[20:11:35] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:35] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[20:11:35] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:35] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[20:11:35] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[20:11:35] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:35] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:35] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:35] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[20:11:35] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:35] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:35] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[20:11:35] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:35] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[20:11:35] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:35] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:35] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:35] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:35] [Device2Sender] [INFO] Device 2: Sent 4 packets to the switch.
+[20:11:35] [Device3Sender] [INFO] Device 3: Sent 6 packets to the switch.
+[20:11:35] [Device4Sender] [INFO] Device 4: Sent 6 packets to the switch.
+[20:11:35] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs and Types):
+[{'id': 7535, 'type': 'type2'}, {'id': 4639, 'type': 'type1'}, {'id': 8517, 'type': 'type2'}, {'id': 4612, 'type': 'type
+2'}, {'id': 5971, 'type': 'type1'}, {'id': 3320, 'type': 'type2'}, {'id': 6742, 'type': 'type2'}, {'id': 4253, 'type': '
+type1'}, {'id': 7784, 'type': 'type2'}] Total Packets: 9
+[20:11:35] [Device1Processor] [PROCESS] Device 1: Processed packets: [7535, 4639, 8517, 4612, 5971, 3320, 6742, 4253, 7784].
+[20:11:35] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs and Types):
+[{'id': 3953, 'type': 'type1'}, {'id': 4528, 'type': 'type2'}, {'id': 2995, 'type': 'type2'}, {'id': 2108, 'type': 'type
+1'}, {'id': 8338, 'type': 'type2'}, {'id': 8761, 'type': 'type1'}, {'id': 2049, 'type': 'type2'}, {'id': 5524, 'type': '
+type1'}, {'id': 7923, 'type': 'type2'}, {'id': 6633, 'type': 'type2'}, {'id': 2894, 'type': 'type1'}, {'id': 9955, 'type
+': 'type2'}] Total Packets: 12
+[20:11:35] [Device2Processor] [PROCESS] Device 2: Processed packets: [3953, 4528, 2995, 2108, 8338, 8761, 2049, 5524, 7923, 6633].
+[20:11:35] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs and Types):
+[{'id': 2618, 'type': 'type2'}, {'id': 9886, 'type': 'type2'}, {'id': 8974, 'type': 'type1'}, {'id': 5387, 'type': 'type
+1'}, {'id': 6682, 'type': 'type2'}, {'id': 9210, 'type': 'type2'}, {'id': 1486, 'type': 'type2'}, {'id': 8024, 'type': '
+type1'}, {'id': 2287, 'type': 'type1'}, {'id': 5261, 'type': 'type1'}, {'id': 1262, 'type': 'type2'}, {'id': 2606, 'type
+': 'type2'}, {'id': 3704, 'type': 'type2'}, {'id': 9673, 'type': 'type1'}, {'id': 8207, 'type': 'type1'}, {'id': 4906, '
+type': 'type2'}, {'id': 5396, 'type': 'type1'}, {'id': 8795, 'type': 'type2'}, {'id': 5156, 'type': 'type1'}, {'id': 656
+5, 'type': 'type2'}, {'id': 7384, 'type': 'type1'}, {'id': 6443, 'type': 'type1'}, {'id': 8815, 'type': 'type2'}, {'id':
+ 5047, 'type': 'type2'}, {'id': 8429, 'type': 'type1'}, {'id': 9701, 'type': 'type1'}, {'id': 4412, 'type': 'type2'}, {'
+id': 7059, 'type': 'type2'}, {'id': 1948, 'type': 'type2'}, {'id': 3586, 'type': 'type1'}, {'id': 7310, 'type': 'type1'}
+, {'id': 8242, 'type': 'type1'}, {'id': 3753, 'type': 'type2'}, {'id': 1140, 'type': 'type2'}, {'id': 9384, 'type': 'typ
+e2'}, {'id': 5256, 'type': 'type2'}, {'id': 6075, 'type': 'type1'}, {'id': 2565, 'type': 'type1'}, {'id': 7625, 'type': 
+'type2'}, {'id': 3921, 'type': 'type2'}, {'id': 2890, 'type': 'type2'}, {'id': 2637, 'type': 'type1'}, {'id': 8006, 'typ
+e': 'type1'}, {'id': 7340, 'type': 'type1'}, {'id': 1089, 'type': 'type2'}, {'id': 6967, 'type': 'type2'}, {'id': 6491, 
+'type': 'type1'}, {'id': 9895, 'type': 'type1'}, {'id': 1045, 'type': 'type1'}, {'id': 7034, 'type': 'type2'}, {'id': 95
+59, 'type': 'type2'}, {'id': 9802, 'type': 'type2'}, {'id': 7786, 'type': 'type1'}, {'id': 4469, 'type': 'type1'}, {'id'
+: 2966, 'type': 'type1'}, {'id': 1307, 'type': 'type1'}, {'id': 8005, 'type': 'type2'}, {'id': 3556, 'type': 'type1'}, {
+'id': 8046, 'type': 'type1'}, {'id': 8567, 'type': 'type1'}, {'id': 7671, 'type': 'type2'}, {'id': 3077, 'type': 'type1'
+}, {'id': 1046, 'type': 'type2'}, {'id': 9839, 'type': 'type1'}, {'id': 4267, 'type': 'type2'}, {'id': 3934, 'type': 'ty
+pe1'}, {'id': 6540, 'type': 'type2'}, {'id': 5959, 'type': 'type1'}] Total Packets: 68
+[20:11:35] [Device4Processor] [PROCESS] Device 4: Processed packets: [2618, 9886, 8974, 5387, 6682, 9210, 1486, 8024, 2287, 5261].
+[20:11:35] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs and Types):
+[{'id': 3363, 'type': 'type2'}, {'id': 9747, 'type': 'type1'}, {'id': 9070, 'type': 'type2'}, {'id': 7195, 'type': 'type
+1'}, {'id': 2940, 'type': 'type1'}, {'id': 9028, 'type': 'type2'}, {'id': 1950, 'type': 'type2'}, {'id': 5122, 'type': '
+type1'}, {'id': 6956, 'type': 'type2'}, {'id': 1349, 'type': 'type1'}, {'id': 9061, 'type': 'type2'}, {'id': 8367, 'type
+': 'type1'}, {'id': 8533, 'type': 'type1'}, {'id': 9133, 'type': 'type2'}, {'id': 4303, 'type': 'type1'}, {'id': 7246, '
+type': 'type2'}, {'id': 4836, 'type': 'type1'}, {'id': 2867, 'type': 'type2'}, {'id': 6878, 'type': 'type1'}, {'id': 518
+2, 'type': 'type2'}, {'id': 5033, 'type': 'type2'}, {'id': 6137, 'type': 'type1'}, {'id': 9563, 'type': 'type2'}, {'id':
+ 9411, 'type': 'type1'}, {'id': 2198, 'type': 'type1'}, {'id': 7044, 'type': 'type2'}, {'id': 2481, 'type': 'type1'}, {'
+id': 9785, 'type': 'type2'}, {'id': 4690, 'type': 'type2'}, {'id': 9188, 'type': 'type2'}, {'id': 1426, 'type': 'type1'}
+, {'id': 1398, 'type': 'type1'}, {'id': 1424, 'type': 'type2'}, {'id': 2391, 'type': 'type1'}, {'id': 7627, 'type': 'typ
+e1'}, {'id': 2644, 'type': 'type2'}, {'id': 3592, 'type': 'type2'}, {'id': 4850, 'type': 'type1'}, {'id': 8589, 'type': 
+'type1'}] Total Packets: 39
+[20:11:35] [Device3Processor] [PROCESS] Device 3: Processed packets: [3363, 9747, 9070, 7195, 2940, 9028, 1950, 5122, 6956, 1349].
+[20:11:35] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:35] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:35] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:35] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:35] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:35] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:35] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:35] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:35] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:35] [Device1Sender] [INFO] Device 1: Sent 3 packets to the switch.
+[20:11:36] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:36] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[20:11:36] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:36] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:36] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:36] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:36] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:36] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[20:11:36] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:36] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[20:11:36] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:36] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:36] [Device2Sender] [INFO] Device 2: Sent 4 packets to the switch.
+[20:11:36] [Device3Sender] [INFO] Device 3: Sent 7 packets to the switch.
+[20:11:36] [Device4Sender] [INFO] Device 4: Sent 7 packets to the switch.
+[20:11:36] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:36] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:36] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:36] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs and Types):
+[{'id': 5117, 'type': 'type1'}, {'id': 2293, 'type': 'type2'}, {'id': 5208, 'type': 'type1'}, {'id': 7584, 'type': 'type
+2'}, {'id': 7852, 'type': 'type1'}, {'id': 5578, 'type': 'type1'}, {'id': 8726, 'type': 'type2'}, {'id': 4670, 'type': '
+type2'}, {'id': 6561, 'type': 'type2'}, {'id': 6668, 'type': 'type1'}, {'id': 8479, 'type': 'type2'}, {'id': 1071, 'type
+': 'type1'}, {'id': 7967, 'type': 'type2'}] Total Packets: 13
+[20:11:36] [Device1Processor] [PROCESS] Device 1: Processed packets: [5117, 2293, 5208, 7584, 7852, 5578, 8726, 4670, 6561, 6668].
+[20:11:36] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs and Types):
+[{'id': 2894, 'type': 'type1'}, {'id': 9955, 'type': 'type2'}, {'id': 4669, 'type': 'type2'}, {'id': 1547, 'type': 'type
+1'}, {'id': 9779, 'type': 'type2'}, {'id': 2310, 'type': 'type1'}, {'id': 2939, 'type': 'type1'}, {'id': 7911, 'type': '
+type2'}, {'id': 5483, 'type': 'type1'}] Total Packets: 9
+[20:11:36] [Device2Processor] [PROCESS] Device 2: Processed packets: [2894, 9955, 4669, 1547, 9779, 2310, 2939, 7911, 5483].
+[20:11:36] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs and Types):
+[{'id': 1262, 'type': 'type2'}, {'id': 2606, 'type': 'type2'}, {'id': 3704, 'type': 'type2'}, {'id': 9673, 'type': 'type
+1'}, {'id': 8207, 'type': 'type1'}, {'id': 4906, 'type': 'type2'}, {'id': 5396, 'type': 'type1'}, {'id': 8795, 'type': '
+type2'}, {'id': 5156, 'type': 'type1'}, {'id': 6565, 'type': 'type2'}, {'id': 7384, 'type': 'type1'}, {'id': 6443, 'type
+': 'type1'}, {'id': 8815, 'type': 'type2'}, {'id': 5047, 'type': 'type2'}, {'id': 8429, 'type': 'type1'}, {'id': 9701, '
+type': 'type1'}, {'id': 4412, 'type': 'type2'}, {'id': 7059, 'type': 'type2'}, {'id': 1948, 'type': 'type2'}, {'id': 358
+6, 'type': 'type1'}, {'id': 7310, 'type': 'type1'}, {'id': 8242, 'type': 'type1'}, {'id': 3753, 'type': 'type2'}, {'id':
+ 1140, 'type': 'type2'}, {'id': 9384, 'type': 'type2'}, {'id': 5256, 'type': 'type2'}, {'id': 6075, 'type': 'type1'}, {'
+id': 2565, 'type': 'type1'}, {'id': 7625, 'type': 'type2'}, {'id': 3921, 'type': 'type2'}, {'id': 2890, 'type': 'type2'}
+, {'id': 2637, 'type': 'type1'}, {'id': 8006, 'type': 'type1'}, {'id': 7340, 'type': 'type1'}, {'id': 1089, 'type': 'typ
+e2'}, {'id': 6967, 'type': 'type2'}, {'id': 6491, 'type': 'type1'}, {'id': 9895, 'type': 'type1'}, {'id': 1045, 'type': 
+'type1'}, {'id': 7034, 'type': 'type2'}, {'id': 9559, 'type': 'type2'}, {'id': 9802, 'type': 'type2'}, {'id': 7786, 'typ
+e': 'type1'}, {'id': 4469, 'type': 'type1'}, {'id': 2966, 'type': 'type1'}, {'id': 1307, 'type': 'type1'}, {'id': 8005, 
+'type': 'type2'}, {'id': 3556, 'type': 'type1'}, {'id': 8046, 'type': 'type1'}, {'id': 8567, 'type': 'type1'}, {'id': 76
+71, 'type': 'type2'}, {'id': 3077, 'type': 'type1'}, {'id': 1046, 'type': 'type2'}, {'id': 9839, 'type': 'type1'}, {'id'
+: 4267, 'type': 'type2'}, {'id': 3934, 'type': 'type1'}, {'id': 6540, 'type': 'type2'}, {'id': 5959, 'type': 'type1'}, {
+'id': 6451, 'type': 'type2'}, {'id': 9255, 'type': 'type1'}, {'id': 5366, 'type': 'type1'}, {'id': 1394, 'type': 'type1'
+}, {'id': 3954, 'type': 'type2'}, {'id': 5994, 'type': 'type2'}, {'id': 4936, 'type': 'type1'}, {'id': 8335, 'type': 'ty
+pe2'}, {'id': 5302, 'type': 'type1'}, {'id': 9066, 'type': 'type2'}, {'id': 9979, 'type': 'type2'}, {'id': 6999, 'type':
+ 'type2'}, {'id': 4148, 'type': 'type1'}, {'id': 4557, 'type': 'type1'}, {'id': 5746, 'type': 'type1'}, {'id': 9328, 'ty
+pe': 'type2'}] Total Packets: 74
+[20:11:36] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs and Types):
+[{'id': 9061, 'type': 'type2'}, {'id': 8367, 'type': 'type1'}, {'id': 8533, 'type': 'type1'}, {'id': 9133, 'type': 'type
+2'}, {'id': 4303, 'type': 'type1'}, {'id': 7246, 'type': 'type2'}, {'id': 4836, 'type': 'type1'}, {'id': 2867, 'type': '
+type2'}, {'id': 6878, 'type': 'type1'}, {'id': 5182, 'type': 'type2'}, {'id': 5033, 'type': 'type2'}, {'id': 6137, 'type
+': 'type1'}, {'id': 9563, 'type': 'type2'}, {'id': 9411, 'type': 'type1'}, {'id': 2198, 'type': 'type1'}, {'id': 7044, '
+type': 'type2'}, {'id': 2481, 'type': 'type1'}, {'id': 9785, 'type': 'type2'}, {'id': 4690, 'type': 'type2'}, {'id': 918
+8, 'type': 'type2'}, {'id': 1426, 'type': 'type1'}, {'id': 1398, 'type': 'type1'}, {'id': 1424, 'type': 'type2'}, {'id':
+ 2391, 'type': 'type1'}, {'id': 7627, 'type': 'type1'}, {'id': 2644, 'type': 'type2'}, {'id': 3592, 'type': 'type2'}, {'
+id': 4850, 'type': 'type1'}, {'id': 8589, 'type': 'type1'}, {'id': 6763, 'type': 'type2'}, {'id': 5961, 'type': 'type1'}
+, {'id': 4179, 'type': 'type2'}] Total Packets: 32
+[20:11:36] [Device4Processor] [PROCESS] Device 4: Processed packets: [1262, 2606, 3704, 9673, 8207, 4906, 5396, 8795, 5156, 6565].
+[20:11:36] [Device3Processor] [PROCESS] Device 3: Processed packets: [9061, 8367, 8533, 9133, 4303, 7246, 4836, 2867, 6878, 5182].
+[20:11:36] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:36] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:36] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:36] [Device1Sender] [INFO] Device 1: Sent 5 packets to the switch.
+[20:11:37] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:37] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:37] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[20:11:37] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:37] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 5.
+[20:11:37] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 5.
+[20:11:37] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 5.
+[20:11:37] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:37] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[20:11:37] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[20:11:37] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:37] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:37] [Device2Sender] [INFO] Device 2: Sent 5 packets to the switch.
+[20:11:37] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[20:11:37] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[20:11:37] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[20:11:37] [Device3Sender] [INFO] Device 3: Sent 8 packets to the switch.
+[20:11:37] [Device4Sender] [INFO] Device 4: Sent 8 packets to the switch.
+[20:11:37] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs and Types):
+[{'id': 8479, 'type': 'type2'}, {'id': 1071, 'type': 'type1'}, {'id': 7967, 'type': 'type2'}, {'id': 8682, 'type': 'type
+2'}, {'id': 2044, 'type': 'type1'}, {'id': 4519, 'type': 'type2'}, {'id': 4981, 'type': 'type1'}, {'id': 4189, 'type': '
+type1'}, {'id': 1098, 'type': 'type2'}, {'id': 1663, 'type': 'type2'}, {'id': 1515, 'type': 'type1'}, {'id': 5472, 'type
+': 'type1'}] Total Packets: 12
+[20:11:37] [Device1Processor] [PROCESS] Device 1: Processed packets: [8479, 1071, 7967, 8682, 2044, 4519, 4981, 4189, 1098, 1663].
+[20:11:37] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs and Types):
+[{'id': 7481, 'type': 'type2'}, {'id': 7838, 'type': 'type1'}, {'id': 9036, 'type': 'type2'}, {'id': 3638, 'type': 'type
+2'}, {'id': 7789, 'type': 'type1'}, {'id': 3235, 'type': 'type2'}, {'id': 2124, 'type': 'type1'}, {'id': 6957, 'type': '
+type2'}, {'id': 6334, 'type': 'type2'}, {'id': 6287, 'type': 'type1'}] Total Packets: 10
+[20:11:37] [Device2Processor] [PROCESS] Device 2: Processed packets: [7481, 7838, 9036, 3638, 7789, 3235, 2124, 6957, 6334, 6287].
+[20:11:37] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs and Types):
+[{'id': 7384, 'type': 'type1'}, {'id': 6443, 'type': 'type1'}, {'id': 8815, 'type': 'type2'}, {'id': 5047, 'type': 'type
+2'}, {'id': 8429, 'type': 'type1'}, {'id': 9701, 'type': 'type1'}, {'id': 4412, 'type': 'type2'}, {'id': 7059, 'type': '
+type2'}, {'id': 1948, 'type': 'type2'}, {'id': 3586, 'type': 'type1'}, {'id': 7310, 'type': 'type1'}, {'id': 8242, 'type
+': 'type1'}, {'id': 3753, 'type': 'type2'}, {'id': 1140, 'type': 'type2'}, {'id': 9384, 'type': 'type2'}, {'id': 5256, '
+type': 'type2'}, {'id': 6075, 'type': 'type1'}, {'id': 2565, 'type': 'type1'}, {'id': 7625, 'type': 'type2'}, {'id': 392
+1, 'type': 'type2'}, {'id': 2890, 'type': 'type2'}, {'id': 2637, 'type': 'type1'}, {'id': 8006, 'type': 'type1'}, {'id':
+ 7340, 'type': 'type1'}, {'id': 1089, 'type': 'type2'}, {'id': 6967, 'type': 'type2'}, {'id': 6491, 'type': 'type1'}, {'
+id': 9895, 'type': 'type1'}, {'id': 1045, 'type': 'type1'}, {'id': 7034, 'type': 'type2'}, {'id': 9559, 'type': 'type2'}
+, {'id': 9802, 'type': 'type2'}, {'id': 7786, 'type': 'type1'}, {'id': 4469, 'type': 'type1'}, {'id': 2966, 'type': 'typ
+e1'}, {'id': 1307, 'type': 'type1'}, {'id': 8005, 'type': 'type2'}, {'id': 3556, 'type': 'type1'}, {'id': 8046, 'type': 
+'type1'}, {'id': 8567, 'type': 'type1'}, {'id': 7671, 'type': 'type2'}, {'id': 3077, 'type': 'type1'}, {'id': 1046, 'typ
+e': 'type2'}, {'id': 9839, 'type': 'type1'}, {'id': 4267, 'type': 'type2'}, {'id': 3934, 'type': 'type1'}, {'id': 6540, 
+'type': 'type2'}, {'id': 5959, 'type': 'type1'}, {'id': 6451, 'type': 'type2'}, {'id': 9255, 'type': 'type1'}, {'id': 53
+66, 'type': 'type1'}, {'id': 1394, 'type': 'type1'}, {'id': 3954, 'type': 'type2'}, {'id': 5994, 'type': 'type2'}, {'id'
+: 4936, 'type': 'type1'}, {'id': 8335, 'type': 'type2'}, {'id': 5302, 'type': 'type1'}, {'id': 9066, 'type': 'type2'}, {
+'id': 9979, 'type': 'type2'}, {'id': 6999, 'type': 'type2'}, {'id': 4148, 'type': 'type1'}, {'id': 4557, 'type': 'type1'
+}, {'id': 5746, 'type': 'type1'}, {'id': 9328, 'type': 'type2'}, {'id': 4563, 'type': 'type1'}, {'id': 8029, 'type': 'ty
+pe2'}, {'id': 7596, 'type': 'type2'}, {'id': 7553, 'type': 'type1'}] Total Packets: 68
+[20:11:37] [Device4Processor] [PROCESS] Device 4: Processed packets: [7384, 6443, 8815, 5047, 8429, 9701, 4412, 7059, 1948, 3586].
+[20:11:37] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs and Types):
+[{'id': 5033, 'type': 'type2'}, {'id': 6137, 'type': 'type1'}, {'id': 9563, 'type': 'type2'}, {'id': 9411, 'type': 'type
+1'}, {'id': 2198, 'type': 'type1'}, {'id': 7044, 'type': 'type2'}, {'id': 2481, 'type': 'type1'}, {'id': 9785, 'type': '
+type2'}, {'id': 4690, 'type': 'type2'}, {'id': 9188, 'type': 'type2'}, {'id': 1426, 'type': 'type1'}, {'id': 1398, 'type
+': 'type1'}, {'id': 1424, 'type': 'type2'}, {'id': 2391, 'type': 'type1'}, {'id': 7627, 'type': 'type1'}, {'id': 2644, '
+type': 'type2'}, {'id': 3592, 'type': 'type2'}, {'id': 4850, 'type': 'type1'}, {'id': 8589, 'type': 'type1'}, {'id': 676
+3, 'type': 'type2'}, {'id': 5961, 'type': 'type1'}, {'id': 4179, 'type': 'type2'}, {'id': 2163, 'type': 'type1'}, {'id':
+ 5327, 'type': 'type1'}, {'id': 3255, 'type': 'type1'}, {'id': 7300, 'type': 'type2'}, {'id': 4414, 'type': 'type1'}, {'
+id': 7091, 'type': 'type1'}, {'id': 1569, 'type': 'type1'}, {'id': 3480, 'type': 'type2'}, {'id': 4140, 'type': 'type2'}
+, {'id': 9721, 'type': 'type1'}, {'id': 7346, 'type': 'type1'}, {'id': 8520, 'type': 'type2'}, {'id': 2148, 'type': 'typ
+e2'}] Total Packets: 35
+[20:11:37] [Device3Processor] [PROCESS] Device 3: Processed packets: [5033, 6137, 9563, 9411, 2198, 7044, 2481, 9785, 4690, 9188].
+[20:11:37] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:37] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:37] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:37] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[20:11:37] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[20:11:37] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[20:11:37] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:37] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:37] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 3.
+[20:11:37] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:37] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:37] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:37] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[20:11:37] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[20:11:37] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[20:11:37] [Device1Sender] [INFO] Device 1: Sent 1 packets to the switch.
+[20:11:38] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:38] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:38] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:38] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[20:11:38] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[20:11:38] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[20:11:38] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:38] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:38] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 1.
+[20:11:38] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:38] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:38] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:38] [Device2Sender] [INFO] Device 2: Sent 4 packets to the switch.
+[20:11:38] [Device3Sender] [INFO] Device 3: Sent 5 packets to the switch.
+[20:11:38] [Device4Sender] [INFO] Device 4: Sent 5 packets to the switch.
+[20:11:38] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs and Types):
+[{'id': 1515, 'type': 'type1'}, {'id': 5472, 'type': 'type1'}, {'id': 5334, 'type': 'type2'}, {'id': 7083, 'type': 'type
+1'}, {'id': 3476, 'type': 'type1'}, {'id': 9557, 'type': 'type2'}, {'id': 9648, 'type': 'type2'}, {'id': 4003, 'type': '
+type1'}, {'id': 5906, 'type': 'type2'}, {'id': 6999, 'type': 'type2'}, {'id': 1790, 'type': 'type1'}, {'id': 1002, 'type
+': 'type1'}, {'id': 9460, 'type': 'type2'}, {'id': 3561, 'type': 'type1'}, {'id': 2399, 'type': 'type2'}, {'id': 9413, '
+type': 'type1'}] Total Packets: 16
+[20:11:38] [Device1Processor] [PROCESS] Device 1: Processed packets: [1515, 5472, 5334, 7083, 3476, 9557, 9648, 4003, 5906, 6999].
+[20:11:38] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:38] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:38] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:38] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs and Types):
+[{'id': 2865, 'type': 'type2'}, {'id': 1209, 'type': 'type2'}, {'id': 1319, 'type': 'type1'}, {'id': 8306, 'type': 'type
+2'}, {'id': 2800, 'type': 'type2'}, {'id': 2069, 'type': 'type1'}, {'id': 1426, 'type': 'type2'}, {'id': 2746, 'type': '
+type1'}, {'id': 2543, 'type': 'type1'}, {'id': 5714, 'type': 'type2'}, {'id': 8362, 'type': 'type1'}, {'id': 2586, 'type
+': 'type2'}, {'id': 1229, 'type': 'type1'}, {'id': 2565, 'type': 'type1'}, {'id': 5033, 'type': 'type2'}, {'id': 8405, '
+type': 'type1'}, {'id': 9123, 'type': 'type1'}] Total Packets: 17
+[20:11:38] [Device2Processor] [PROCESS] Device 2: Processed packets: [2865, 1209, 1319, 8306, 2800, 2069, 1426, 2746, 2543, 5714].
+[20:11:38] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs and Types):
+[{'id': 7310, 'type': 'type1'}, {'id': 8242, 'type': 'type1'}, {'id': 3753, 'type': 'type2'}, {'id': 1140, 'type': 'type
+2'}, {'id': 9384, 'type': 'type2'}, {'id': 5256, 'type': 'type2'}, {'id': 6075, 'type': 'type1'}, {'id': 2565, 'type': '
+type1'}, {'id': 7625, 'type': 'type2'}, {'id': 3921, 'type': 'type2'}, {'id': 2890, 'type': 'type2'}, {'id': 2637, 'type
+': 'type1'}, {'id': 8006, 'type': 'type1'}, {'id': 7340, 'type': 'type1'}, {'id': 1089, 'type': 'type2'}, {'id': 6967, '
+type': 'type2'}, {'id': 6491, 'type': 'type1'}, {'id': 9895, 'type': 'type1'}, {'id': 1045, 'type': 'type1'}, {'id': 703
+4, 'type': 'type2'}, {'id': 9559, 'type': 'type2'}, {'id': 9802, 'type': 'type2'}, {'id': 7786, 'type': 'type1'}, {'id':
+ 4469, 'type': 'type1'}, {'id': 2966, 'type': 'type1'}, {'id': 1307, 'type': 'type1'}, {'id': 8005, 'type': 'type2'}, {'
+id': 3556, 'type': 'type1'}, {'id': 8046, 'type': 'type1'}, {'id': 8567, 'type': 'type1'}, {'id': 7671, 'type': 'type2'}
+, {'id': 3077, 'type': 'type1'}, {'id': 1046, 'type': 'type2'}, {'id': 9839, 'type': 'type1'}, {'id': 4267, 'type': 'typ
+e2'}, {'id': 3934, 'type': 'type1'}, {'id': 6540, 'type': 'type2'}, {'id': 5959, 'type': 'type1'}, {'id': 6451, 'type': 
+'type2'}, {'id': 9255, 'type': 'type1'}, {'id': 5366, 'type': 'type1'}, {'id': 1394, 'type': 'type1'}, {'id': 3954, 'typ
+e': 'type2'}, {'id': 5994, 'type': 'type2'}, {'id': 4936, 'type': 'type1'}, {'id': 8335, 'type': 'type2'}, {'id': 5302, 
+'type': 'type1'}, {'id': 9066, 'type': 'type2'}, {'id': 9979, 'type': 'type2'}, {'id': 6999, 'type': 'type2'}, {'id': 41
+48, 'type': 'type1'}, {'id': 4557, 'type': 'type1'}, {'id': 5746, 'type': 'type1'}, {'id': 9328, 'type': 'type2'}, {'id'
+: 4563, 'type': 'type1'}, {'id': 8029, 'type': 'type2'}, {'id': 7596, 'type': 'type2'}, {'id': 7553, 'type': 'type1'}, {
+'id': 7459, 'type': 'type1'}, {'id': 7882, 'type': 'type2'}, {'id': 2270, 'type': 'type1'}, {'id': 7028, 'type': 'type1'
+}, {'id': 5069, 'type': 'type2'}, {'id': 5244, 'type': 'type2'}, {'id': 2425, 'type': 'type2'}, {'id': 5142, 'type': 'ty
+pe1'}, {'id': 7971, 'type': 'type1'}, {'id': 9648, 'type': 'type2'}] Total Packets: 68
+[20:11:38] [Device4Processor] [PROCESS] Device 4: Processed packets: [7310, 8242, 3753, 1140, 9384, 5256, 6075, 2565, 7625, 3921].
+[20:11:38] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs and Types):
+[{'id': 1426, 'type': 'type1'}, {'id': 1398, 'type': 'type1'}, {'id': 1424, 'type': 'type2'}, {'id': 2391, 'type': 'type
+1'}, {'id': 7627, 'type': 'type1'}, {'id': 2644, 'type': 'type2'}, {'id': 3592, 'type': 'type2'}, {'id': 4850, 'type': '
+type1'}, {'id': 8589, 'type': 'type1'}, {'id': 6763, 'type': 'type2'}, {'id': 5961, 'type': 'type1'}, {'id': 4179, 'type
+': 'type2'}, {'id': 2163, 'type': 'type1'}, {'id': 5327, 'type': 'type1'}, {'id': 3255, 'type': 'type1'}, {'id': 7300, '
+type': 'type2'}, {'id': 4414, 'type': 'type1'}, {'id': 7091, 'type': 'type1'}, {'id': 1569, 'type': 'type1'}, {'id': 348
+0, 'type': 'type2'}, {'id': 4140, 'type': 'type2'}, {'id': 9721, 'type': 'type1'}, {'id': 7346, 'type': 'type1'}, {'id':
+ 8520, 'type': 'type2'}, {'id': 2148, 'type': 'type2'}, {'id': 1958, 'type': 'type1'}, {'id': 3750, 'type': 'type1'}, {'
+id': 9201, 'type': 'type2'}, {'id': 5437, 'type': 'type2'}, {'id': 4010, 'type': 'type1'}, {'id': 4679, 'type': 'type2'}
+, {'id': 1489, 'type': 'type2'}, {'id': 9195, 'type': 'type2'}, {'id': 6237, 'type': 'type2'}] Total Packets: 34
+[20:11:38] [Device3Processor] [PROCESS] Device 3: Processed packets: [1426, 1398, 1424, 2391, 7627, 2644, 3592, 4850, 8589, 6763].
+[20:11:38] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[20:11:38] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[20:11:38] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[20:11:38] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:38] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:38] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:38] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[20:11:38] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[20:11:38] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[20:11:38] [Device1Sender] [INFO] Device 1: Sent 1 packets to the switch.
+[20:11:39] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:39] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:39] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:39] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[20:11:39] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[20:11:39] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[20:11:39] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[20:11:39] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[20:11:39] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:39] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[20:11:39] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:39] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:39] [Device2Sender] [INFO] Device 2: Sent 5 packets to the switch.
+[20:11:39] [Device3Sender] [INFO] Device 3: Sent 4 packets to the switch.
+[20:11:39] [Device4Sender] [INFO] Device 4: Sent 5 packets to the switch.
+[20:11:39] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs and Types):
+[{'id': 1790, 'type': 'type1'}, {'id': 1002, 'type': 'type1'}, {'id': 9460, 'type': 'type2'}, {'id': 3561, 'type': 'type
+1'}, {'id': 2399, 'type': 'type2'}, {'id': 9413, 'type': 'type1'}, {'id': 8604, 'type': 'type2'}, {'id': 7577, 'type': '
+type2'}, {'id': 6987, 'type': 'type2'}, {'id': 3920, 'type': 'type1'}, {'id': 1963, 'type': 'type1'}, {'id': 1992, 'type
+': 'type2'}, {'id': 1836, 'type': 'type2'}, {'id': 8143, 'type': 'type1'}, {'id': 1138, 'type': 'type1'}] Total Packets: 15
+[20:11:39] [Device1Processor] [PROCESS] Device 1: Processed packets: [1790, 1002, 9460, 3561, 2399, 9413, 8604, 7577, 6987, 3920].
+[20:11:39] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs and Types):
+[{'id': 8362, 'type': 'type1'}, {'id': 2586, 'type': 'type2'}, {'id': 1229, 'type': 'type1'}, {'id': 2565, 'type': 'type
+1'}, {'id': 5033, 'type': 'type2'}, {'id': 8405, 'type': 'type1'}, {'id': 9123, 'type': 'type1'}, {'id': 6032, 'type': '
+type2'}, {'id': 1030, 'type': 'type2'}, {'id': 1057, 'type': 'type1'}, {'id': 7180, 'type': 'type1'}, {'id': 5331, 'type
+': 'type2'}, {'id': 7631, 'type': 'type2'}, {'id': 3553, 'type': 'type1'}, {'id': 1785, 'type': 'type1'}, {'id': 8384, '
+type': 'type2'}, {'id': 5840, 'type': 'type1'}] Total Packets: 17
+[20:11:39] [Device2Processor] [PROCESS] Device 2: Processed packets: [8362, 2586, 1229, 2565, 5033, 8405, 9123, 6032, 1030, 1057].
+[20:11:39] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs and Types):
+[{'id': 2890, 'type': 'type2'}, {'id': 2637, 'type': 'type1'}, {'id': 8006, 'type': 'type1'}, {'id': 7340, 'type': 'type
+1'}, {'id': 1089, 'type': 'type2'}, {'id': 6967, 'type': 'type2'}, {'id': 6491, 'type': 'type1'}, {'id': 9895, 'type': '
+type1'}, {'id': 1045, 'type': 'type1'}, {'id': 7034, 'type': 'type2'}, {'id': 9559, 'type': 'type2'}, {'id': 9802, 'type
+': 'type2'}, {'id': 7786, 'type': 'type1'}, {'id': 4469, 'type': 'type1'}, {'id': 2966, 'type': 'type1'}, {'id': 1307, '
+type': 'type1'}, {'id': 8005, 'type': 'type2'}, {'id': 3556, 'type': 'type1'}, {'id': 8046, 'type': 'type1'}, {'id': 856
+7, 'type': 'type1'}, {'id': 7671, 'type': 'type2'}, {'id': 3077, 'type': 'type1'}, {'id': 1046, 'type': 'type2'}, {'id':
+ 9839, 'type': 'type1'}, {'id': 4267, 'type': 'type2'}, {'id': 3934, 'type': 'type1'}, {'id': 6540, 'type': 'type2'}, {'
+id': 5959, 'type': 'type1'}, {'id': 6451, 'type': 'type2'}, {'id': 9255, 'type': 'type1'}, {'id': 5366, 'type': 'type1'}
+, {'id': 1394, 'type': 'type1'}, {'id': 3954, 'type': 'type2'}, {'id': 5994, 'type': 'type2'}, {'id': 4936, 'type': 'typ
+e1'}, {'id': 8335, 'type': 'type2'}, {'id': 5302, 'type': 'type1'}, {'id': 9066, 'type': 'type2'}, {'id': 9979, 'type': 
+'type2'}, {'id': 6999, 'type': 'type2'}, {'id': 4148, 'type': 'type1'}, {'id': 4557, 'type': 'type1'}, {'id': 5746, 'typ
+e': 'type1'}, {'id': 9328, 'type': 'type2'}, {'id': 4563, 'type': 'type1'}, {'id': 8029, 'type': 'type2'}, {'id': 7596, 
+'type': 'type2'}, {'id': 7553, 'type': 'type1'}, {'id': 7459, 'type': 'type1'}, {'id': 7882, 'type': 'type2'}, {'id': 22
+70, 'type': 'type1'}, {'id': 7028, 'type': 'type1'}, {'id': 5069, 'type': 'type2'}, {'id': 5244, 'type': 'type2'}, {'id'
+: 2425, 'type': 'type2'}, {'id': 5142, 'type': 'type1'}, {'id': 7971, 'type': 'type1'}, {'id': 9648, 'type': 'type2'}, {
+'id': 8974, 'type': 'type1'}, {'id': 2032, 'type': 'type1'}, {'id': 6370, 'type': 'type2'}, {'id': 3659, 'type': 'type1'
+}, {'id': 9307, 'type': 'type1'}, {'id': 6034, 'type': 'type2'}, {'id': 8606, 'type': 'type1'}, {'id': 7452, 'type': 'ty
+pe2'}, {'id': 7893, 'type': 'type1'}] Total Packets: 67
+[20:11:39] [Device4Processor] [PROCESS] Device 4: Processed packets: [2890, 2637, 8006, 7340, 1089, 6967, 6491, 9895, 1045, 7034].
+[20:11:39] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs and Types):
+[{'id': 5961, 'type': 'type1'}, {'id': 4179, 'type': 'type2'}, {'id': 2163, 'type': 'type1'}, {'id': 5327, 'type': 'type
+1'}, {'id': 3255, 'type': 'type1'}, {'id': 7300, 'type': 'type2'}, {'id': 4414, 'type': 'type1'}, {'id': 7091, 'type': '
+type1'}, {'id': 1569, 'type': 'type1'}, {'id': 3480, 'type': 'type2'}, {'id': 4140, 'type': 'type2'}, {'id': 9721, 'type
+': 'type1'}, {'id': 7346, 'type': 'type1'}, {'id': 8520, 'type': 'type2'}, {'id': 2148, 'type': 'type2'}, {'id': 1958, '
+type': 'type1'}, {'id': 3750, 'type': 'type1'}, {'id': 9201, 'type': 'type2'}, {'id': 5437, 'type': 'type2'}, {'id': 401
+0, 'type': 'type1'}, {'id': 4679, 'type': 'type2'}, {'id': 1489, 'type': 'type2'}, {'id': 9195, 'type': 'type2'}, {'id':
+ 6237, 'type': 'type2'}, {'id': 5939, 'type': 'type1'}] Total Packets: 25
+[20:11:39] [Device3Processor] [PROCESS] Device 3: Processed packets: [5961, 4179, 2163, 5327, 3255, 7300, 4414, 7091, 1569, 3480].
+[20:11:39] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:39] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:39] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:39] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[20:11:39] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[20:11:39] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[20:11:39] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:39] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:39] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:39] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[20:11:39] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[20:11:39] [Device4AlertHandler] [CRITICAL] Device 4: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 2.
+[20:11:39] [Device1Sender] [INFO] Device 1: Sent 1 packets to the switch.
+[20:11:40] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:40] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:40] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:40] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[20:11:40] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[20:11:40] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[20:11:40] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 1.
+[20:11:40] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:40] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:40] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[20:11:40] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[20:11:40] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:40] [Device2Sender] [INFO] Device 2: Sent 5 packets to the switch.
+[20:11:40] [Device3Sender] [INFO] Device 3: Sent 4 packets to the switch.
+[20:11:40] [Device4Sender] [INFO] Device 4: Sent 5 packets to the switch.
+[20:11:40] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[20:11:40] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[20:11:40] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[20:11:40] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs and Types):
+[{'id': 1963, 'type': 'type1'}, {'id': 1992, 'type': 'type2'}, {'id': 1836, 'type': 'type2'}, {'id': 8143, 'type': 'type
+1'}, {'id': 1138, 'type': 'type1'}, {'id': 3374, 'type': 'type2'}, {'id': 9144, 'type': 'type2'}, {'id': 5462, 'type': '
+type1'}, {'id': 2942, 'type': 'type1'}, {'id': 9528, 'type': 'type2'}, {'id': 9751, 'type': 'type1'}, {'id': 1854, 'type
+': 'type2'}] Total Packets: 12
+[20:11:40] [Device1Processor] [PROCESS] Device 1: Processed packets: [1963, 1992, 1836, 8143, 1138, 3374, 9144, 5462, 2942, 9528].
+[20:11:40] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs and Types):
+[{'id': 7180, 'type': 'type1'}, {'id': 5331, 'type': 'type2'}, {'id': 7631, 'type': 'type2'}, {'id': 3553, 'type': 'type
+1'}, {'id': 1785, 'type': 'type1'}, {'id': 8384, 'type': 'type2'}, {'id': 5840, 'type': 'type1'}, {'id': 5027, 'type': '
+type2'}, {'id': 4623, 'type': 'type2'}, {'id': 8597, 'type': 'type2'}, {'id': 3253, 'type': 'type1'}, {'id': 1870, 'type
+': 'type2'}, {'id': 7893, 'type': 'type2'}, {'id': 7726, 'type': 'type1'}] Total Packets: 14
+[20:11:40] [Device2Processor] [PROCESS] Device 2: Processed packets: [7180, 5331, 7631, 3553, 1785, 8384, 5840, 5027, 4623, 8597].
+[20:11:40] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs and Types):
+[{'id': 9559, 'type': 'type2'}, {'id': 9802, 'type': 'type2'}, {'id': 7786, 'type': 'type1'}, {'id': 4469, 'type': 'type
+1'}, {'id': 2966, 'type': 'type1'}, {'id': 1307, 'type': 'type1'}, {'id': 8005, 'type': 'type2'}, {'id': 3556, 'type': '
+type1'}, {'id': 8046, 'type': 'type1'}, {'id': 8567, 'type': 'type1'}, {'id': 7671, 'type': 'type2'}, {'id': 3077, 'type
+': 'type1'}, {'id': 1046, 'type': 'type2'}, {'id': 9839, 'type': 'type1'}, {'id': 4267, 'type': 'type2'}, {'id': 3934, '
+type': 'type1'}, {'id': 6540, 'type': 'type2'}, {'id': 5959, 'type': 'type1'}, {'id': 6451, 'type': 'type2'}, {'id': 925
+5, 'type': 'type1'}, {'id': 5366, 'type': 'type1'}, {'id': 1394, 'type': 'type1'}, {'id': 3954, 'type': 'type2'}, {'id':
+ 5994, 'type': 'type2'}, {'id': 4936, 'type': 'type1'}, {'id': 8335, 'type': 'type2'}, {'id': 5302, 'type': 'type1'}, {'
+id': 9066, 'type': 'type2'}, {'id': 9979, 'type': 'type2'}, {'id': 6999, 'type': 'type2'}, {'id': 4148, 'type': 'type1'}
+, {'id': 4557, 'type': 'type1'}, {'id': 5746, 'type': 'type1'}, {'id': 9328, 'type': 'type2'}, {'id': 4563, 'type': 'typ
+e1'}, {'id': 8029, 'type': 'type2'}, {'id': 7596, 'type': 'type2'}, {'id': 7553, 'type': 'type1'}, {'id': 7459, 'type': 
+'type1'}, {'id': 7882, 'type': 'type2'}, {'id': 2270, 'type': 'type1'}, {'id': 7028, 'type': 'type1'}, {'id': 5069, 'typ
+e': 'type2'}, {'id': 5244, 'type': 'type2'}, {'id': 2425, 'type': 'type2'}, {'id': 5142, 'type': 'type1'}, {'id': 7971, 
+'type': 'type1'}, {'id': 9648, 'type': 'type2'}, {'id': 8974, 'type': 'type1'}, {'id': 2032, 'type': 'type1'}, {'id': 63
+70, 'type': 'type2'}, {'id': 3659, 'type': 'type1'}, {'id': 9307, 'type': 'type1'}, {'id': 6034, 'type': 'type2'}, {'id'
+: 8606, 'type': 'type1'}, {'id': 7452, 'type': 'type2'}, {'id': 7893, 'type': 'type1'}, {'id': 3770, 'type': 'type2'}, {
+'id': 9368, 'type': 'type1'}, {'id': 5005, 'type': 'type1'}, {'id': 1634, 'type': 'type2'}, {'id': 7233, 'type': 'type2'
+}, {'id': 1829, 'type': 'type1'}, {'id': 8671, 'type': 'type1'}, {'id': 1431, 'type': 'type1'}, {'id': 1434, 'type': 'ty
+pe2'}, {'id': 1957, 'type': 'type2'}, {'id': 3060, 'type': 'type2'}, {'id': 5476, 'type': 'type1'}, {'id': 6617, 'type':
+ 'type1'}, {'id': 7453, 'type': 'type2'}, {'id': 2800, 'type': 'type2'}, {'id': 8079, 'type': 'type2'}, {'id': 9201, 'ty
+pe': 'type1'}] Total Packets: 74
+[20:11:40] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:40] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:40] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:40] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs and Types):
+[{'id': 4140, 'type': 'type2'}, {'id': 9721, 'type': 'type1'}, {'id': 7346, 'type': 'type1'}, {'id': 8520, 'type': 'type
+2'}, {'id': 2148, 'type': 'type2'}, {'id': 1958, 'type': 'type1'}, {'id': 3750, 'type': 'type1'}, {'id': 9201, 'type': '
+type2'}, {'id': 5437, 'type': 'type2'}, {'id': 4010, 'type': 'type1'}, {'id': 4679, 'type': 'type2'}, {'id': 1489, 'type
+': 'type2'}, {'id': 9195, 'type': 'type2'}, {'id': 6237, 'type': 'type2'}, {'id': 5939, 'type': 'type1'}, {'id': 8726, '
+type': 'type1'}, {'id': 4188, 'type': 'type1'}, {'id': 7923, 'type': 'type2'}, {'id': 8347, 'type': 'type2'}, {'id': 146
+6, 'type': 'type1'}, {'id': 2895, 'type': 'type2'}, {'id': 5005, 'type': 'type1'}, {'id': 9589, 'type': 'type2'}, {'id':
+ 4614, 'type': 'type1'}, {'id': 8321, 'type': 'type2'}, {'id': 9644, 'type': 'type1'}, {'id': 7876, 'type': 'type1'}, {'
+id': 3073, 'type': 'type2'}, {'id': 5668, 'type': 'type1'}, {'id': 3919, 'type': 'type1'}] Total Packets: 30
+[20:11:40] [Device4Processor] [PROCESS] Device 4: Processed packets: [9559, 9802, 7786, 4469, 2966, 1307, 8005, 3556, 8046, 8567].
+[20:11:40] [Device3Processor] [PROCESS] Device 3: Processed packets: [4140, 9721, 7346, 8520, 2148, 1958, 3750, 9201, 5437, 4010].
+[20:11:40] [Device1Sender] [INFO] Device 1: Sent 2 packets to the switch.
+[20:11:41] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[20:11:41] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[20:11:41] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 3.
+[20:11:41] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[20:11:41] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[20:11:41] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[20:11:41] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[20:11:41] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[20:11:41] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[20:11:41] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:41] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:41] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:41] [Device2Sender] [INFO] Device 2: Sent 6 packets to the switch.
+[20:11:41] [Device3Sender] [INFO] Device 3: Sent 6 packets to the switch.
+[20:11:41] [Device4Sender] [INFO] Device 4: Sent 7 packets to the switch.
+[20:11:41] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs and Types):
+[{'id': 9751, 'type': 'type1'}, {'id': 1854, 'type': 'type2'}, {'id': 2664, 'type': 'type1'}, {'id': 9018, 'type': 'type
+2'}, {'id': 9362, 'type': 'type1'}, {'id': 1929, 'type': 'type2'}, {'id': 3048, 'type': 'type2'}, {'id': 9775, 'type': '
+type1'}] Total Packets: 8
+[20:11:41] [Device1Processor] [PROCESS] Device 1: Processed packets: [9751, 1854, 2664, 9018, 9362, 1929, 3048, 9775].
+[20:11:41] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs and Types):
+[{'id': 3253, 'type': 'type1'}, {'id': 1870, 'type': 'type2'}, {'id': 7893, 'type': 'type2'}, {'id': 7726, 'type': 'type
+1'}, {'id': 2632, 'type': 'type1'}, {'id': 2736, 'type': 'type1'}, {'id': 2114, 'type': 'type1'}, {'id': 4329, 'type': '
+type2'}, {'id': 6200, 'type': 'type2'}, {'id': 3812, 'type': 'type1'}, {'id': 2350, 'type': 'type2'}, {'id': 7161, 'type
+': 'type1'}] Total Packets: 12
+[20:11:41] [Device2Processor] [PROCESS] Device 2: Processed packets: [3253, 1870, 7893, 7726, 2632, 2736, 2114, 4329, 6200, 3812].
+[20:11:41] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:41] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs and Types):
+[{'id': 7671, 'type': 'type2'}, {'id': 3077, 'type': 'type1'}, {'id': 1046, 'type': 'type2'}, {'id': 9839, 'type': 'type
+1'}, {'id': 4267, 'type': 'type2'}, {'id': 3934, 'type': 'type1'}, {'id': 6540, 'type': 'type2'}, {'id': 5959, 'type': '
+type1'}, {'id': 6451, 'type': 'type2'}, {'id': 9255, 'type': 'type1'}, {'id': 5366, 'type': 'type1'}, {'id': 1394, 'type
+': 'type1'}, {'id': 3954, 'type': 'type2'}, {'id': 5994, 'type': 'type2'}, {'id': 4936, 'type': 'type1'}, {'id': 8335, '
+type': 'type2'}, {'id': 5302, 'type': 'type1'}, {'id': 9066, 'type': 'type2'}, {'id': 9979, 'type': 'type2'}, {'id': 699
+9, 'type': 'type2'}, {'id': 4148, 'type': 'type1'}, {'id': 4557, 'type': 'type1'}, {'id': 5746, 'type': 'type1'}, {'id':
+ 9328, 'type': 'type2'}, {'id': 4563, 'type': 'type1'}, {'id': 8029, 'type': 'type2'}, {'id': 7596, 'type': 'type2'}, {'
+id': 7553, 'type': 'type1'}, {'id': 7459, 'type': 'type1'}, {'id': 7882, 'type': 'type2'}, {'id': 2270, 'type': 'type1'}
+, {'id': 7028, 'type': 'type1'}, {'id': 5069, 'type': 'type2'}, {'id': 5244, 'type': 'type2'}, {'id': 2425, 'type': 'typ
+e2'}, {'id': 5142, 'type': 'type1'}, {'id': 7971, 'type': 'type1'}, {'id': 9648, 'type': 'type2'}, {'id': 8974, 'type': 
+'type1'}, {'id': 2032, 'type': 'type1'}, {'id': 6370, 'type': 'type2'}, {'id': 3659, 'type': 'type1'}, {'id': 9307, 'typ
+e': 'type1'}, {'id': 6034, 'type': 'type2'}, {'id': 8606, 'type': 'type1'}, {'id': 7452, 'type': 'type2'}, {'id': 7893, 
+'type': 'type1'}, {'id': 3770, 'type': 'type2'}, {'id': 9368, 'type': 'type1'}, {'id': 5005, 'type': 'type1'}, {'id': 16
+34, 'type': 'type2'}, {'id': 7233, 'type': 'type2'}, {'id': 1829, 'type': 'type1'}, {'id': 8671, 'type': 'type1'}, {'id'
+: 1431, 'type': 'type1'}, {'id': 1434, 'type': 'type2'}, {'id': 1957, 'type': 'type2'}, {'id': 3060, 'type': 'type2'}, {
+'id': 5476, 'type': 'type1'}, {'id': 6617, 'type': 'type1'}, {'id': 7453, 'type': 'type2'}, {'id': 2800, 'type': 'type2'
+}, {'id': 8079, 'type': 'type2'}, {'id': 9201, 'type': 'type1'}, {'id': 7211, 'type': 'type1'}, {'id': 7725, 'type': 'ty
+pe2'}, {'id': 5893, 'type': 'type2'}, {'id': 6465, 'type': 'type1'}, {'id': 2159, 'type': 'type1'}, {'id': 9070, 'type':
+ 'type2'}, {'id': 8733, 'type': 'type2'}, {'id': 9427, 'type': 'type2'}, {'id': 5441, 'type': 'type1'}, {'id': 3935, 'ty
+pe': 'type1'}] Total Packets: 74
+[20:11:41] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:41] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:41] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs and Types):
+[{'id': 4679, 'type': 'type2'}, {'id': 1489, 'type': 'type2'}, {'id': 9195, 'type': 'type2'}, {'id': 6237, 'type': 'type
+2'}, {'id': 5939, 'type': 'type1'}, {'id': 8726, 'type': 'type1'}, {'id': 4188, 'type': 'type1'}, {'id': 7923, 'type': '
+type2'}, {'id': 8347, 'type': 'type2'}, {'id': 1466, 'type': 'type1'}, {'id': 2895, 'type': 'type2'}, {'id': 5005, 'type
+': 'type1'}, {'id': 9589, 'type': 'type2'}, {'id': 4614, 'type': 'type1'}, {'id': 8321, 'type': 'type2'}, {'id': 9644, '
+type': 'type1'}, {'id': 7876, 'type': 'type1'}, {'id': 3073, 'type': 'type2'}, {'id': 5668, 'type': 'type1'}, {'id': 391
+9, 'type': 'type1'}, {'id': 2073, 'type': 'type1'}, {'id': 4200, 'type': 'type2'}, {'id': 4796, 'type': 'type1'}, {'id':
+ 4424, 'type': 'type1'}, {'id': 5119, 'type': 'type1'}, {'id': 4469, 'type': 'type2'}] Total Packets: 26
+[20:11:41] [Device4Processor] [PROCESS] Device 4: Processed packets: [7671, 3077, 1046, 9839, 4267, 3934, 6540, 5959, 6451, 9255].
+[20:11:41] [Device3Processor] [PROCESS] Device 3: Processed packets: [4679, 1489, 9195, 6237, 5939, 8726, 4188, 7923, 8347, 1466].
+[20:11:41] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[20:11:41] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[20:11:41] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 3 to 1.
+[20:11:41] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[20:11:41] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[20:11:41] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 1.
+[20:11:41] [Device1Sender] [INFO] Device 1: Sent 2 packets to the switch.
+[20:11:42] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 4.
+[20:11:42] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 4.
+[20:11:42] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 4.
+[20:11:42] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[20:11:42] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[20:11:42] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 2.
+[20:11:42] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[20:11:42] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[20:11:42] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 2.
+[20:11:42] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:42] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:42] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:42] [Device2Sender] [INFO] Device 2: Sent 7 packets to the switch.
+[20:11:42] [Device3Sender] [INFO] Device 3: Sent 7 packets to the switch.
+[20:11:42] [Device4Sender] [INFO] Device 4: Sent 8 packets to the switch.
+[20:11:42] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs and Types):
+[{'id': 1145, 'type': 'type2'}, {'id': 5266, 'type': 'type1'}, {'id': 8241, 'type': 'type2'}, {'id': 9851, 'type': 'type
+1'}, {'id': 1069, 'type': 'type2'}, {'id': 2899, 'type': 'type1'}, {'id': 4823, 'type': 'type2'}] Total Packets: 7
+[20:11:42] [Device1Processor] [PROCESS] Device 1: Processed packets: [1145, 5266, 8241, 9851, 1069, 2899, 4823].
+[20:11:42] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs and Types):
+[{'id': 2350, 'type': 'type2'}, {'id': 7161, 'type': 'type1'}, {'id': 5557, 'type': 'type1'}, {'id': 4278, 'type': 'type
+1'}, {'id': 8843, 'type': 'type2'}, {'id': 8732, 'type': 'type1'}, {'id': 7669, 'type': 'type2'}, {'id': 7853, 'type': '
+type2'}] Total Packets: 8
+[20:11:42] [Device2Processor] [PROCESS] Device 2: Processed packets: [2350, 7161, 5557, 4278, 8843, 8732, 7669, 7853].
+[20:11:42] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:42] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:42] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:42] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs and Types):
+[{'id': 5366, 'type': 'type1'}, {'id': 1394, 'type': 'type1'}, {'id': 3954, 'type': 'type2'}, {'id': 5994, 'type': 'type
+2'}, {'id': 4936, 'type': 'type1'}, {'id': 8335, 'type': 'type2'}, {'id': 5302, 'type': 'type1'}, {'id': 9066, 'type': '
+type2'}, {'id': 9979, 'type': 'type2'}, {'id': 6999, 'type': 'type2'}, {'id': 4148, 'type': 'type1'}, {'id': 4557, 'type
+': 'type1'}, {'id': 5746, 'type': 'type1'}, {'id': 9328, 'type': 'type2'}, {'id': 4563, 'type': 'type1'}, {'id': 8029, '
+type': 'type2'}, {'id': 7596, 'type': 'type2'}, {'id': 7553, 'type': 'type1'}, {'id': 7459, 'type': 'type1'}, {'id': 788
+2, 'type': 'type2'}, {'id': 2270, 'type': 'type1'}, {'id': 7028, 'type': 'type1'}, {'id': 5069, 'type': 'type2'}, {'id':
+ 5244, 'type': 'type2'}, {'id': 2425, 'type': 'type2'}, {'id': 5142, 'type': 'type1'}, {'id': 7971, 'type': 'type1'}, {'
+id': 9648, 'type': 'type2'}, {'id': 8974, 'type': 'type1'}, {'id': 2032, 'type': 'type1'}, {'id': 6370, 'type': 'type2'}
+, {'id': 3659, 'type': 'type1'}, {'id': 9307, 'type': 'type1'}, {'id': 6034, 'type': 'type2'}, {'id': 8606, 'type': 'typ
+e1'}, {'id': 7452, 'type': 'type2'}, {'id': 7893, 'type': 'type1'}, {'id': 3770, 'type': 'type2'}, {'id': 9368, 'type': 
+'type1'}, {'id': 5005, 'type': 'type1'}, {'id': 1634, 'type': 'type2'}, {'id': 7233, 'type': 'type2'}, {'id': 1829, 'typ
+e': 'type1'}, {'id': 8671, 'type': 'type1'}, {'id': 1431, 'type': 'type1'}, {'id': 1434, 'type': 'type2'}, {'id': 1957, 
+'type': 'type2'}, {'id': 3060, 'type': 'type2'}, {'id': 5476, 'type': 'type1'}, {'id': 6617, 'type': 'type1'}, {'id': 74
+53, 'type': 'type2'}, {'id': 2800, 'type': 'type2'}, {'id': 8079, 'type': 'type2'}, {'id': 9201, 'type': 'type1'}, {'id'
+: 7211, 'type': 'type1'}, {'id': 7725, 'type': 'type2'}, {'id': 5893, 'type': 'type2'}, {'id': 6465, 'type': 'type1'}, {
+'id': 2159, 'type': 'type1'}, {'id': 9070, 'type': 'type2'}, {'id': 8733, 'type': 'type2'}, {'id': 9427, 'type': 'type2'
+}, {'id': 5441, 'type': 'type1'}, {'id': 3935, 'type': 'type1'}, {'id': 1941, 'type': 'type2'}, {'id': 8952, 'type': 'ty
+pe2'}, {'id': 5856, 'type': 'type1'}, {'id': 2223, 'type': 'type2'}, {'id': 2036, 'type': 'type1'}, {'id': 2325, 'type':
+ 'type2'}, {'id': 3841, 'type': 'type1'}, {'id': 5026, 'type': 'type2'}, {'id': 4606, 'type': 'type1'}, {'id': 4448, 'ty
+pe': 'type1'}] Total Packets: 74
+[20:11:42] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs and Types):
+[{'id': 2895, 'type': 'type2'}, {'id': 5005, 'type': 'type1'}, {'id': 9589, 'type': 'type2'}, {'id': 4614, 'type': 'type
+1'}, {'id': 8321, 'type': 'type2'}, {'id': 9644, 'type': 'type1'}, {'id': 7876, 'type': 'type1'}, {'id': 3073, 'type': '
+type2'}, {'id': 5668, 'type': 'type1'}, {'id': 3919, 'type': 'type1'}, {'id': 2073, 'type': 'type1'}, {'id': 4200, 'type
+': 'type2'}, {'id': 4796, 'type': 'type1'}, {'id': 4424, 'type': 'type1'}, {'id': 5119, 'type': 'type1'}, {'id': 4469, '
+type': 'type2'}, {'id': 6153, 'type': 'type1'}, {'id': 4510, 'type': 'type1'}, {'id': 4302, 'type': 'type2'}, {'id': 655
+2, 'type': 'type1'}, {'id': 1700, 'type': 'type2'}, {'id': 7555, 'type': 'type1'}] Total Packets: 22
+[20:11:42] [Device4Processor] [PROCESS] Device 4: Processed packets: [5366, 1394, 3954, 5994, 4936, 8335, 5302, 9066, 9979, 6999].
+[20:11:42] [Device3Processor] [PROCESS] Device 3: Processed packets: [2895, 5005, 9589, 4614, 8321, 9644, 7876, 3073, 5668, 3919].
+[20:11:43] [Device1Sender] [INFO] Device 1: Sent 4 packets to the switch.
+[20:11:43] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 5.
+[20:11:43] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 5.
+[20:11:43] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 5.
+[20:11:43] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[20:11:43] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[20:11:43] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 3.
+[20:11:43] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[20:11:43] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:43] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 3.
+[20:11:43] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 3.
+[20:11:43] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:43] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:43] [Device2Sender] [INFO] Device 2: Sent 9 packets to the switch.
+[20:11:43] [Device3Sender] [INFO] Device 3: Sent 9 packets to the switch.
+[20:11:43] [Device4Sender] [INFO] Device 4: Sent 11 packets to the switch.
+[20:11:43] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs and Types):
+[{'id': 6428, 'type': 'type1'}, {'id': 7299, 'type': 'type2'}, {'id': 7169, 'type': 'type2'}, {'id': 8651, 'type': 'type
+1'}, {'id': 8607, 'type': 'type2'}, {'id': 4747, 'type': 'type1'}, {'id': 8190, 'type': 'type1'}, {'id': 7027, 'type': '
+type2'}] Total Packets: 8
+[20:11:43] [Device1Processor] [PROCESS] Device 1: Processed packets: [6428, 7299, 7169, 8651, 8607, 4747, 8190, 7027].
+[20:11:43] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs and Types):
+[{'id': 7633, 'type': 'type1'}, {'id': 4069, 'type': 'type2'}, {'id': 3461, 'type': 'type2'}, {'id': 3049, 'type': 'type
+2'}, {'id': 6628, 'type': 'type2'}, {'id': 2239, 'type': 'type1'}] Total Packets: 6
+[20:11:43] [Device2Processor] [PROCESS] Device 2: Processed packets: [7633, 4069, 3461, 3049, 6628, 2239].
+[20:11:43] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs and Types):
+[{'id': 4148, 'type': 'type1'}, {'id': 4557, 'type': 'type1'}, {'id': 5746, 'type': 'type1'}, {'id': 9328, 'type': 'type
+2'}, {'id': 4563, 'type': 'type1'}, {'id': 8029, 'type': 'type2'}, {'id': 7596, 'type': 'type2'}, {'id': 7553, 'type': '
+type1'}, {'id': 7459, 'type': 'type1'}, {'id': 7882, 'type': 'type2'}, {'id': 2270, 'type': 'type1'}, {'id': 7028, 'type
+': 'type1'}, {'id': 5069, 'type': 'type2'}, {'id': 5244, 'type': 'type2'}, {'id': 2425, 'type': 'type2'}, {'id': 5142, '
+type': 'type1'}, {'id': 7971, 'type': 'type1'}, {'id': 9648, 'type': 'type2'}, {'id': 8974, 'type': 'type1'}, {'id': 203
+2, 'type': 'type1'}, {'id': 6370, 'type': 'type2'}, {'id': 3659, 'type': 'type1'}, {'id': 9307, 'type': 'type1'}, {'id':
+ 6034, 'type': 'type2'}, {'id': 8606, 'type': 'type1'}, {'id': 7452, 'type': 'type2'}, {'id': 7893, 'type': 'type1'}, {'
+id': 3770, 'type': 'type2'}, {'id': 9368, 'type': 'type1'}, {'id': 5005, 'type': 'type1'}, {'id': 1634, 'type': 'type2'}
+, {'id': 7233, 'type': 'type2'}, {'id': 1829, 'type': 'type1'}, {'id': 8671, 'type': 'type1'}, {'id': 1431, 'type': 'typ
+e1'}, {'id': 1434, 'type': 'type2'}, {'id': 1957, 'type': 'type2'}, {'id': 3060, 'type': 'type2'}, {'id': 5476, 'type': 
+'type1'}, {'id': 6617, 'type': 'type1'}, {'id': 7453, 'type': 'type2'}, {'id': 2800, 'type': 'type2'}, {'id': 8079, 'typ
+e': 'type2'}, {'id': 9201, 'type': 'type1'}, {'id': 7211, 'type': 'type1'}, {'id': 7725, 'type': 'type2'}, {'id': 5893, 
+'type': 'type2'}, {'id': 6465, 'type': 'type1'}, {'id': 2159, 'type': 'type1'}, {'id': 9070, 'type': 'type2'}, {'id': 87
+33, 'type': 'type2'}, {'id': 9427, 'type': 'type2'}, {'id': 5441, 'type': 'type1'}, {'id': 3935, 'type': 'type1'}, {'id'
+: 1941, 'type': 'type2'}, {'id': 8952, 'type': 'type2'}, {'id': 5856, 'type': 'type1'}, {'id': 2223, 'type': 'type2'}, {
+'id': 2036, 'type': 'type1'}, {'id': 2325, 'type': 'type2'}, {'id': 3841, 'type': 'type1'}, {'id': 5026, 'type': 'type2'
+}, {'id': 4606, 'type': 'type1'}, {'id': 4448, 'type': 'type1'}, {'id': 7734, 'type': 'type1'}, {'id': 5121, 'type': 'ty
+pe2'}, {'id': 3737, 'type': 'type1'}, {'id': 6984, 'type': 'type2'}, {'id': 3221, 'type': 'type1'}, {'id': 4147, 'type':
+ 'type2'}, {'id': 3271, 'type': 'type2'}, {'id': 7355, 'type': 'type2'}, {'id': 3165, 'type': 'type1'}] Total Packets: 73
+[20:11:43] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs and Types):
+[{'id': 2073, 'type': 'type1'}, {'id': 4200, 'type': 'type2'}, {'id': 4796, 'type': 'type1'}, {'id': 4424, 'type': 'type
+1'}, {'id': 5119, 'type': 'type1'}, {'id': 4469, 'type': 'type2'}, {'id': 6153, 'type': 'type1'}, {'id': 4510, 'type': '
+type1'}, {'id': 4302, 'type': 'type2'}, {'id': 6552, 'type': 'type1'}, {'id': 1700, 'type': 'type2'}, {'id': 7555, 'type
+': 'type1'}, {'id': 7209, 'type': 'type1'}, {'id': 2781, 'type': 'type2'}, {'id': 6913, 'type': 'type2'}, {'id': 9617, '
+type': 'type1'}] Total Packets: 16
+[20:11:43] [Device4Processor] [PROCESS] Device 4: Processed packets: [4148, 4557, 5746, 9328, 4563, 8029, 7596, 7553, 7459, 7882].
+[20:11:43] [Device3Processor] [PROCESS] Device 3: Processed packets: [2073, 4200, 4796, 4424, 5119, 4469, 6153, 4510, 4302, 6552].
+[20:11:43] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:43] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:43] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:43] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[20:11:43] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[20:11:43] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 2.
+[20:11:43] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:43] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:43] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:44] [Device1Sender] [INFO] Device 1: Sent 6 packets to the switch.
+[20:11:44] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:44] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:44] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:44] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[20:11:44] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[20:11:44] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 4.
+[20:11:44] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 4.
+[20:11:44] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:44] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 4.
+[20:11:44] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:44] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 4.
+[20:11:44] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:44] [Device2Sender] [INFO] Device 2: Sent 7 packets to the switch.
+[20:11:44] [Device3Sender] [INFO] Device 3: Sent 7 packets to the switch.
+[20:11:44] [Device4Sender] [INFO] Device 4: Sent 10 packets to the switch.
+[20:11:44] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs and Types):
+[{'id': 1745, 'type': 'type2'}, {'id': 6979, 'type': 'type1'}, {'id': 8648, 'type': 'type1'}, {'id': 3442, 'type': 'type
+2'}, {'id': 4381, 'type': 'type2'}, {'id': 8060, 'type': 'type1'}, {'id': 9121, 'type': 'type1'}, {'id': 1023, 'type': '
+type1'}, {'id': 6614, 'type': 'type2'}, {'id': 5155, 'type': 'type2'}, {'id': 4343, 'type': 'type1'}, {'id': 2603, 'type
+': 'type2'}, {'id': 7378, 'type': 'type2'}, {'id': 4606, 'type': 'type1'}] Total Packets: 14
+[20:11:44] [Device1Processor] [PROCESS] Device 1: Processed packets: [1745, 6979, 8648, 3442, 4381, 8060, 9121, 1023, 6614, 5155].
+[20:11:44] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs and Types):
+[{'id': 4310, 'type': 'type2'}, {'id': 6373, 'type': 'type2'}, {'id': 9278, 'type': 'type2'}, {'id': 3142, 'type': 'type
+1'}, {'id': 9287, 'type': 'type1'}, {'id': 5764, 'type': 'type2'}, {'id': 2615, 'type': 'type2'}, {'id': 9621, 'type': '
+type1'}, {'id': 2873, 'type': 'type2'}, {'id': 8431, 'type': 'type1'}] Total Packets: 10
+[20:11:44] [Device2Processor] [PROCESS] Device 2: Processed packets: [4310, 6373, 9278, 3142, 9287, 5764, 2615, 9621, 2873, 8431].
+[20:11:44] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs and Types):
+[{'id': 2270, 'type': 'type1'}, {'id': 7028, 'type': 'type1'}, {'id': 5069, 'type': 'type2'}, {'id': 5244, 'type': 'type
+2'}, {'id': 2425, 'type': 'type2'}, {'id': 5142, 'type': 'type1'}, {'id': 7971, 'type': 'type1'}, {'id': 9648, 'type': '
+type2'}, {'id': 8974, 'type': 'type1'}, {'id': 2032, 'type': 'type1'}, {'id': 6370, 'type': 'type2'}, {'id': 3659, 'type
+': 'type1'}, {'id': 9307, 'type': 'type1'}, {'id': 6034, 'type': 'type2'}, {'id': 8606, 'type': 'type1'}, {'id': 7452, '
+type': 'type2'}, {'id': 7893, 'type': 'type1'}, {'id': 3770, 'type': 'type2'}, {'id': 9368, 'type': 'type1'}, {'id': 500
+5, 'type': 'type1'}, {'id': 1634, 'type': 'type2'}, {'id': 7233, 'type': 'type2'}, {'id': 1829, 'type': 'type1'}, {'id':
+ 8671, 'type': 'type1'}, {'id': 1431, 'type': 'type1'}, {'id': 1434, 'type': 'type2'}, {'id': 1957, 'type': 'type2'}, {'
+id': 3060, 'type': 'type2'}, {'id': 5476, 'type': 'type1'}, {'id': 6617, 'type': 'type1'}, {'id': 7453, 'type': 'type2'}
+, {'id': 2800, 'type': 'type2'}, {'id': 8079, 'type': 'type2'}, {'id': 9201, 'type': 'type1'}, {'id': 7211, 'type': 'typ
+e1'}, {'id': 7725, 'type': 'type2'}, {'id': 5893, 'type': 'type2'}, {'id': 6465, 'type': 'type1'}, {'id': 2159, 'type': 
+'type1'}, {'id': 9070, 'type': 'type2'}, {'id': 8733, 'type': 'type2'}, {'id': 9427, 'type': 'type2'}, {'id': 5441, 'typ
+e': 'type1'}, {'id': 3935, 'type': 'type1'}, {'id': 1941, 'type': 'type2'}, {'id': 8952, 'type': 'type2'}, {'id': 5856, 
+'type': 'type1'}, {'id': 2223, 'type': 'type2'}, {'id': 2036, 'type': 'type1'}, {'id': 2325, 'type': 'type2'}, {'id': 38
+41, 'type': 'type1'}, {'id': 5026, 'type': 'type2'}, {'id': 4606, 'type': 'type1'}, {'id': 4448, 'type': 'type1'}, {'id'
+: 7734, 'type': 'type1'}, {'id': 5121, 'type': 'type2'}, {'id': 3737, 'type': 'type1'}, {'id': 6984, 'type': 'type2'}, {
+'id': 3221, 'type': 'type1'}, {'id': 4147, 'type': 'type2'}, {'id': 3271, 'type': 'type2'}, {'id': 7355, 'type': 'type2'
+}, {'id': 3165, 'type': 'type1'}, {'id': 3588, 'type': 'type2'}, {'id': 3153, 'type': 'type1'}, {'id': 7707, 'type': 'ty
+pe2'}, {'id': 2484, 'type': 'type2'}, {'id': 9608, 'type': 'type2'}] Total Packets: 68
+[20:11:44] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs and Types):
+[{'id': 1700, 'type': 'type2'}, {'id': 7555, 'type': 'type1'}, {'id': 7209, 'type': 'type1'}, {'id': 2781, 'type': 'type
+2'}, {'id': 6913, 'type': 'type2'}, {'id': 9617, 'type': 'type1'}, {'id': 3540, 'type': 'type2'}, {'id': 4941, 'type': '
+type1'}, {'id': 8263, 'type': 'type2'}, {'id': 1479, 'type': 'type1'}, {'id': 8879, 'type': 'type1'}, {'id': 7453, 'type
+': 'type2'}, {'id': 8332, 'type': 'type1'}, {'id': 1045, 'type': 'type1'}, {'id': 6463, 'type': 'type2'}, {'id': 8569, '
+type': 'type1'}] Total Packets: 16
+[20:11:44] [Device4Processor] [PROCESS] Device 4: Processed packets: [2270, 7028, 5069, 5244, 2425, 5142, 7971, 9648, 8974, 2032].
+[20:11:44] [Device3Processor] [PROCESS] Device 3: Processed packets: [1700, 7555, 7209, 2781, 6913, 9617, 3540, 4941, 8263, 1479].
+[20:11:44] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:44] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:44] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:44] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:44] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:44] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:45] [Device1Sender] [INFO] Device 1: Sent 8 packets to the switch.
+[20:11:45] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[20:11:45] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[20:11:45] [Device1AlertHandler] [WARNING] Device 1: Received BACKPRESSURE signal. Slowing down transmission toDevice 2 to 2.
+[20:11:45] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:45] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:45] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 1 to 2.
+[20:11:45] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[20:11:45] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[20:11:45] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 3 to 5.
+[20:11:45] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 2 to 3.
+[20:11:45] [Device2AlertHandler] [INFO] Device 2: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:45] [Device3AlertHandler] [INFO] Device 3: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:45] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 3 to 5.
+[20:11:45] [Device4AlertHandler] [INFO] Device 4: Received RESTORE signal. Speeding up transmission to Device 3 to 5.
+[20:11:45] [Device1AlertHandler] [INFO] Device 1: Received RESTORE signal. Speeding up transmission to Device 4 to 1.
+[20:11:45] [Device2Sender] [INFO] Device 2: Sent 8 packets to the switch.
+[20:11:45] [Device3Sender] [INFO] Device 3: Sent 6 packets to the switch.
+[20:11:45] [Device4Sender] [INFO] Device 4: Sent 10 packets to the switch.
+[20:11:45] [Device1Processor] [INFO] Buffer Status: Device 1: Buffer Content (IDs and Types):
+[{'id': 4343, 'type': 'type1'}, {'id': 2603, 'type': 'type2'}, {'id': 7378, 'type': 'type2'}, {'id': 4606, 'type': 'type
+1'}, {'id': 4894, 'type': 'type2'}, {'id': 3348, 'type': 'type1'}, {'id': 4565, 'type': 'type2'}, {'id': 3792, 'type': '
+type2'}, {'id': 6606, 'type': 'type1'}, {'id': 3532, 'type': 'type2'}, {'id': 3333, 'type': 'type1'}, {'id': 8572, 'type
+': 'type2'}] Total Packets: 12
+[20:11:45] [Device1Processor] [PROCESS] Device 1: Processed packets: [4343, 2603, 7378, 4606, 4894, 3348, 4565, 3792, 6606, 3532].
+[20:11:45] [Device2Processor] [INFO] Buffer Status: Device 2: Buffer Content (IDs and Types):
+[{'id': 3685, 'type': 'type2'}, {'id': 8618, 'type': 'type2'}, {'id': 2608, 'type': 'type1'}, {'id': 3216, 'type': 'type
+2'}, {'id': 1224, 'type': 'type1'}, {'id': 5994, 'type': 'type2'}, {'id': 9791, 'type': 'type1'}, {'id': 5234, 'type': '
+type2'}, {'id': 4026, 'type': 'type2'}, {'id': 1417, 'type': 'type1'}, {'id': 6602, 'type': 'type1'}] Total Packets: 11
+[20:11:45] [Device2Processor] [PROCESS] Device 2: Processed packets: [3685, 8618, 2608, 3216, 1224, 5994, 9791, 5234, 4026, 1417].
+[20:11:45] [Device4Processor] [INFO] Buffer Status: Device 4: Buffer Content (IDs and Types):
+[{'id': 6370, 'type': 'type2'}, {'id': 3659, 'type': 'type1'}, {'id': 9307, 'type': 'type1'}, {'id': 6034, 'type': 'type
+2'}, {'id': 8606, 'type': 'type1'}, {'id': 7452, 'type': 'type2'}, {'id': 7893, 'type': 'type1'}, {'id': 3770, 'type': '
+type2'}, {'id': 9368, 'type': 'type1'}, {'id': 5005, 'type': 'type1'}, {'id': 1634, 'type': 'type2'}, {'id': 7233, 'type
+': 'type2'}, {'id': 1829, 'type': 'type1'}, {'id': 8671, 'type': 'type1'}, {'id': 1431, 'type': 'type1'}, {'id': 1434, '
+type': 'type2'}, {'id': 1957, 'type': 'type2'}, {'id': 3060, 'type': 'type2'}, {'id': 5476, 'type': 'type1'}, {'id': 661
+7, 'type': 'type1'}, {'id': 7453, 'type': 'type2'}, {'id': 2800, 'type': 'type2'}, {'id': 8079, 'type': 'type2'}, {'id':
+ 9201, 'type': 'type1'}, {'id': 7211, 'type': 'type1'}, {'id': 7725, 'type': 'type2'}, {'id': 5893, 'type': 'type2'}, {'
+id': 6465, 'type': 'type1'}, {'id': 2159, 'type': 'type1'}, {'id': 9070, 'type': 'type2'}, {'id': 8733, 'type': 'type2'}
+, {'id': 9427, 'type': 'type2'}, {'id': 5441, 'type': 'type1'}, {'id': 3935, 'type': 'type1'}, {'id': 1941, 'type': 'typ
+e2'}, {'id': 8952, 'type': 'type2'}, {'id': 5856, 'type': 'type1'}, {'id': 2223, 'type': 'type2'}, {'id': 2036, 'type': 
+'type1'}, {'id': 2325, 'type': 'type2'}, {'id': 3841, 'type': 'type1'}, {'id': 5026, 'type': 'type2'}, {'id': 4606, 'typ
+e': 'type1'}, {'id': 4448, 'type': 'type1'}, {'id': 7734, 'type': 'type1'}, {'id': 5121, 'type': 'type2'}, {'id': 3737, 
+'type': 'type1'}, {'id': 6984, 'type': 'type2'}, {'id': 3221, 'type': 'type1'}, {'id': 4147, 'type': 'type2'}, {'id': 32
+71, 'type': 'type2'}, {'id': 7355, 'type': 'type2'}, {'id': 3165, 'type': 'type1'}, {'id': 3588, 'type': 'type2'}, {'id'
+: 3153, 'type': 'type1'}, {'id': 7707, 'type': 'type2'}, {'id': 2484, 'type': 'type2'}, {'id': 9608, 'type': 'type2'}, {
+'id': 4854, 'type': 'type1'}, {'id': 3070, 'type': 'type1'}, {'id': 4976, 'type': 'type2'}, {'id': 6352, 'type': 'type1'
+}, {'id': 4724, 'type': 'type1'}, {'id': 7379, 'type': 'type2'}, {'id': 4267, 'type': 'type1'}, {'id': 5739, 'type': 'ty
+pe1'}, {'id': 4277, 'type': 'type1'}, {'id': 3886, 'type': 'type2'}] Total Packets: 68
+[20:11:45] [Device3Processor] [INFO] Buffer Status: Device 3: Buffer Content (IDs and Types):
+[{'id': 8879, 'type': 'type1'}, {'id': 7453, 'type': 'type2'}, {'id': 8332, 'type': 'type1'}, {'id': 1045, 'type': 'type
+1'}, {'id': 6463, 'type': 'type2'}, {'id': 8569, 'type': 'type1'}, {'id': 3968, 'type': 'type2'}, {'id': 6115, 'type': '
+type1'}, {'id': 9851, 'type': 'type2'}, {'id': 7135, 'type': 'type1'}, {'id': 3355, 'type': 'type1'}, {'id': 7320, 'type
+': 'type2'}, {'id': 4790, 'type': 'type2'}, {'id': 8166, 'type': 'type1'}, {'id': 3740, 'type': 'type2'}] Total Packets: 15
+[20:11:45] [Device4Processor] [PROCESS] Device 4: Processed packets: [6370, 3659, 9307, 6034, 8606, 7452, 7893, 3770, 9368, 5005].
+[20:11:45] [Device3Processor] [PROCESS] Device 3: Processed packets: [8879, 7453, 8332, 1045, 6463, 8569, 3968, 6115, 9851, 7135].
+[20:11:45] [Device2AlertHandler] [CRITICAL] Device 2: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:45] [Device3AlertHandler] [CRITICAL] Device 3: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:45] [Device1AlertHandler] [CRITICAL] Device 1: Received CRITICAL_BACKPRESSURE signal. Stopping transmissionto Device 4.
+[20:11:45] [Device2AlertHandler] [WARNING] Device 2: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:45] [Device3AlertHandler] [WARNING] Device 3: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.
+[20:11:45] [Device4AlertHandler] [WARNING] Device 4: Received BACKPRESSURE signal. Slowing down transmission toDevice 1 to 1.

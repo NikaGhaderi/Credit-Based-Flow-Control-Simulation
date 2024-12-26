@@ -1,6 +1,8 @@
+import threading
 import time
 import random
 import queue
+from queue import Empty
 
 TRANSMISSION_RATES = {
     1: {2: 10, 3: 20, 4: 30},
@@ -9,11 +11,18 @@ TRANSMISSION_RATES = {
     4: {1: 10, 2: 20, 3: 30}
 }
 
+BUFFER_SIZES = {
+    1: 1 * 1024 * 8,
+    2: 1 * 1024 * 8,
+    3: 2 * 1024 * 8,
+    4: 4 * 1024 * 8
+}
+
 PROCESS_RATE = 10
 
 
 class Device:
-    def __init__(self, device_id, switch_queue, logger, RATIO, DURATION):
+    def __init__(self, device_id, switch_queue, logger, RATIO, DURATION, STATE, PRIORITY_OPTION):
         self.device_id = device_id
         self.received_packets = queue.Queue()
         self.switch_queue = switch_queue
@@ -23,7 +32,9 @@ class Device:
         self.ratio_counter = 0
         self.RATIO = RATIO
         self.DURATION = DURATION
-
+        self.lock = threading.Lock()
+        self.STATE = STATE
+        self.PRIORITY_MODE = PRIORITY_OPTION
 
     def check_alerts(self):
         start_time = time.time()
@@ -101,8 +112,10 @@ class Device:
             processed_packets = []
             counter = 0
             while True:
-                if not self.received_packets.empty():
-                    packet = self.received_packets.get()
+                try:
+                    if self.received_packets.empty():
+                        break
+                    packet = self.received_packets.get_nowait()
 
                     # Ignore alert packets here (handled by `check_alerts`)
                     if packet['id'] in ["BACKPRESSURE", "RESTORE", "CRITICAL_BACKPRESSURE"]:
@@ -112,24 +125,12 @@ class Device:
                     processed_packets.append(packet)
                     if counter == PROCESS_RATE:
                         break
-                else:
+                except:
                     break
 
             if processed_packets:
-                # Include both packet ID and type in the log
-                processed_details = [{"id": packet['id'], "type": packet['type']} for packet in processed_packets]
-
-                # Convert the processed details into a string and wrap lines if necessary
-                processed_details_str = str(processed_details)
-                max_line_length = 120
-                wrapped_processed_details = '\n'.join(
-                    [processed_details_str[i:i + max_line_length] for i in
-                     range(0, len(processed_details_str), max_line_length)]
-                )
-
-                self.logger.process(
-                    f"Device {self.device_id}: Processed packets (IDs and Types):\n{wrapped_processed_details}."
-                )
+                packet_ids = [p['id'] for p in processed_packets]
+                self.logger.process(f"Device {self.device_id}: Processed packets: {packet_ids}.")
 
             time.sleep(1)  # Process packets every second
 
@@ -137,7 +138,11 @@ class Device:
         """Send packets to the switch."""
         start_time = time.time()
         packets_to_send = []  # List to gather packets to send
+
         while self.running and time.time() - start_time < self.DURATION:
+            packets_by_target = {}  # Group packets by target device
+
+            # Generate packets and group them by target device
             for target_device, rate in self.current_rates.items():
                 for _ in range(rate):
                     if self.ratio_counter <= 0:
@@ -156,9 +161,51 @@ class Device:
                     }
                     packets_to_send.append(packet)  # Gather packets
 
+            # # Apply priority sorting
+            # if self.STATE == 1:
+            #     # If state 1, no sorting needed
+            #     pass
+            # else:
+            #     if self.PRIORITY_MODE == 1:
+            #         # Option 1: Prioritize type1 over type2
+            #         packets_to_send.sort(key=lambda pkt: pkt["type"] == "type2")
+            #     elif self.PRIORITY_MODE == 2:
+            #         # Option 2: Prioritize type1 when buffer is low
+            #         buffer_contents = list(self.received_packets.queue)
+            #         buffer_usage = len(buffer_contents) * 512  # Convert to bits
+            #         if buffer_usage > 0.9 * BUFFER_SIZES[self.device_id]:
+            #             packets_to_send.sort(key=lambda pkt: pkt["type"] == "type2")
+            #     elif self.PRIORITY_MODE == 3:
+            #         # Option 3: Process 2 type1 for every 1 type2
+            #         type1_packets = [pkt for pkt in packets_to_send if pkt["type"] == "type1"]
+            #         type2_packets = [pkt for pkt in packets_to_send if pkt["type"] == "type2"]
+            #
+            #         # Combine type1 and type2 packets in a 2:1 ratio
+            #         combined_packets = []
+            #         type1_index, type2_index = 0, 0
+            #
+            #         while type1_index < len(type1_packets) or type2_index < len(type2_packets):
+            #             if type1_index < len(type1_packets):
+            #                 combined_packets.append(type1_packets[type1_index])
+            #                 type1_index += 1
+            #             if type1_index < len(type1_packets):
+            #                 combined_packets.append(type1_packets[type1_index])
+            #                 type1_index += 1
+            #             if type2_index < len(type2_packets):
+            #                 combined_packets.append(type2_packets[type2_index])
+            #                 type2_index += 1
+            #
+            #         # Replace packets_to_send with combined list
+            #         packets_to_send[:] = combined_packets
+
             # Send all gathered packets every second
             for packet in packets_to_send:
                 self.switch_queue.put(packet)  # Send all gathered packets to the switch
+
+            # Log the sent packets
+            self.logger.info(
+                f"Device {self.device_id}: Sent {len(packets_to_send)} packets to the switch."
+            )
 
             packets_to_send.clear()  # Clear the list for the next round
             time.sleep(1)  # Wait for 1 second before sending

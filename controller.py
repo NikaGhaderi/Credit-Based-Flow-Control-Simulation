@@ -76,7 +76,7 @@ def get_priority_option():
                                "1) Packets of type 1 are always processed before packets of type 2.\n"
                                "2) Only when competing for remaining buffer space, packets of type 1 are preferred to "
                                "type 2.\n"
-                               "3) Process 2 packets of type 1 for every 1 packet of type 2.\n"
+                               "3) Switch processes 2 packets of type 1 for every 1 packet of type 2.\n"
                                "Enter 1, 2, or 3:\n")
 
             PRIORITY_OPTION = int(user_input)
@@ -164,10 +164,10 @@ if __name__ == "__main__":
 
     # Initialize devices first to access their received_packets
     devices = [
-        Device1(1, incoming_queues[1], memory_logger, RATIO, DURATION),
-        Device2(2, incoming_queues[2], memory_logger, RATIO, DURATION),
-        Device3(3, incoming_queues[3], memory_logger, RATIO, DURATION),
-        Device4(4, incoming_queues[4], memory_logger, RATIO, DURATION)
+        Device1(1, incoming_queues[1], memory_logger, RATIO, DURATION, STATE, PRIORITY_OPTION),
+        Device2(2, incoming_queues[2], memory_logger, RATIO, DURATION, STATE, PRIORITY_OPTION),
+        Device3(3, incoming_queues[3], memory_logger, RATIO, DURATION, STATE, PRIORITY_OPTION),
+        Device4(4, incoming_queues[4], memory_logger, RATIO, DURATION, STATE, PRIORITY_OPTION)
     ]
 
     # Outgoing queues: Switch sends to Devices

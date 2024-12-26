@@ -50,52 +50,43 @@ class Switch:
                         packets_to_process[target_device] = []
                     packets_to_process[target_device].append((device_id, packet))
 
-            # Now, sort the packets before processing
             if self.STATE == 1:
-                # If state 1, no sorting needed
                 pass
             else:
-                # State 2: Handle sorting based on priority mode, for each target device
                 for target_device, packets in packets_to_process.items():
                     if self.PRIORITY_MODE == 1:
-                        # Option 1: Prioritize packet type 1 before type 2 for this specific target_device
-                        packets.sort(key=lambda pkt: pkt[1]["type"] == 2)  # Type 1 comes before Type 2
+                        packets.sort(key=lambda pkt: pkt[1]["type"] == 2)
                     elif self.PRIORITY_MODE == 2:
-                        # Option 2: Prioritize packet type 1 only when buffer is low for this specific target_device
                         buffer_usage = self.buffers[target_device]
                         if buffer_usage < 0.10 * BUFFER_SIZES[target_device]:
-                            # If buffer is low, prioritize type 1 over type 2 for this target device
-                            packets.sort(key=lambda pkt: pkt[1]["type"] == 2)  # Type 1 comes before Type 2
+                            packets.sort(key=lambda pkt: pkt[1]["type"] == 2)
                     elif self.PRIORITY_MODE == 3:
-                        # Option 3: Process 2 packets of type1 for every 1 packet of type2
-                        type1_packets = [pkt for pkt in packets if pkt[1]["type"] == "type1"]
-                        type2_packets = [pkt for pkt in packets if pkt[1]["type"] == "type2"]
+                        with self.lock:
+                            type1_packets = [pkt for pkt in packets if pkt[1]["type"] == "type1"]
+                            type2_packets = [pkt for pkt in packets if pkt[1]["type"] == "type2"]
 
-                        # Combine type1 and type2 packets in a 2:1 ratio
-                        combined_packets = []
-                        type1_index, type2_index = 0, 0
+                            combined_packets = []
+                            type1_index, type2_index = 0, 0
 
-                        # Create a loop to maintain the 2:1 processing ratio
-                        while type1_index < len(type1_packets) or type2_index < len(type2_packets):
-                            if type1_index < len(type1_packets):
-                                combined_packets.append(type1_packets[type1_index])
-                                type1_index += 1
-                            if type1_index < len(type1_packets):
-                                combined_packets.append(type1_packets[type1_index])
-                                type1_index += 1
-                            if type2_index < len(type2_packets):
-                                combined_packets.append(type2_packets[type2_index])
-                                type2_index += 1
+                            while type1_index < len(type1_packets) or type2_index < len(type2_packets):
+                                if type1_index < len(type1_packets):
+                                    combined_packets.append(type1_packets[type1_index])
+                                    type1_index += 1
+                                if type1_index < len(type1_packets):
+                                    combined_packets.append(type1_packets[type1_index])
+                                    type1_index += 1
+                                if type2_index < len(type2_packets):
+                                    combined_packets.append(type2_packets[type2_index])
+                                    type2_index += 1
 
-                        # Replace packets with the combined list maintaining the 2:1 ratio
-                        packets[:] = combined_packets
+                            packets[:] = combined_packets
 
             # Process all packets for each target device after sorting
             for target_device, packets in packets_to_process.items():
                 for device_id, packet in packets:
                     self.process_packet(device_id, packet)
 
-            # time.sleep(0.1)  # Prevents tight loop; adjust as needed
+            time.sleep(0.05)  # Prevents tight loop; adjust as needed
 
     def broadcast(self, message, exclude=None):
         if exclude is None:

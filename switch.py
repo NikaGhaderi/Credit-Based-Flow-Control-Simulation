@@ -1,9 +1,6 @@
 import threading
-import queue
 import time
-import logging
 
-# Buffer size in bits for each device
 BUFFER_SIZES = {
     1: 1 * 1024 * 8,
     2: 1 * 1024 * 8,
@@ -11,7 +8,7 @@ BUFFER_SIZES = {
     4: 4 * 1024 * 8
 }
 
-PROCESS_RATE = 10  # Packets processed per second by each device
+PROCESS_RATE = 10
 
 DEVICES_NUMBER = 4
 
@@ -20,8 +17,8 @@ PROGRAM_START_TIME = time.time()
 
 class Switch:
     def __init__(self, incoming_queues, outgoing_queues, logger, STATE, PRIORITY_OPTION):
-        self.incoming_queues = incoming_queues  # Queues from Devices to Switch
-        self.outgoing_queues = outgoing_queues  # Queues from Switch to Devices
+        self.incoming_queues = incoming_queues
+        self.outgoing_queues = outgoing_queues
         self.STATE = STATE
         self.PRIORITY_MODE = PRIORITY_OPTION
 
@@ -38,14 +35,12 @@ class Switch:
     def listen(self):
         self.logger.info("Switch: Listening for incoming packets...")
         while self.running:
-            # Initialize a data structure (dictionary of lists) to save packets and device_id for each target device
             packets_to_process = {}
 
             for device_id, q in self.incoming_queues.items():
                 if not q.empty():
                     packet = q.get()
-                    target_device = packet["target"]  # Get the target device for this packet
-                    # Add a tuple (device_id, packet) to the list for the target device
+                    target_device = packet["target"]
                     if target_device not in packets_to_process:
                         packets_to_process[target_device] = []
                     packets_to_process[target_device].append((device_id, packet))
@@ -81,12 +76,11 @@ class Switch:
 
                             packets[:] = combined_packets
 
-            # Process all packets for each target device after sorting
             for target_device, packets in packets_to_process.items():
                 for device_id, packet in packets:
                     self.process_packet(device_id, packet)
 
-            time.sleep(0.05)  # Prevents tight loop; adjust as needed
+            time.sleep(0.05)
 
     def broadcast(self, message, exclude=None):
         if exclude is None:
@@ -99,14 +93,12 @@ class Switch:
         target_device = packet['target']
         packet_size = packet['size']
 
-        # Threshold to trigger backpressure (e.g., 80% buffer utilization)
         BACKPRESSURE_THRESHOLD = 0.4 * BUFFER_SIZES[target_device]
         CRITICAL_THRESHOLD = 0
         packet_type = packet.get('type', 'unknown')
 
-        with self.lock:  # Lock the critical section
+        with self.lock:
             if self.buffers[target_device] >= packet_size:
-                # Enough space, send the packet
                 self.buffers[target_device] -= packet_size
                 self.outgoing_queues[target_device].put(packet)
                 self.logger.info(
@@ -114,9 +106,7 @@ class Switch:
                     f"Remaining buffer for Device {target_device}: {self.buffers[target_device]} bits."
                 )
 
-                # Check if buffer usage exceeds threshold
                 if self.buffers[target_device] < BACKPRESSURE_THRESHOLD and self.buffers[target_device] != 0:
-                    # Send a backpressure signal (e.g., via a special packet or message)
                     backpressure_packet = {"id": "BACKPRESSURE", "size": 0, "target": target_device}
                     self.broadcast(backpressure_packet, exclude=[target_device])
 
@@ -126,21 +116,20 @@ class Switch:
                     )
 
                 if self.buffers[target_device] == CRITICAL_THRESHOLD:
-                    # Send a critical backpressure signal to stop sending
                     critical_backpressure_packet = {"id": "CRITICAL_BACKPRESSURE", "size": 0, "target": target_device}
                     self.broadcast(critical_backpressure_packet, exclude=[target_device])
                     self.logger.critical(
-                        f"Switch: Critical backpressure signal sent to all devices to stop sending to Device {target_device} "
+                        f"Switch: Critical backpressure signal sent to all devices to stop sending to Device "
+                        f"{target_device}"
                         f"due to buffer overflow."
                     )
 
             else:
-                # Packet is dropped due to insufficient buffer space
                 self.logger.warning(
-                    f"Switch: Packet from Device {source_device} to Device {target_device} dropped due to buffer overflow. "
+                    f"Switch: Packet from Device {source_device} to Device {target_device} dropped due to buffer "
+                    f"overflow."
                     f"Buffer space remaining: {self.buffers[target_device]} bits, Packet size: {packet_size} bits."
                 )
-                # Re-add the packet to the source device's queue
                 self.incoming_queues[source_device].put(packet)
                 self.logger.info(
                     f"Switch: Re-queued packet {packet['id']} from Device {source_device} back to incoming queue."
@@ -149,9 +138,9 @@ class Switch:
     def restore_buffers(self):
         self.logger.info("Switch: Buffer restoration thread started.")
         while self.running:
-            time.sleep(1)  # Every second
+            time.sleep(1)
             for device_id in self.buffers.keys():
-                restored_size = PROCESS_RATE * 512  # Restore buffer based on process rate
+                restored_size = PROCESS_RATE * 512
                 before_restore = self.buffers[device_id]
                 self.buffers[device_id] = min(self.buffers[device_id] + restored_size, BUFFER_SIZES[device_id])
                 restored = self.buffers[device_id] - before_restore
@@ -160,17 +149,14 @@ class Switch:
                     f"Current credit size: {self.buffers[device_id] / 8} bytes."
                 )
 
-                # Check if buffer usage is now below backpressure threshold
                 BACKPRESSURE_THRESHOLD = 0.15 * BUFFER_SIZES[device_id]
                 if self.buffers[device_id] >= BACKPRESSURE_THRESHOLD:
-                    # Send "RESTORE" signal to all devices
                     restore_packet = {"id": "RESTORE", "size": 0, "target": device_id}
                     self.broadcast(restore_packet, exclude=[device_id])
                     self.logger.process(
                         f"Switch: Sent RESTORE signal for Device {device_id} as buffer usage is below the threshold."
                     )
                 elif self.buffers[device_id] < BACKPRESSURE_THRESHOLD:
-                    # Continue backpressure if threshold is still exceeded
                     backpressure_packet = {"id": "BACKPRESSURE", "size": 0, "target": device_id}
                     self.broadcast(backpressure_packet, exclude=[device_id])
                     self.logger.process(

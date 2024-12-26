@@ -40,15 +40,12 @@ class Device:
         start_time = time.time()
         while self.running and time.time() - start_time < self.DURATION:
             try:
-                # Look at all packets in the queue (non-destructive peek)
-                all_packets = list(self.received_packets.queue)  # Get a snapshot of all packets in the queue
+                all_packets = list(self.received_packets.queue)
 
                 for packet in all_packets:
                     if packet['id'] in ["BACKPRESSURE", "RESTORE", "CRITICAL_BACKPRESSURE"]:
-                        # Remove the alert packet from the queue (destructive removal)
                         self.received_packets.queue.remove(packet)
 
-                        # Process the alert
                         target_device = packet.get('target', None)
                         current_rate = self.current_rates[target_device]
 
@@ -57,8 +54,7 @@ class Device:
                             if current_rate != 1:
                                 self.logger.warning(
                                     f"Device {self.device_id}: Received BACKPRESSURE signal. Slowing down "
-                                    f"transmission to"
-                                    f"Device {target_device} to {self.current_rates[target_device]}."
+                                    f"transmission to Device {target_device} to {self.current_rates[target_device]}."
                                 )
                         elif packet['id'] == "RESTORE":
                             self.current_rates[target_device] = min(
@@ -74,20 +70,17 @@ class Device:
                             if current_rate != 0:
                                 self.logger.critical(
                                     f"Device {self.device_id}: Received CRITICAL_BACKPRESSURE signal. Stopping "
-                                    f"transmission"
-                                    f"to Device {target_device}."
+                                    f"transmission to Device {target_device}."
                                 )
             except Exception as e:
                 self.logger.error(f"Device {self.device_id}: Error in handling alert: {e}")
 
-            # Sleep for a short time to allow frequent checks
-            time.sleep(0.0001)  # Check alerts every 100 ms
+            time.sleep(0.0001)
 
     def process_incoming(self):
         start_time = time.time()
         while self.running and time.time() - start_time < self.DURATION:
 
-            # Log buffer status
             buffer_contents = list(self.received_packets.queue)
             filtered_buffer = [packet for packet in buffer_contents if packet['id'] not in ["BACKPRESSURE", "RESTORE",
                                                                                             "CRITICAL_BACKPRESSURE"]]
@@ -96,17 +89,16 @@ class Device:
                 buffer_details = [{"id": packet['id'], "type": packet['type']} for packet in filtered_buffer]
                 buffer_size = len(buffer_details)
 
-                # Format the buffer details into a multi-line string if it exceeds 120 characters
                 buffer_details_str = str(buffer_details)
                 max_line_length = 120
                 wrapped_buffer_details = '\n'.join(
-                    [buffer_details_str[i:i + max_line_length] for i in
-                     range(0, len(buffer_details_str), max_line_length)]
+                    [buffer_details_str[i:i + max_line_length] for i in range(0, len(buffer_details_str),
+                                                                              max_line_length)]
                 )
 
                 self.logger.info(
-                    f"Buffer Status: Device {self.device_id}: Buffer Content (IDs and Types):\n{wrapped_buffer_details} "
-                    f"Total Packets: {buffer_size}"
+                    f"Buffer Status: Device {self.device_id}: Buffer Content (IDs and Types):\n{wrapped_buffer_details}"
+                    f" Total Packets: {buffer_size}"
                 )
 
             processed_packets = []
@@ -117,7 +109,6 @@ class Device:
                         break
                     packet = self.received_packets.get_nowait()
 
-                    # Ignore alert packets here (handled by `check_alerts`)
                     if packet['id'] in ["BACKPRESSURE", "RESTORE", "CRITICAL_BACKPRESSURE"]:
                         self.received_packets.put(packet)
                         continue
@@ -125,24 +116,20 @@ class Device:
                     processed_packets.append(packet)
                     if counter == PROCESS_RATE:
                         break
-                except:
+                except Empty:
                     break
 
             if processed_packets:
                 packet_ids = [p['id'] for p in processed_packets]
                 self.logger.process(f"Device {self.device_id}: Processed packets: {packet_ids}.")
 
-            time.sleep(1)  # Process packets every second
+            time.sleep(1)
 
     def send_packets(self):
-        """Send packets to the switch."""
         start_time = time.time()
-        packets_to_send = []  # List to gather packets to send
+        packets_to_send = []
 
         while self.running and time.time() - start_time < self.DURATION:
-            packets_by_target = {}  # Group packets by target device
-
-            # Generate packets and group them by target device
             for target_device, rate in self.current_rates.items():
                 for _ in range(rate):
                     if self.ratio_counter <= 0:
@@ -159,53 +146,14 @@ class Device:
                         "target": target_device,
                         "type": packet_type
                     }
-                    packets_to_send.append(packet)  # Gather packets
+                    packets_to_send.append(packet)
 
-            # # Apply priority sorting
-            # if self.STATE == 1:
-            #     # If state 1, no sorting needed
-            #     pass
-            # else:
-            #     if self.PRIORITY_MODE == 1:
-            #         # Option 1: Prioritize type1 over type2
-            #         packets_to_send.sort(key=lambda pkt: pkt["type"] == "type2")
-            #     elif self.PRIORITY_MODE == 2:
-            #         # Option 2: Prioritize type1 when buffer is low
-            #         buffer_contents = list(self.received_packets.queue)
-            #         buffer_usage = len(buffer_contents) * 512  # Convert to bits
-            #         if buffer_usage > 0.9 * BUFFER_SIZES[self.device_id]:
-            #             packets_to_send.sort(key=lambda pkt: pkt["type"] == "type2")
-            #     elif self.PRIORITY_MODE == 3:
-            #         # Option 3: Process 2 type1 for every 1 type2
-            #         type1_packets = [pkt for pkt in packets_to_send if pkt["type"] == "type1"]
-            #         type2_packets = [pkt for pkt in packets_to_send if pkt["type"] == "type2"]
-            #
-            #         # Combine type1 and type2 packets in a 2:1 ratio
-            #         combined_packets = []
-            #         type1_index, type2_index = 0, 0
-            #
-            #         while type1_index < len(type1_packets) or type2_index < len(type2_packets):
-            #             if type1_index < len(type1_packets):
-            #                 combined_packets.append(type1_packets[type1_index])
-            #                 type1_index += 1
-            #             if type1_index < len(type1_packets):
-            #                 combined_packets.append(type1_packets[type1_index])
-            #                 type1_index += 1
-            #             if type2_index < len(type2_packets):
-            #                 combined_packets.append(type2_packets[type2_index])
-            #                 type2_index += 1
-            #
-            #         # Replace packets_to_send with combined list
-            #         packets_to_send[:] = combined_packets
-
-            # Send all gathered packets every second
             for packet in packets_to_send:
-                self.switch_queue.put(packet)  # Send all gathered packets to the switch
+                self.switch_queue.put(packet)
 
-            # Log the sent packets
             self.logger.info(
                 f"Device {self.device_id}: Sent {len(packets_to_send)} packets to the switch."
             )
 
-            packets_to_send.clear()  # Clear the list for the next round
-            time.sleep(1)  # Wait for 1 second before sending
+            packets_to_send.clear()
+            time.sleep(1)

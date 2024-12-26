@@ -11,9 +11,8 @@ from device4 import Device as Device4
 STATE = 1
 RATIO = 1
 DURATION = 5
-PRIORITY_OPTION = 1  # Default priority option
+PRIORITY_OPTION = 1
 
-# === Define Custom 'PROCESS' Logging Level ===
 PROCESS_LEVEL_NUM = 25
 logging.addLevelName(PROCESS_LEVEL_NUM, "PROCESS")
 
@@ -23,11 +22,7 @@ def process(self, message, *args, **kws):
         self._log(PROCESS_LEVEL_NUM, message, args, **kws)
 
 
-# Add the 'process' method to the Logger class
 logging.Logger.process = process
-
-
-# === End of Custom Logging Level ===
 
 
 def get_simulation_duration():
@@ -88,16 +83,12 @@ def get_priority_option():
             print("Invalid input. Please enter 1, 2 or 3.\n")
 
 
-# Configure Logging: Setup two loggers
 def setup_loggers():
-    # === Simulation Logger ===
     simulation_logger = logging.getLogger("SimulationLogger")
     simulation_logger.setLevel(logging.DEBUG)
 
-    # Erase previous content
     open('simulation.log', 'w').close()
 
-    # Create a file handler for simulation.log
     fh_sim = logging.FileHandler("simulation.log")
     fh_sim.setLevel(logging.DEBUG)
     formatter_sim = logging.Formatter(
@@ -109,14 +100,11 @@ def setup_loggers():
 
     simulation_logger.info("Switch is running. Ready to process packets...")
 
-    # === Memory Logger ===
     memory_logger = logging.getLogger("MemoryLogger")
     memory_logger.setLevel(logging.DEBUG)
 
-    # Erase previous content
     open('memory.log', 'w').close()
 
-    # Create a file handler for memory.log
     fh_mem = logging.FileHandler("memory.log")
     fh_mem.setLevel(logging.DEBUG)
     formatter_mem = logging.Formatter(
@@ -128,19 +116,16 @@ def setup_loggers():
 
     memory_logger.info("Memory is running. Ready to process packets...")
 
-    # Prevent logs from propagating to the root logger
     simulation_logger.propagate = False
     memory_logger.propagate = False
 
     return simulation_logger, memory_logger
 
 
-# Initialize the loggers
 simulation_logger, memory_logger = setup_loggers()
 
 
 def stop_simulation(switch, devices, logger):
-    # Signal the switch and devices to stop
     logger.info("Stopping simulation...")
     switch.running = False
     for device in devices:
@@ -154,7 +139,6 @@ if __name__ == "__main__":
 
     simulation_logger.info("Starting simulation...")
 
-    # Shared queues for devices (Incoming queues: Devices send to Switch)
     incoming_queues = {
         1: queue.Queue(),
         2: queue.Queue(),
@@ -162,7 +146,6 @@ if __name__ == "__main__":
         4: queue.Queue()
     }
 
-    # Initialize devices first to access their received_packets
     devices = [
         Device1(1, incoming_queues[1], memory_logger, RATIO, DURATION, STATE, PRIORITY_OPTION),
         Device2(2, incoming_queues[2], memory_logger, RATIO, DURATION, STATE, PRIORITY_OPTION),
@@ -170,7 +153,6 @@ if __name__ == "__main__":
         Device4(4, incoming_queues[4], memory_logger, RATIO, DURATION, STATE, PRIORITY_OPTION)
     ]
 
-    # Outgoing queues: Switch sends to Devices
     outgoing_queues = {
         1: devices[0].received_packets,
         2: devices[1].received_packets,
@@ -178,35 +160,29 @@ if __name__ == "__main__":
         4: devices[3].received_packets
     }
 
-    # Initialize the switch with both incoming and outgoing queues and priority option
     switch = Switch(incoming_queues, outgoing_queues, simulation_logger, STATE, PRIORITY_OPTION)
     switch_thread = threading.Thread(target=switch.listen, name="SwitchListener")
     buffer_thread = threading.Thread(target=switch.restore_buffers, name="BufferRestorer")
 
-    # Create device threads
     device_threads = []
     for device in devices:
         device_thread_sender = threading.Thread(target=device.send_packets, name=f"Device{device.device_id}Sender")
         device_thread_processor = threading.Thread(target=device.process_incoming,
-                                                   name=f"Device{device.device_id}Processor")  # Corrected name
+                                                   name=f"Device{device.device_id}Processor")
         device_thread_alert = threading.Thread(target=device.check_alerts, name=f"Device{device.device_id}AlertHandler")
         device_threads.append(device_thread_sender)
         device_threads.append(device_thread_processor)
         device_threads.append(device_thread_alert)
 
-    # Start the switch and device threads
     switch_thread.start()
     buffer_thread.start()
     for thread in device_threads:
         thread.start()
 
-    # Run the simulation for DURATION seconds
     time.sleep(DURATION)
 
-    # Stop the switch and devices
     stop_simulation(switch, devices, simulation_logger)
 
-    # Wait for all threads to finish
     switch_thread.join()
     buffer_thread.join()
     for thread in device_threads:
